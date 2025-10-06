@@ -1,0 +1,101 @@
+/* Aqui começa a importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Aqui termina a importação das fontes */
+/* Aqui começa o css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+/* Aqui termina o css reset */
+/* Aqui começa o estilo da body */
+body{
+    background-color: #fffafa;
+}
+/* Aqui termina o estilo da body */
+/* Aqui começa o estilo da header */
+header{
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+/* Aqui comela o estilo da logo */
+#logo{
+    position: relative;
+    width: 300px;
+    height: auto;
+}
+#logo img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 5%;
+    left: 20%;
+    filter: drop-shadow(1px 2px 2px rgb(91, 91, 91));
+}
+/* Aqui termina o estilo da logo */
+/* Aqui começa o estilo dos links */
+nav{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 55%;
+    top: -15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    text-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+nav a{
+    text-decoration: none;
+    color: #381A72;
+    margin-top: -22%;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #381A72;
+    transform: scale(1.1);
+}
+/* Aqui termina o estilo dos links */
+/* Aqui começa o estilo dos botões */
+#botoes{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 76%;
+    margin-top: -3.7%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;
+    
+}
+#cadastro, #login{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+#login{
+    background-color: #381A72;
+    color: white;
+}
+#cadastro:hover, #login:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+/* Aqui termina o estilo dos botões */
+
+/* Aqui termina o estilo da header */
