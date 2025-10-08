@@ -11,7 +11,7 @@ footer{
     left: 5%;
     width: 400px;
 }
-#links_footer{
+.links_footer{
     position: relative;
     display: flex;
     justify-content: start;
@@ -24,19 +24,38 @@ footer{
 .Mapa{
     display: flex;
     flex-direction: column;
-    margin-top: 2%;
+    margin-top: -1%;
 }
 .Ferramentas{
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: -2%;
 }
 footer a {
     text-decoration: none;
     color: #381A72;
 }
-#contator_footer{
+.contator_footer{
     font-size: 1.5rem;
     margin-left: 75%;
-    margin-top: -3.5%;
+    margin-top: -3%;
+}
+.contator_footer h3{
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    margin-top: 5%;
+}
+.meio{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: auto;
+    right: 150%;
+    margin-top: 10%;
+    white-space: nowrap;
 }

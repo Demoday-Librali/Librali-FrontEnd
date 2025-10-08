@@ -17,7 +17,7 @@ function Footer() {
             {/* Aqui termina o código da logo do footer */}
 
             {/* Aqui começa os links do footer */}
-            <div id={Style.links_footer}>
+            <div className={Style.links_footer}>
             <div className={Style.Mapa}>
                 <h3>Mapa do Site</h3>
                 <a href="#">Página Inicial</a>
@@ -32,13 +32,24 @@ function Footer() {
             </div>
             {/* Aqui termina os links do footer */}
             {/* Aqui começa o código das redes sociais e contatos */}
-            <div id={Style.contator_footer}>
+            <div className={Style.contator_footer}>
                 <h3>Siga nossas redes sociais</h3>
-                <a href='index.html'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
-                <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
-                <a href='#'> <img src={X} alt="X da Librali" /> </a>
-                <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
-                <a href='#'> <img src={YouTube} alt="YouTube da Librali" /> </a>
+                <div className={Style.links}>
+                    <a href='index.html'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
+                    <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
+                    <a href='#'> <img src={X} alt="X da Librali" /> </a>
+                    <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
+                    <a href='#'> <img src={YouTube} alt="YouTube da Librali" /> </a>
+                    </div>
+                    <br></br>
+                <h3>Entre em contato</h3>
+                <h4>(14) 3376-1782</h4>
+                <br></br>
+                <a href='#'>libraliproa@gmail.com</a>
+                <div className={Style.meio}>
+                    <h4>Política de Privacidade</h4>
+                    <p>© 2025 LibraLi. Todos os direitos reservados.</p>
+                </div>
             </div>
             {/* Aqui termina o código das redes sociais e contatos */}
         </footer>
