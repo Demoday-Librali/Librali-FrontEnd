@@ -3,13 +3,13 @@ footer{
     height: 620px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 103%;
+    margin-top: 100%;
 }
 .logo_footer img{
     position: relative;
-    margin-top: 18%;
+    margin-top: 23%;
     left: 5%;
-    width: 500px;
+    width: 400px;
 }
 #links_footer{
     position: relative;
@@ -24,15 +24,19 @@ footer{
 .Mapa{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
-    
+    margin-top: 2%;
 }
 .Ferramentas{
     display: flex;
     flex-direction: column;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 footer a {
     text-decoration: none;
     color: #381A72;
+}
+#contator_footer{
+    font-size: 1.5rem;
+    margin-left: 75%;
+    margin-top: -3.5%;
 }
