@@ -5,6 +5,7 @@ import Comeco from './Componente/Comeco'
 import Oquee from './Componente/Oquee'
 import Privacidade from './Componente/Privacidade'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './Componente/ScrollToTop';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
+            <ScrollToTop />
             <Comeco />
             <Oquee />
           </>

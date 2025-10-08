@@ -8,13 +8,12 @@ import Facebook from '../assets/img/Facebook.png'
 import YouTube from '../assets/img/YouTube.png'
 import { Link } from 'react-router-dom'
 
-
 function Footer() {
     return (
         <footer id={Style.footer}>
             {/* Aqui começa o código da logo do footer */}
             <div className={Style.logo_footer}>
-                <a href='index.html'> <img src={Logo} alt="Logo da Librali"/> </a>
+                <Link to="/"> <img src={Logo} alt="Logo da Librali"/></Link>
             </div>
             {/* Aqui termina o código da logo do footer */}
 

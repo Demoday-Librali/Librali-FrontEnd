@@ -1,6 +1,10 @@
 import Style from '../Componente/css/Privacidade.module.css'
+import { useEffect } from 'react';
 
 function Privacidade() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <main className={Style.sitemain}>

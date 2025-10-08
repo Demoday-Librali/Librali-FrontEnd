@@ -1,12 +1,17 @@
 import Style from '../Componente/css/Header.module.css'
 import Logo from '../assets/img/Logo-escrita.png'
+import { Link } from 'react-router-dom'
+import { useEffect } from 'react';
 
 function Header() {
+    useEffect(() => {
+                window.scrollTo(0, 0);
+            }, []);
     return (
         <header>
             {/* Aqui começa o código da logo */}
             <div id={Style.logo}>
-                <a href='app.jsx'> <img src={Logo} alt="Logo da Librali"/> </a>
+                <Link to="/"> <img src={Logo} alt="Logo da Librali"/></Link>
             </div>
             {/* Aqui termina o código da logo */}
 
