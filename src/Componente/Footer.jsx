@@ -6,6 +6,8 @@ import Instagram from '../assets/img/Instagram.png'
 import X from '../assets/img/Twitter.png'
 import Facebook from '../assets/img/Facebook.png'
 import YouTube from '../assets/img/YouTube.png'
+import { Link } from 'react-router-dom'
+
 
 function Footer() {
     return (
@@ -47,7 +49,7 @@ function Footer() {
                 <br></br>
                 <a href='#'>libraliproa@gmail.com</a>
                 <div className={Style.meio}>
-                    <a href='../Componente/Privacidade'>Política de Privacidade</a>
+                    <Link to="/privacidade">Política de Privacidade</Link>
                     <p>© 2025 LibraLi. Todos os direitos reservados.</p>
                 </div>
             </div>

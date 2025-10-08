@@ -6,7 +6,7 @@ function Header() {
         <header>
             {/* Aqui começa o código da logo */}
             <div id={Style.logo}>
-                <a href='index.html'> <img src={Logo} alt="Logo da Librali"/> </a>
+                <a href='app.jsx'> <img src={Logo} alt="Logo da Librali"/> </a>
             </div>
             {/* Aqui termina o código da logo */}
 
