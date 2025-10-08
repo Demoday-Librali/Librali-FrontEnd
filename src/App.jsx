@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Componente/Header'
 import Footer from './Componente/Footer'
 import Comeco from './componente/Comeco'
+import Oquee from './componente/Oquee'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       <Comeco />
+      <Oquee />
       <Footer />
     </>
   )

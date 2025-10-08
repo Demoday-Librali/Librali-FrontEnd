@@ -1,0 +1,26 @@
+import Style from './css/Oquee.module.css'
+import Loira_de_fone from '../assets/img/Loira_de_fone.png'
+import Computador_com_tasks from '../assets/img/Computador_com_task.png'
+import Comprimento_de_mao from '../assets/img/Comprimento_de_mao.png'
+
+function Oquee() {
+    return (
+
+        <div className={Style.Oquee}>
+            <div className={Style.esquerda}>
+                <img src={Loira_de_fone} alt="Mulher loira de fone" />
+                <h1>O que é o Librali?</h1>
+            </div>
+            <div className={Style.meio}>
+                <img src={Computador_com_tasks} alt="Computador com tasks" />
+                <h1>Quem pode se cadastrar?</h1>
+            </div>
+            <div className={Style.direita}>
+                <img src={Comprimento_de_mao} alt="Comprimento de mão" />
+                <h1>Como pode contratar?</h1>
+            </div>
+        </div>
+    )
+}
+
+export default Oquee

@@ -1,0 +1,47 @@
+.Oquee{
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-color: #421167;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.esquerda{
+    position: relative;
+    background-color: #FFE385;
+    height: 428px;
+    width: 33%;
+}
+
+
+.meio{
+    position: relative;
+    background-color: #FD9BCC;
+    height: 550px;
+    width: 33%;
+}
+
+.meio img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.direita{
+    position: relative;
+    background-color: #A5F391;
+    height: 428px;
+    width: 33%;
+}
+
+.Oquee h1{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana;
+    text-align: center;
+    margin-bottom: 20px;
+}
+

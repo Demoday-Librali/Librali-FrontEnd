@@ -4,6 +4,7 @@
   width: 100%;
   top:10px;
   overflow: hidden; /* Garante que o vídeo não ultrapasse os limites do contêiner */
+  display: flex;
 }
 
 .video_bg {
