@@ -47,7 +47,7 @@ function Footer() {
                 <br></br>
                 <a href='#'>libraliproa@gmail.com</a>
                 <div className={Style.meio}>
-                    <h4>Política de Privacidade</h4>
+                    <a href='../Componente/Privacidade'>Política de Privacidade</a>
                     <p>© 2025 LibraLi. Todos os direitos reservados.</p>
                 </div>
             </div>
