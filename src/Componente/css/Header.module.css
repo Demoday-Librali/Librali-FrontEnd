@@ -1,0 +1,73 @@
+/* Aqui começa a config da logo */
+#logo{
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-top: 1%;
+    left: 2%;
+    filter: drop-shadow(1px 2px 2px rgb(91, 91, 91));
+}
+/* Aqui termina a config da logo */
+/* Aqui começa a config dos links */
+nav{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 55%;
+    top: -15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    text-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+nav a{
+    text-decoration: none;
+    color: #381A72;
+    margin-top: -22%;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #381A72;
+    transform: scale(1.1);
+}
+/* Aqui termina a config dos links */
+
+/* Aqui começa a config dos botões */
+#botoes{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 76%;
+    margin-top: -3.2%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;
+    
+}
+#cadastro, #login{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+#login{
+    background-color: #381A72;
+    color: white;
+}
+#cadastro:hover, #login:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+/* Aqui termina oa config dos botões */
