@@ -76,6 +76,7 @@
     color: #FFFAFA;
     font-size: 24px;
     transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
 }
 .botao:hover{
     transform: scale(1.1);
@@ -93,6 +94,7 @@
     font-size: 24px;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
 }
 .botao2:hover{
     transform: scale(1.1);

@@ -1,13 +1,110 @@
 .PaginaIa {
-    position: relative;
+    position: relative; /* Permite que elementos filhos usem position absolute */
+    display: inline-block; /* Ajusta o tamanho ao da imagem */
     height: 850px;
     width: 100%;
-    background-color: #381A72;
     display: flex;
 }
-
-.PaginaIa h1 {
-    font-size: 10px;
-    color: #FFE385;
-    
+.Titulo {
+   color: #FFE385;
+   position: absolute;
+   top: 10%; 
+   left: 105%; 
+   transform: translate(-50%, -50%); 
+   font-size: 3em;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+   width: 100%; 
+   height: auto;
 }
+.Texto1 {
+   color: #FFE385;
+   position: absolute;
+   top: 35%; 
+   left: 75%; 
+   transform: translate(-50%, -50%); 
+   color: white;
+   font-size: 2.2em;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+   width: 40%; 
+   height: auto;
+}
+.Texto2 {
+   color: #FFE385;
+   position: absolute;
+   top: 65%; 
+   left: 75%; 
+   transform: translate(-50%, -50%); 
+   color: white;
+   font-size: 2.2em;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+   width: 40%; 
+   height: auto;
+   font-weight: 600;
+}
+.Fundoia {
+    position: relative;
+  display: block; /* Remove espaços em branco indesejados */
+  width: 100%; /* Ajusta o tamanho da imagem, opcional */
+  height: auto;
+}
+.Mulheria{
+  position: absolute;
+  top: 63%; 
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 550px; /* define a largura desejada */
+  height: auto;  /* mantém proporção da imagem */
+  max-width: 90%; /* opcional, para não ultrapassar o container */
+}
+.Iconeia{
+position: absolute;
+  top: 25%; 
+  left: 23%;
+  transform: translate(-50%, -50%);
+  width: 250px; /* define a largura desejada */
+  height: auto;  /* mantém proporção da imagem */
+  max-width: 90%; /* opcional, para não ultrapassar o container */
+}
+.Blocoverde{
+    position: absolute;
+  top: 95%; 
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* define a largura desejada */
+  height: auto;  /* mantém proporção da imagem */
+  max-width: 90%; /* opcional, para não ultrapassar o container */
+}
+#botoes{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: -35%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;    
+}
+#cadastro, #login{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border: 2px solid #FFFAFA;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFAFA;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+#login{
+    background-color: #FFE385;
+    color: #49038A;
+}
+#cadastro:hover, #login:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+/* Aqui termina oa config dos botões */

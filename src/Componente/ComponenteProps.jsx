@@ -1,6 +1,6 @@
 import Style from './css/ComponenteProps.module.css';
 
-function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude}) {
+function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -12,6 +12,10 @@ function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educaci
             <img src={Educacional} alt=""  className={Style.Educacional_props}/>
             <img src={Juridico} alt=""  className={Style.Juridico_props}/>
             <img src={Saude} alt=""  className={Style.Saude_props}/>
+            <img src={Fundoia} alt=""  className={Style.Fundoia_props}/>
+            <img src={Mulheria} alt=""  className={Style.Mulheria_props}/>
+            <img src={Iconeia} alt=""  className={Style.Iconeia_props}/>
+            <img src={Blocoverde} alt=""  className={Style.Blocoverde_props}/>
         </div>
     )
 }

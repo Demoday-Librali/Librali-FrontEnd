@@ -3,13 +3,23 @@ import Loira_de_fone from '../assets/img/Loira_de_fone.png'
 import Computador_com_tasks from '../assets/img/Computador_com_task.png'
 import Comprimento_de_mao from '../assets/img/Comprimento_de_mao.png'
 
+
 function Oquee() {
+    
     return (
 
         <div className={Style.Oquee}>
             <div className={Style.esquerda}>
                 <img src={Loira_de_fone} alt="Mulher loira de fone" />
                 <h1>O que é o Librali?</h1>
+                <div className={Style.textoanimado}>
+
+                    <p>
+                    O Librali é uma plataforma que conecta intérpretes e clientes de forma acessível e rápida.
+                    Nosso objetivo é facilitar a comunicação entre pessoas surdas e ouvintes, promovendo inclusão
+                    e oportunidades iguais em todos os contextos.
+                    </p>
+    </div>
             </div>
             <div className={Style.meio}>
                 <img src={Computador_com_tasks} alt="Computador com tasks" />
