@@ -1,47 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .Oquee{
     position: relative;
-    height: 720px;
+    height: 850px;
     width: 100%;
     background-color: #421167;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    clip-path: ellipse(80% 50% at 50% 50%);
+    margin-top: -83px;
 }
 
 .esquerda{
     position: relative;
     background-color: #FFE385;
-    height: 428px;
+    height: 550px;
     width: 33%;
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+    margin-left: -18px;
 }
-
+.esquerda img{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
 
 .meio{
     position: relative;
     background-color: #FD9BCC;
     height: 550px;
-    width: 33%;
+    width: 550px;
+    border-radius: 50%;
 }
 
 .meio img{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 36px;
+    width: 500px;
 }
 
 .direita{
     position: relative;
     background-color: #A5F391;
-    height: 428px;
+    height: 550px;
     width: 33%;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    margin-right: -16px;
 }
-
+.direita img{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
 .Oquee h1{
     color: white;
     font-size: 30px;
     font-family: Verdana;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 29px;
+    font-family: "Montserrat Alternates", sans-serif;
 }
-
+.meio h1{
+    margin-top: 30px;
+}

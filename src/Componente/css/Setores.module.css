@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.setores{
+    width: 90%;
+    height: 830px;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.setores h1{
+    color: #1D0B3F;
+    text-align: center;
+    font-size: 50px;
+}
+.setores h2{
+    color: #381A72;
+    text-align: center;
+    font-size: 30px;
+}
+.caixinha{
+    width: 25%;
+    height: 500px;
+    margin-top: 70px;
+    border: 2px solid #5E5C5C;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.caixinha img{
+    width: 100%;
+}
+.caixinha1 h3{
+    text-align: start;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    color: #5E5C5C;
+}
+.caixinha1 h2{
+    text-align: start;
+    margin-left: -1070px;
+    color: #1D0B3F;
+}
+.linha {
+    width: 90%;
+    height: 4px;
+    background-color: #5E5C5C;
+    color: transparent;
+    margin: 20px auto;
+}
+.caixinha2{
+    width: 25%;
+    height: 500px;
+    margin-top: 70px;
+    background-color: #1D0B3F;
+}
+.caixinha3{
+    width: 25%;
+    height: 500px;
+    margin-top: 70px;
+    background-color: #1D0B3F;
+}
+.caixas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botao{
+    width: 250px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    background-color: #6D038A;
+    border: none;
+    border-radius: 10px;
+    color: #FFFAFA;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.botao:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+.botao2{
+    display: block;
+    margin: 40px auto 0 auto; /* topo, auto para centralizar, zero embaixo */
+    width: 250px;
+    height: 80px;
+    background-color: #6D038A;
+    border: none;
+    border-radius: 10px;
+    color: #FFFAFA;
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.botao2:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
