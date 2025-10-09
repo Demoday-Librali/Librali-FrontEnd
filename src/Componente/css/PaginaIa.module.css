@@ -1,0 +1,13 @@
+.PaginaIa {
+    position: relative;
+    height: 850px;
+    width: 100%;
+    background-color: #381A72;
+    display: flex;
+}
+
+.PaginaIa h1 {
+    font-size: 10px;
+    color: #FFE385;
+    
+}
