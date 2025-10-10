@@ -8,7 +8,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
-    /*background-color: #7C54B1;*/
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,6 @@ body {
 }
 
 .privacycard {
-    height: 500px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     padding: 2.5rem;
@@ -83,4 +81,61 @@ body {
     .socialicons {
         justify-content: center;
     }
+}
+
+.accordionItem {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordionHeader h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7C54B1;
+  margin: 0;
+}
+
+.accordionIcon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #7C54B1;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+.accordionContent {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding-top 0.4s ease-in-out;
+}
+
+.accordionItem.active .accordionContent {
+  max-height: 60vh;   
+  overflow-y: auto;   
+  opacity: 1;
+  padding-top: 1.5rem;
+  padding-right: 15px;
+}
+
+.accordionHeader h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.accordionContent h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.accordionContent p {
+  font-family: 'Poppins', sans-serif;
 }
