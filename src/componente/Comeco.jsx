@@ -1,6 +1,6 @@
 
 import Style from './css/Comeco.module.css'
-import videoFundo from '../assets/img/video/Vergil_combo.mp4'
+import videoFundo from '../assets/img/video/librali_video.mp4'
 
 function Comeco() {
     return (
