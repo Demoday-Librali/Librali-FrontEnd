@@ -36,7 +36,7 @@ function Footer() {
             <div className={Style.contator_footer}>
                 <h3>Siga nossas redes sociais</h3>
                 <div className={Style.links}>
-                    <a href='index.html'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
+                    <a href='#'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
                     <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
                     <a href='#'> <img src={X} alt="X da Librali" /> </a>
                     <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>

@@ -52,27 +52,39 @@
   top: 63%; 
   left: 35%;
   transform: translate(-50%, -50%);
-  width: 550px; /* define a largura desejada */
-  height: auto;  /* mantém proporção da imagem */
-  max-width: 90%; /* opcional, para não ultrapassar o container */
+  width: 550px; 
+  height: auto;  
+  max-width: 90%;
 }
 .Iconeia{
 position: absolute;
   top: 25%; 
   left: 23%;
   transform: translate(-50%, -50%);
-  width: 250px; /* define a largura desejada */
-  height: auto;  /* mantém proporção da imagem */
-  max-width: 90%; /* opcional, para não ultrapassar o container */
+  width: 250px; 
+  height: auto;  
+  max-width: 90%; 
+  animation: flutuaricone 3s ease-in-out infinite;
+}
+@keyframes flutuaricone {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
 }
 .Blocoverde{
     position: absolute;
-  top: 95%; 
-  left: 45%;
-  transform: translate(-50%, -50%);
-  width: 300px; /* define a largura desejada */
-  height: auto;  /* mantém proporção da imagem */
-  max-width: 90%; /* opcional, para não ultrapassar o container */
+    top: 95%; 
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 300px; 
+    height: auto;  
+    max-width: 90%; 
+    animation: flutuarbloco 3s ease-in-out infinite;
+}
+@keyframes flutuarbloco {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
 }
 #botoes{
     position: relative;
@@ -87,8 +99,8 @@ position: absolute;
 }
 #cadastro, #login{
     position: relative;
-    width: 150px;
-    height: 60px;
+    width: 200px;
+    height: 70px;
     border: 2px solid #FFFAFA;
     border-radius: 10px;
     font-size: 1.5rem;

@@ -1,0 +1,155 @@
+.fundo{
+    position: relative;
+    margin-top: 18%;
+}
+.Rosa{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -47%;
+    animation: rosa 3s ease-in-out infinite;
+}
+@keyframes rosa {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+  
+}
+.Laranja{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -4%;
+    z-index: -1;
+    animation: laranja 3s ease-in-out infinite;
+}
+@keyframes laranja {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+}
+.Verde{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -3%;
+    animation: verde 3s ease-in-out infinite;
+}
+@keyframes verde {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+  
+}
+.Azul{
+    position: absolute;
+    margin-left: 87%;
+    margin-top: -4%;
+    animation: azul 3s ease-in-out infinite;
+}
+@keyframes azul {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+}
+.title{
+    position: relative;
+    text-align: center;
+    margin-top: -8%;
+    color: #EFE2FF;
+    font-size: 48px;
+}
+.Amarelo{
+    color: #FFE385;
+}
+.paragrafo{
+    position: relative;
+    text-align: center;
+    color: #EFE2FF;
+    font-size: 34px;
+    margin-bottom: 3%;
+}.caixasbrancas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -13.5%;
+}
+.caixa1{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin-bottom: -46%;
+    z-index: 2;
+    background-color: #fffafa;
+    border-radius: 5%;
+}
+.caixa2{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin-bottom: -43%;
+    margin-top: -2%;
+    z-index: 2;
+    background-color: #fffafa;
+    border-radius: 5%;
+}
+.caixa3{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin-bottom: -31%;
+    z-index: 2;
+    background-color: #fffafa;
+    border-radius: 5%;
+}
+.plano{
+    color: #5B5151;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.valor{
+     color: #A13BB1;
+     font-size: 36px;
+     margin-left: 20px;
+}
+.beneficios{
+    color: #1B062F;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.itens{
+    color: #0a0a0a;
+    font-size: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+#botoa{
+    position: relative;
+    height: auto;
+    left: 0%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;
+    
+}
+#login{
+    background-color: #381A72;
+    color: white;
+}
+#login{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}

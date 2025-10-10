@@ -1,6 +1,6 @@
 import Style from './css/ComponenteProps.module.css';
 
-function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde}) {
+export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -16,7 +16,14 @@ function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educaci
             <img src={Mulheria} alt=""  className={Style.Mulheria_props}/>
             <img src={Iconeia} alt=""  className={Style.Iconeia_props}/>
             <img src={Blocoverde} alt=""  className={Style.Blocoverde_props}/>
+            <img src={Categoria} alt=""  className={Style.Categoria_props}/>
+            <img src={Interprete} alt=""  className={Style.Interprete_props}/>
+            <img src={Cadastro} alt=""  className={Style.Cadastro_props}/>
+            <img src={Impulso} alt=""  className={Style.Impulso_props}/>
+            <img src={Rosa} alt=""  className={Style.Rosa_props}/>
+            <img src={Laranja} alt=""  className={Style.Laranja_props}/>
+            <img src={Verde} alt=""  className={Style.Verde_props}/>
+            <img src={Azul} alt=""  className={Style.Azul_props}/>
         </div>
     )
 }
-export default ComponenteProps;

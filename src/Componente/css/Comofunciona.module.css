@@ -1,0 +1,52 @@
+.comofunciona{
+    width: 90%;
+    height: 750px;
+    margin-top:6%;
+    margin-left: 5%;
+}
+.title{
+    text-align: center;
+    font-size: 54px;
+    color: #1B062F;
+}
+.paragrafo{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    color: #616060;
+}
+.imagens{
+    display: flex;
+    justify-content: space-around;
+}
+.passo1 img, .passo2 img, .passo3 img{
+    width: 500px;
+    margin-top: 5%
+}
+.passo1 h1{
+    color: #49038A;
+    margin-left: 2%;
+}
+.passo2 h1{
+    color: #421167;
+    margin-left: 2%;
+}
+.passo3 h1{
+    color: #C9038A;
+    margin-left: 2%;
+}
+.passo1 p{
+    width: 400px;
+    margin-left: 2%;
+    font-size: 26px;
+}
+.passo2 p{
+    width: 400px;
+    margin-left: 2%;
+    font-size: 26px;
+}
+.passo3 p{
+    width: 400px;
+    margin-left: 2%;
+    font-size: 26px;
+}
