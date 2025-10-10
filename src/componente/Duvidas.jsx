@@ -11,7 +11,8 @@ function Duvidas() {
                 <div className={Style.textoContainer}>
                     <h2>Preciso ter algum contrato ou documentação?</h2>
                     <p className={Style.descricao}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, delectus commodi, officia magnam suscipit iste consectetur sapiente veniam vero iusto cupiditate qui minima veritatis quos? Eos, eveniet! Ad, dolorum laborum!
+                        A única documentação solicitamos é do intérprete para confirmar sua qualificação, habilidade e experiência em 
+                        trabalhos com Libras. Os contratos são feitos diretamente entre os contratantes e os intérpretes.
                     </p>
                 </div>
             </div>
@@ -33,9 +34,8 @@ function Duvidas() {
                 <div className={Style.textoContainer}>
                     <h2>E se eu tiver dúvidas ou problemas?</h2>
                     <p className={Style.descricao}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium tempore ipsam fuga, labore quibusdam 
-                        tempora ullam doloremque. Culpa, esse accusantium dolorem pariatur voluptas nostrum quasi animi incidunt placeat 
-                        fugit.
+                        Em caso de dúvidas referentes ao nosso site você pode utlizar a nossa Inteligência artificial para esclarecer 
+                        essas dúvidas ou entrar em contato conosco via e-mail(libraliproa@gmail.com) ou telefone((14) 3376-1782).
                     </p>
                 </div>
             </div>
@@ -43,25 +43,14 @@ function Duvidas() {
                 <input type="checkbox" id="duvida4" className={Style.checkbox} />
                 <label htmlFor="duvida4" className={Style.toggle}></label>
                 <div className={Style.textoContainer}>
-                    <h2>É em tempo real ou agendado?</h2>
-                    <p className={Style.descricao}>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ad odio magni aliquid ut corporis, sunt 
-                        sequi necessitatibus et! Vitae dicta, repudiandae aut rerum incidunt dignissimos repellat consequuntur explicabo 
-                        nemo!
-                    </p>
-                </div>
-            </div>
-            <div className={Style.duvidasContainer}>
-                <input type="checkbox" id="duvida5" className={Style.checkbox} />
-                <label htmlFor="duvida5" className={Style.toggle}></label>
-                <div className={Style.textoContainer}>
                     <h2>É seguro contratar por aqui?</h2>
                     <p className={Style.descricao}>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium eius enim omnis amet assumenda quibusdam 
-                        delectus voluptas est magni, quia molestiae optio, natus dolores? Ullam commodi voluptates facere quod expedita.
+                        O LibraLi respeita o seu direito à privacidade e zela pela segurança dos dados pessoais a que tem acesso em suas 
+                        atividades. Para saber mais, clique aqui para ler nossa política de privacidade.!
                     </p>
                 </div>
             </div>
+            
         </div>
     )
 }
