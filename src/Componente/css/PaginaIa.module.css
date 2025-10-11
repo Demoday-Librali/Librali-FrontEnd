@@ -4,6 +4,8 @@
     height: 850px;
     width: 100%;
     display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .Titulo {
    color: #FFE385;

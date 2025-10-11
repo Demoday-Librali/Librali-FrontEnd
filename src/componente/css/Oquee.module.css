@@ -6,35 +6,114 @@
     width: 100%;
     background-color: #421167;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     clip-path: ellipse(80% 50% at 50% 50%);
     margin-top: -83px;
+    z-index: 1;
 }
-
-.esquerda{
-    position: relative;
+.esquerda {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #FFE385;
     height: 550px;
     width: 33%;
     border-top-right-radius: 350px;
     border-bottom-right-radius: 350px;
-    margin-left: -18px;
+    transition: 2s all;
+    display: flex;
+    justify-content: start;
+}
+.paragrafoesquerda {
+  display: block;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease, opacity 1s ease;
+  position: relative;
+  width: 900px;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+.paragrafoesquerda {
+  position: relative;
+  width: 900px;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.esquerda:hover .paragrafoesquerda {
+  opacity: 1;
+  transform: translateX(0);
+}
+.esquerda:hover {
+    width: 100%;
+    transition: 2s all;
+}
+.esquerda:hover p {
+  display: block;
+}
+.titleesquerda{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    height: 150px;
+    white-space: nowrap;
+    font-size: 17px;
+    font-family: Verdana;
+    margin-top: 90%;
+    margin-left: -70%;
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: 2s all;
+}.esquerda:hover .titleesquerda{
+    margin-top: 0%;
+    margin-left: -85%;
+    font-size: 46px;
+    color: #421167;
+    transition: 2s all;
+}
+.esquerda:hover .paragrafoesquerda{
+    display: block;
+    margin-top: 20%;
+    margin-left: -90%;
+    width: 900px;
+    font-size: 36px;
+    font-weight: 500;
+    transition: 2s all;
+}
+.esquerda:hover img{
+    margin-left: 70%;
+    transition: 2s all;
+}
+.esquerda:hover h1{
+    transition: none;
+}
+.esquerda:hover ~ .meio,
+.esquerda:hover ~ .direita {
+  display: none;
+  transition: 2s all;
 }
 .esquerda img{
     width: 500px;
-    margin-top: 40px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 95px;
+    transition: 2s all;
 }
-
 .meio{
     position: relative;
     background-color: #FD9BCC;
     height: 550px;
     width: 550px;
     border-radius: 50%;
+    margin-left: 35%;
+    transition: 2s all;
 }
-
 .meio img{
     position: relative;
     justify-content: center;
@@ -42,31 +121,201 @@
     text-align: center;
     margin-left: 16px;
     margin-top: 36px;
+    margin-left: -20px;
     width: 500px;
+    transition: 2s all;
 }
 
 .direita{
-    position: relative;
     background-color: #A5F391;
     height: 550px;
     width: 33%;
     border-top-left-radius: 350px;
     border-bottom-left-radius: 350px;
     margin-right: -16px;
+    position: absolute; 
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 550px;
+    width: 33%;
+    transition: 2s all;
+    display: flex;
+    justify-content: start;
+     overflow: visible;
+}
+
+.direita:hover {
+    width: 100%;
+    transition: 2s all;
+}
+
+.direita:hover img{
+    margin-right: 70%;
+    transition: 2s all;
+}
+/* CORREÇÃO AQUI - Mudar para display: none */
+.direita:hover ~ .meio,
+.direita:hover ~ .esquerda {
+    display: none; /* Mude de opacity: 0 para display: none */
+    pointer-events: none;
+    transition: all 0.5s;
 }
 .direita img{
     width: 500px;
-    margin-top: 40px;
-    margin-left: 60px;
-}
-.Oquee h1{
-    color: white;
-    font-size: 30px;
-    font-family: Verdana;
-    text-align: center;
-    margin-top: 29px;
-    font-family: "Montserrat Alternates", sans-serif;
-}
-.meio h1{
     margin-top: 30px;
+    margin-left: 60px;
+    transition: 2s all;
+}
+.titledireita{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    height: 150px;
+    white-space: nowrap;
+    font-size: 37px;
+    font-family: Verdana;
+    margin-top: 90%;
+    margin-left: -70%;
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: 2s all;
+}.direita:hover .titledireita{
+    margin-top: 0%;
+    margin-left: -60%;
+    font-size: 66px;
+    color: #421167;
+    transition: 2s all;
+}
+
+
+.paragrafodireita {
+  position: relative;
+  width: 900px;
+  font-size: 36px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(150%); /* começa fora da tela, bem à direita */
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 20%;
+  margin-left: -82%;
+}
+
+/* Quando passar o mouse */
+.direita:hover .paragrafodireita {
+  opacity: 1;
+  transform: translateX(0); /* entra suavemente da direita pra esquerda */
+}
+
+
+
+/* .meio */
+.meio {
+  position: relative;
+  background-color: #FD9BCC;
+  height: 550px;
+  width: 550px;
+  border-radius: 50%;
+  margin-left: 35%;
+  transition: all 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Título da meio */
+
+/* Parágrafo da meio */
+.paragrafomeio {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(50%); /* começa mais abaixo */
+  transition: all 1.5s ease;
+  margin-top: 20px;
+}
+
+/* Hover da meio */
+.meio:hover {
+    display: flex;
+    margin-left: -0%;
+  clip-path: ellipse(70% 35% at 50% 50%);
+    width: 100%;
+    height: 760px;
+}
+
+.meio:hover .titletmedio {
+  opacity: 1;
+  transform: translateY(0); /* desliza para a posição final */
+  font-size: 46px;
+}
+
+.meio:hover .paragrafomedio {
+  opacity: 1;
+  transform: translateY(0); /* desliza para a posição final */
+}
+.esquerda:hover ~ .meio {
+  display: none;
+  pointer-events: none; /* evita que o hover passe para .meio */
+}
+.direita:hover ~ .meio {
+  display: none;
+  pointer-events: none;
+}
+.esquerda:hover ~ .direita {
+  display: none;
+}
+.direita:hover ~ .esquerda {
+  display: none;
+}
+.paragrafomeio{
+    display: none;
+}
+.titlemeio{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    height: 150px;
+    white-space: nowrap;
+    font-size: 37px;
+    font-family: Verdana;
+    margin-top: 90%;
+    margin-left: -70%;
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: 2s all;
+    position: absolute; /* Adicione isso */
+    top: 10%; /* Posicione no topo */
+    left: 10%; /* Ajuste conforme necessário */
+    margin: 0; /* Remova as margens */
+    z-index: 2; /* Garanta que fique acima */
+}.meio:hover .titlemeio{
+    margin-top: 0%;
+    margin-left: -60%;
+    font-size: 66px;
+    color: #421167;
+    transition: 2s all;
+    
+}
+.meio:hover .paragrafomeio{
+    display: block;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+  position: relative;
+  width: 900px;
+  font-size: 36px;
+  font-weight: 500;
+  top: 5%; /* Ajuste a posição no hover */
+}
+.direita:hover ~ .meio,
+.direita:hover ~ .esquerda {
+    display: none; /* Mude de opacity: 0 para display: none */
+    pointer-events: none;
+    transition: all 0.5s;
+}
+.hidden {
+    display: none !important;
 }

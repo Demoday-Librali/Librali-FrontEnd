@@ -1,6 +1,7 @@
 .fundo{
     position: relative;
     margin-top: 18%;
+    margin-bottom: 10%;
 }
 .Rosa{
     position: absolute;
@@ -78,6 +79,7 @@
     z-index: 2;
     background-color: #fffafa;
     border-radius: 5%;
+    margin-right: -10%;
 }
 .caixa2{
     position: relative;
@@ -88,6 +90,7 @@
     z-index: 2;
     background-color: #fffafa;
     border-radius: 5%;
+    margin-right: -10%;
 }
 .caixa3{
     position: relative;
@@ -103,6 +106,7 @@
     font-weight: 600;
     font-size: 20px;
     margin-left: 20px;
+    margin-top: 5%;
 }
 .valor{
      color: #A13BB1;
@@ -138,6 +142,7 @@
 #login{
     background-color: #381A72;
     color: white;
+    margin-top: -2%;
 }
 #login{
     position: relative;
@@ -152,4 +157,83 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
+}
+#login:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+#botoa2{
+    position: relative;
+    height: auto;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+#login2{
+    background-color: #381A72;
+    color: white;
+    margin-top: 19%;
+}
+#login2{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+    margin-bottom: -5%;
+}
+#login2:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+#botoa3{
+    position: relative;
+    height: auto;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+#login3{
+    background-color: #381A72;
+    color: white;
+    margin-top: 12%;
+}
+#login3, #Vermais{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+    margin-bottom: -5%;
+}
+#login3:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+#Vermais{
+    background-color: #FFE385;
+    color: #49038A;
+    margin-left: -115%;
+    margin-top: 10%;
+}
+#Vermais:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }

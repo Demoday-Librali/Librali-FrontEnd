@@ -35,8 +35,8 @@ function Impulso(){
                     <p>Selo de “Recomendado”</p>
                     <p>Benefícios para você.</p>
                     </div>
-                    <div id={Style.botoa}>
-                    <button id={Style.login}>Inscrever-se</button>
+                    <div id={Style.botoa2}>
+                    <button id={Style.login2}>Inscrever-se</button>
                     </div>
                 </div>
                 <div className={Style.caixa3}>
@@ -49,11 +49,13 @@ function Impulso(){
                     <p>Selo de “Top Intérprete”</p>
                     <p>Ferramentas extras</p>
                     </div>
-                    <div id={Style.botoa}>
-                    <button id={Style.login}>Inscrever-se</button>
+                    <div id={Style.botoa3}>
+                    <button id={Style.login3}>Inscrever-se</button>
                     </div>
+                    <button id={Style.Vermais}>Ver mais</button>
                 </div>
             </div>
+            
             <img src={Visibilidade} alt="" />
             <img className={Style.Rosa} src={Rosa} alt=""/>
             <img className={Style.Laranja} src={Laranja} alt=""/>
