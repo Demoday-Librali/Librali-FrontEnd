@@ -1,10 +1,10 @@
-.final {
+.pagina_atual {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.final p {
+.pagina_atual p {
     font-size: 20px;
     margin-bottom: 20px;
     color: #512C91;
