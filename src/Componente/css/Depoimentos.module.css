@@ -119,7 +119,7 @@
 
 .depoimentoCargo {
     font-size: 34px;
-    color: #FD9BCC;
+    color: #7B9CFF;
     font-weight: 500;
     margin-top: 5px;
 }
@@ -148,7 +148,7 @@
 }
 
 .carrosselBtn:hover {
-    background: #FD9BCC;
+    background: #7C54B1;
     transform: scale(1.1);
 }
 
