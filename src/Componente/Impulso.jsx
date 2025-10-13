@@ -4,6 +4,8 @@ import Rosa from '../assets/img/Rosa.png'
 import Laranja from '../assets/img/Laranja.png'
 import Verde from '../assets/img/Verde.png'
 import Azul from '../assets/img/Azul.png'
+import Check from '../assets/img/Check.png'
+import Checkgif from '../assets/img/video/check.gif'
 
 function Impulso(){
     return(
@@ -16,10 +18,10 @@ function Impulso(){
                     <h1 className={Style.valor}>Gratuito</h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
-                        <p>Perfil do intérprete visível</p>
-                        <p>Até 5 contatos por mês</p>
-                        <p>Acesso básico às vagas disponíveis</p>
-                        <p>Acesso grupo fechado para networking</p>
+                        <p><img className={Style.check} src={Check} alt=""/> Perfil do intérprete visível</p>
+                        <p><img className={Style.check} src={Check} alt=""/> Até 5 contatos por mês</p>
+                        <p><img className={Style.check} src={Check} alt=""/> Acesso básico às vagas disponíveis</p>
+                        <p><img className={Style.check} src={Check} alt=""/> Acesso grupo fechado para networking</p>
                     </div>
                     <div id={Style.botoa}>
                     <button id={Style.login}>Inscrever-se</button>
@@ -30,10 +32,10 @@ function Impulso(){
                     <h1 className={Style.valor}>R$49,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
-                    <p>Todos os benefícios do gratuito.</p>
-                    <p>3x mais contatos por mês.</p>
-                    <p>Selo de “Recomendado”</p>
-                    <p>Benefícios para você.</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios do gratuito.</p>
+                    <p><img className={Style.check} src={Check} alt=""/> 3x mais contatos por mês.</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Selo de “Recomendado”</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Benefícios para você.</p>
                     </div>
                     <div id={Style.botoa2}>
                     <button id={Style.login2}>Inscrever-se</button>
@@ -44,10 +46,10 @@ function Impulso(){
                     <h1 className={Style.valor}>R$79,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
-                    <p>Todos os benefícios dos planos anteriores.</p>
-                    <p>Maior destaque visual</p>
-                    <p>Selo de “Top Intérprete”</p>
-                    <p>Ferramentas extras</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios dos planos anteriores.</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Maior destaque visual</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Selo de “Top Intérprete”</p>
+                    <p><img className={Style.check} src={Check} alt=""/> Ferramentas extras</p>
                     </div>
                     <div id={Style.botoa3}>
                     <button id={Style.login3}>Inscrever-se</button>

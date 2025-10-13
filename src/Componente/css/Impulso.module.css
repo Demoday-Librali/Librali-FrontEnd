@@ -120,8 +120,8 @@
 }
 .itens{
     color: #0a0a0a;
-    font-size: 20px;
-    margin-left: 50px;
+    font-size: 1.3rem;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -137,7 +137,7 @@
     justify-content: space-around;
     align-content: center;
     gap: 10px;
-    
+    font-size: 1.7rem;
 }
 #login{
     background-color: #381A72;
@@ -150,13 +150,14 @@
     height: 60px;
     border: 2px solid #381A72;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #381A72;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
+    margin-top: 6%;
 }
 #login:hover{
     transform: scale(1.1);
@@ -236,4 +237,11 @@
 #Vermais:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+.check{
+    width: 20px;
+}
+.checkgif{
+    width: 40px;
+    margin-bottom: -13px;
 }

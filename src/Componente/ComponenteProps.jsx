@@ -1,6 +1,6 @@
 import Style from './css/ComponenteProps.module.css';
 
-export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento}) {
+export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -25,6 +25,9 @@ export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, Y
             <img src={Verde} alt=""  className={Style.Verde_props}/>
             <img src={Azul} alt=""  className={Style.Azul_props}/>
             <img src={Fundodepoimento} alt=""  className={Style.Fundodepoimento_props}/>
+            <img src={Cadeado} alt=""  className={Style.Cadeado_props}/>
+            <img src={Check} alt=""  className={Style.check_props}/>
+            <img src={Checkgif} alt=""  className={Style.checkgif_props}/>
         </div>
     )
 }

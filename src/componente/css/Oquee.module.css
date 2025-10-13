@@ -9,7 +9,7 @@
     align-items: center;
     clip-path: ellipse(80% 50% at 50% 50%);
     margin-top: -83px;
-    z-index: 1;
+    z-index: 0;
 }
 .esquerda {
     position: absolute;
@@ -105,27 +105,24 @@
     margin-left: 95px;
     transition: 2s all;
 }
-.meio{
-    position: relative;
-    background-color: #FD9BCC;
-    height: 550px;
-    width: 550px;
-    border-radius: 50%;
-    margin-left: 35%;
-    transition: 2s all;
-}
+
 .meio img{
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: 16px;
-    margin-top: 36px;
+    margin-top: 15px;
     margin-left: -20px;
     width: 500px;
     transition: 2s all;
+    left: 0%;
+    top: 0%;
 }
-
+.meio:hover img{
+  margin-left: -70%;
+  margin-top: 16%;
+}
 .direita{
     background-color: #A5F391;
     height: 550px;
@@ -175,10 +172,9 @@
     height: 150px;
     white-space: nowrap;
     font-size: 37px;
-    font-family: Verdana;
     margin-top: 90%;
     margin-left: -70%;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: 2s all;
 }.direita:hover .titledireita{
     margin-top: 0%;
@@ -211,51 +207,61 @@
 
 /* .meio */
 .meio {
-  position: relative;
+   position: relative;
   background-color: #FD9BCC;
   height: 550px;
-  width: 550px;
-  border-radius: 50%;
-  margin-left: 35%;
-  transition: all 2s;
+  width: 33%; /* igual às laterais */
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+  margin-left: 34%; /* centraliza */
+  transition: 2s all;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 10;
 }
 
 /* Título da meio */
 
 /* Parágrafo da meio */
 .paragrafomeio {
+  .paragrafomeio {
+  display: block;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 1s ease;
   color: white;
   font-size: 30px;
   font-weight: 500;
-  opacity: 0;
-  transform: translateY(50%); /* começa mais abaixo */
-  transition: all 1.5s ease;
-  margin-top: 20px;
+  width: 900px;
+  text-align: center;
+  margin-top: 30px;
+}
 }
 
 /* Hover da meio */
 .meio:hover {
-    display: flex;
-    margin-left: -0%;
-  clip-path: ellipse(70% 35% at 50% 50%);
-    width: 100%;
-    height: 760px;
+  width: 100%;
+  transition: 2s all;
+  margin-left: -0%;
 }
 
-.meio:hover .titletmedio {
-  opacity: 1;
-  transform: translateY(0); /* desliza para a posição final */
-  font-size: 46px;
+.meio:hover .titlemeio {
+  margin-top: -15%;
+    margin-left: 9%;
+    font-size: 66px;
+    color: #421167;
+    transition: 2s all;
 }
 
-.meio:hover .paragrafomedio {
+.meio:hover .paragrafomeio {
   opacity: 1;
-  transform: translateY(0); /* desliza para a posição final */
+  transform: translateY(0);
+  transition: all 1s ease;
 }
 .esquerda:hover ~ .meio {
   display: none;
@@ -274,25 +280,24 @@
 .paragrafomeio{
     display: none;
 }
-.titlemeio{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 37px;
-    font-family: Verdana;
-    margin-top: 90%;
-    margin-left: -70%;
-    font-family: "Montserrat Alternates", sans-serif;
-    transition: 2s all;
-    position: absolute; /* Adicione isso */
-    top: 10%; /* Posicione no topo */
-    left: 10%; /* Ajuste conforme necessário */
-    margin: 0; /* Remova as margens */
-    z-index: 2; /* Garanta que fique acima */
-}.meio:hover .titlemeio{
+.titlemeio {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 37px;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  z-index: 20;
+  transition: 2s all;
+  left: 50%;
+  margin-top: 110%;
+  transform: translate(-50%, -50%);
+}
+.meio:hover ~ .esquerda,
+.meio:hover ~ .direita
+.meio:hover .titlemeio{
     margin-top: 0%;
     margin-left: -60%;
     font-size: 66px;
@@ -305,10 +310,11 @@
   transform: translateX(-100%);
   transition: transform 1s ease, opacity 1s ease;
   position: relative;
-  width: 900px;
+  width: 950px;
   font-size: 36px;
   font-weight: 500;
-  top: 5%; /* Ajuste a posição no hover */
+  top: -65%; /* Ajuste a posição no hover */
+  margin-left: 125%;
 }
 .direita:hover ~ .meio,
 .direita:hover ~ .esquerda {

@@ -17,7 +17,7 @@ function Header() {
 
             {/* Aqui começa o código dos links */}
             <nav id={Style.links}>
-                <a href="#">Início</a>
+                <Link to="/">Início</Link>
                 <a href="Interpretes">Interpretes</a>
             </nav>
             {/* Aqui termina o código dos links */}
