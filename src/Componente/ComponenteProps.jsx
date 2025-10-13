@@ -1,6 +1,6 @@
 import Style from './css/ComponenteProps.module.css';
 
-export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif}) {
+export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -28,6 +28,11 @@ export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, Y
             <img src={Cadeado} alt=""  className={Style.Cadeado_props}/>
             <img src={Check} alt=""  className={Style.check_props}/>
             <img src={Checkgif} alt=""  className={Style.checkgif_props}/>
+            <img src={Fundointerprete} alt=""  className={Style.fundointerprete_props}/>
+            <img src={Fundointerprete1} alt=""  className={Style.fundointerprete1_props}/>
+            <img src={Interpreteuser} alt=""  className={Style.Interpreteuser_props}/>
+            <img src={Ellipse} alt=""  className={Style.ellipse_props}/>
+            <img src={Mulherinterprete} alt=""  className={Style.img_home_props}/>
         </div>
     )
 }

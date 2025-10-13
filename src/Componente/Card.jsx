@@ -1,11 +1,11 @@
 import Styles from './css/Card.module.css'
-import Imagem from './assets/imagens/cleyton.jpeg'
+import Interpreteuser from '../assets/img/interpreteuser.jpeg'
 
 function Card({ nome, status, cidade, estado, especialidades, descricao, preco, imagem }) {
   return (
     <div className={Styles.card}>
       <div className={Styles.topo}>
-        <img src={Imagem} alt={nome} className={Styles.foto} />
+        <img src={Interpreteuser} alt={nome} className={Styles.foto} />
         <div className={Styles.info}>
           <h3>{nome}</h3>
           <p className={Styles.avaliacao}>⭐ 5.0 <span>(284 avaliações)</span></p>

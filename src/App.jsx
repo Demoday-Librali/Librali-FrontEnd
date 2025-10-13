@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './Componente/Header'
 import Footer from './Componente/Footer'
+import Home from './Componente/Home'
 import Comeco from './Componente/Comeco'
 import Oquee from './Componente/Oquee'
 import Setores from './Componente/Setores'
@@ -11,29 +12,35 @@ import Depoimentos from './Componente/Depoimentos'
 import Duvidas from './Componente/Duvidas'
 import Privacidade from './Componente/Privacidade'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ScrollToTop from './Componente/ScrollToTop';
+import ScrollToTop from './Componente/ScrollToTop'
 
 function App() {
   return (
     <Router>
-       <ScrollToTop />
+      <ScrollToTop />
       <Header />
+
       <Routes>
-        <Route path="/" element={
-          <>
-            <ScrollToTop />
-            <Comeco />
-            <Oquee />
-            <Setores />
-            <PaginaIa />
-            <Comofunciona />
-            <Impulso />
-            <Depoimentos />
-            <Duvidas />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Comeco />
+              <Oquee />
+              <Setores />
+              <PaginaIa />
+              <Comofunciona />
+              <Impulso />
+              <Depoimentos />
+              <Duvidas />
+            </>
+          }
+        />
+        <Route path="/interpretes" element={<Home />} />
+        
         <Route path="/privacidade" element={<Privacidade />} />
       </Routes>
+
       <Footer />
     </Router>
   )

@@ -1,8 +1,18 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+  row-gap: 20px;
+}
 .home_interpretes {
     position: relative;
     width: 100%;
     overflow: hidden;
-    top: 4vw;
+    top: 10px;
+    margin-bottom: 7%;
 }
 
 /* Fundo escuro (parte de cima) */
@@ -12,6 +22,7 @@
     height: auto;
     display: block;
     z-index: 2;
+    margin-top: -1px;
 }
 
 /* Fundo claro (parte de baixo, com a curvatura) */
@@ -28,7 +39,7 @@
 .fundo_elipse {
     position: absolute;
     right: 12vw;
-    top: -3vw;
+    top: -1.5vw;
     width: 12vw;
     height: auto;
     z-index: 2;
@@ -55,5 +66,5 @@
     line-height: 1.2;
     font-weight: 1000px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: "Montserrat", sans-serif;
 }
