@@ -1,0 +1,133 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 50px;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+    border: 2px solid #d1b9fa;
+
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.avaliacao {
+  font-size: 20px;
+  color: #512C91;
+}
+
+.local {
+  font-size: 20px;
+  color: #512C91;
+}
+
+.disponivel {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+
+.ocupado {
+  color: rgb(255, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+
+.especialidades p {
+  font-weight: 600;
+  color: #512C91;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 7px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background-color: #512C91;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.descricao {
+  background-color: #f6f3fb;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.3;
+  width: 430px;
+  height: 150px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.preco {
+  font-weight: 600;
+  color: #1B062F;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.botao {
+  background-color: #512C91;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #3c1f70;
+}

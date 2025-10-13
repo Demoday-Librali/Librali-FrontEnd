@@ -1,0 +1,12 @@
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #512C91;
+    font-weight: 600;
+}

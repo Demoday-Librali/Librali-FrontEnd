@@ -1,0 +1,59 @@
+.home_interpretes {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: 4vw;
+}
+
+/* Fundo escuro (parte de cima) */
+.fundo_escuro {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+}
+
+/* Fundo claro (parte de baixo, com a curvatura) */
+.fundo_claro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Elipse decorativa (atrás da mulher) */
+.fundo_elipse {
+    position: absolute;
+    right: 12vw;
+    top: -3vw;
+    width: 12vw;
+    height: auto;
+    z-index: 2;
+}
+
+/* Mulher */
+.img_mulher {
+    position: absolute;
+    right: 6vw;
+    bottom: 3vw;
+    width: 50vw;
+    height: auto;
+    z-index: 4;
+}
+
+/* Texto */
+.home_interpretes h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 3.5vw;
+    z-index: 5;
+    line-height: 1.2;
+    font-weight: 1000px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
