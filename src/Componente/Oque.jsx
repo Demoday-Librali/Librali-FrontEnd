@@ -1,4 +1,4 @@
-import Style from './css/Oquee.module.css'
+import Style from './css/Oque.module.css'
 import Loira_de_fone from '../assets/img/Loira_de_fone.png'
 import Computador_com_tasks from '../assets/img/Computador_com_task.png'
 import Comprimento_de_mao from '../assets/img/Comprimento_de_mao.png'
