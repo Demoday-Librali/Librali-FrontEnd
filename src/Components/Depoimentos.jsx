@@ -2,7 +2,7 @@ import Style from './css/Depoimentos.module.css'
 import React, { useState, useEffect } from 'react';
 import Fundodepoimento from '../../assets/images/fundodepoimento.png'
 import Rosa from '../assets/images/rosa.png'
-import Laranja from '../assets/images/laranja.png'
+
 import Verde from '../assets/images/verde.png'
 import Azul from '../assets/images/azul.png'
 
