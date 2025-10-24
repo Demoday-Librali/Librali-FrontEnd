@@ -5,7 +5,7 @@ import TikTok from '../assets/img/TikTok.png'
 import Instagram from '../assets/img/Instagram.png'
 import X from '../assets/img/Twitter.png'
 import Facebook from '../assets/img/Facebook.png'
-import YouTube from '../assets/img/YouTube.png'
+import Youtube from '../assets/img/Youtube.png'
 import { Link } from 'react-router-dom'
 
 function Footer() {
@@ -40,7 +40,7 @@ function Footer() {
                     <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
                     <a href='#'> <img src={X} alt="X da Librali" /> </a>
                     <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
-                    <a href='#'> <img src={YouTube} alt="YouTube da Librali" /> </a>
+                    <a href='#'> <img src={YouTube} alt="Youtube da Librali" /> </a>
                 </div>
                 <br></br>
                 <h3>Entre em contato</h3>
