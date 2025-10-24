@@ -1,7 +1,7 @@
 import Style from './css/Oque.module.css'
-import Loira_de_fone from '../assets/images/loira_de_fone.png'
-import Computador_com_tasks from '../assets/images/computador_com_task.png'
-import Comprimento_de_mao from '../assets/images/ecomprimento_de_mao.png'
+import Loira_de_fone from '../../assets/images/loira_de_fone.png'
+import Computador_com_tasks from '../../assets/images/computador_com_task.png'
+import Comprimento_de_mao from '../../assets/images/ecomprimento_de_mao.png'
 import { useState } from 'react'
 
 function Oquee() {
