@@ -1,5 +1,5 @@
 import './App.css'
-import Heade from './componente/Heade.jsx'
+import Header from './componente/Header.jsx'
 import Footer from './componente/Footer.jsx'
 import Home from './componente/Home.jsx'
 import Comeco from './componente/Comeco.jsx'
@@ -18,14 +18,14 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      
+      <Header />
 
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Heade />
+              
               <Comeco />
               <Oquee />
               <Setores />

@@ -1,9 +1,9 @@
-import Style from './css/Heade.module.css'
+import Style from './css/Header.module.css'
 import Logo from '../assets/img/Logo-escrita.png'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
-function Heade() {
+function Header() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -27,4 +27,4 @@ function Heade() {
   )
 }
 
-export default Heade
+export default Header
