@@ -1,6 +1,6 @@
 import Style from './css/Footer.module.css'
 import rodape from '../assets/images/footer.png'
-import Logo from '/../assets/images/logo-escrita.png'
+import Logo from '/../assets/images/logo-completo.png'
 import TikTok from '../assets/images/tiktok.png'
 import Instagram from '../assets/images/instagram.png'
 import X from '../assets/images/twitter.png'
