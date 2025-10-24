@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './componente/Header'
+import Header from './componente/Header.jsx'
 import Footer from './componente/Footer'
 import Home from './componente/Home'
 import Comeco from './componente/Comeco'
