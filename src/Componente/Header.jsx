@@ -1,4 +1,4 @@
-import Style from '../Componente/css/Header.module.css'
+import Style from './css/Header.module.css'
 import Logo from '../assets/img/Logo-escrita.png'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'

@@ -1,4 +1,4 @@
-import Style from './css/ComponenteProps.module.css';
+import Style from './css/componenteProps.module.css';
 
 export default function ComponenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete}) {
     return (

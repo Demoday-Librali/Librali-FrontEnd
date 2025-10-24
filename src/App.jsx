@@ -1,18 +1,18 @@
 import './App.css'
-import Header from './Componente/Header'
-import Footer from './Componente/Footer'
-import Home from './Componente/Home'
-import Comeco from './Componente/Comeco'
-import Oquee from './Componente/Oquee'
-import Setores from './Componente/Setores'
-import PaginaIa from './Componente/PaginaIa'
-import Comofunciona from './Componente/Comofunciona'
-import Impulso from './Componente/Impulso'
-import Depoimentos from './Componente/Depoimentos'
-import Duvidas from './Componente/Duvidas'
-import Privacidade from './Componente/Privacidade'
+import Header from './componente/Header'
+import Footer from './componente/Footer'
+import Home from './componente/Home'
+import Comeco from './componente/Comeco'
+import Oquee from './componente/Oquee'
+import Setores from './componente/Setores'
+import PaginaIa from './componente/PaginaIa'
+import Comofunciona from './componente/Comofunciona'
+import Impulso from './componente/Impulso'
+import Depoimentos from './componente/Depoimentos'
+import Duvidas from './componente/Duvidas'
+import Privacidade from './componente/Privacidade'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ScrollToTop from './Componente/ScrollToTop'
+import ScrollToTop from './componente/ScrollToTop'
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
           }
         />
         <Route path="/interpretes" element={<Home />} />
-        
+
         <Route path="/privacidade" element={<Privacidade />} />
       </Routes>
 

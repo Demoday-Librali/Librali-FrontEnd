@@ -1,4 +1,4 @@
-import Style from '../Componente/css/Footer.module.css'
+import Style from './css/Footer.module.css'
 import rodape from '../assets/img/Footer.png'
 import Logo from '../assets/img/Logo-escrita.png'
 import TikTok from '../assets/img/TikTok.png'
@@ -13,23 +13,23 @@ function Footer() {
         <footer id={Style.footer}>
             {/* Aqui começa o código da logo do footer */}
             <div className={Style.logo_footer}>
-                <Link to="/"> <img src={Logo} alt="Logo da Librali"/></Link>
+                <Link to="/"> <img src={Logo} alt="Logo da Librali" /></Link>
             </div>
             {/* Aqui termina o código da logo do footer */}
 
             {/* Aqui começa os links do footer */}
             <div className={Style.links_footer}>
-            <div className={Style.Mapa}>
-                <h3>Mapa do Site</h3>
-                <a href="#">Página Inicial</a>
-                <a href="#">Intérpretes</a>
-                <a href="#">Sobre</a>
-            </div>
-            <div className={Style.Ferramentas}>
-                <h3>Ferramentas</h3>
-                <a href="#">Agendamento</a>
-                <a href="#">IA</a>
-            </div>
+                <div className={Style.Mapa}>
+                    <h3>Mapa do Site</h3>
+                    <a href="#">Página Inicial</a>
+                    <a href="#">Intérpretes</a>
+                    <a href="#">Sobre</a>
+                </div>
+                <div className={Style.Ferramentas}>
+                    <h3>Ferramentas</h3>
+                    <a href="#">Agendamento</a>
+                    <a href="#">IA</a>
+                </div>
             </div>
             {/* Aqui termina os links do footer */}
             {/* Aqui começa o código das redes sociais e contatos */}
@@ -41,8 +41,8 @@ function Footer() {
                     <a href='#'> <img src={X} alt="X da Librali" /> </a>
                     <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
                     <a href='#'> <img src={YouTube} alt="YouTube da Librali" /> </a>
-                    </div>
-                    <br></br>
+                </div>
+                <br></br>
                 <h3>Entre em contato</h3>
                 <h4>(14) 3376-1782</h4>
                 <br></br>
