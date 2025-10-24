@@ -1,6 +1,6 @@
 
 import Style from './css/Aomeco.module.css'
-import videoFundo from '../assets/img/video/Librali_video.mp4'
+import videoFundo from '../assets/img/video/librali_video.mp4'
 
 function Aomeco() {
     return (

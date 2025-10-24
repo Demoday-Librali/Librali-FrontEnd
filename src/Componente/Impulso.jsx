@@ -1,10 +1,10 @@
 import Style from './css/Impulso.module.css'
-import Visibilidade from '../assets/img/Visibilidade.png'
-import Rosa from '../assets/img/Rosa.png'
-import Laranja from '../assets/img/Laranja.png'
-import Verde from '../assets/img/Verde.png'
-import Azul from '../assets/img/Azul.png'
-import Check from '../assets/img/Check.png'
+import Visibilidade from '../assets/img/visibilidade.png'
+import Rosa from '../assets/img/rosa.png'
+import Laranja from '../assets/img/laranja.png'
+import Verde from '../assets/img/verde.png'
+import Azul from '../assets/img/azul.png'
+import Check from '../assets/img/check.png'
 import Checkgif from '../assets/img/video/check.gif'
 
 function Impulso(){

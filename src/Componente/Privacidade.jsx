@@ -1,6 +1,6 @@
 import Style from './css/Privacidade.module.css'
-import Cadeado from '../assets/img/Cadeado.png';
-import Fundodepoimento from '../assets/img/Fundodepoimento.png'
+import Cadeado from '../assets/img/cadeado.png';
+import Fundodepoimento from '../assets/img/fundodepoimento.png'
 
 function Privacidade() {
     return (

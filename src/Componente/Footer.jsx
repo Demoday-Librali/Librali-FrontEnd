@@ -1,11 +1,11 @@
 import Style from './css/Footer.module.css'
-import rodape from '../assets/img/Footer.png'
-import Logo from '../assets/img/Logo-escrita.png'
-import TikTok from '../assets/img/TikTok.png'
-import Instagram from '../assets/img/Instagram.png'
-import X from '../assets/img/Twitter.png'
-import Facebook from '../assets/img/Facebook.png'
-import Youtube from '../assets/img/Youtube.png'
+import rodape from '../assets/img/footer.png'
+import Logo from '../assets/img/logo-escrita.png'
+import TikTok from '../assets/img/tiktok.png'
+import Instagram from '../assets/img/instagram.png'
+import X from '../assets/img/twitter.png'
+import Facebook from '../assets/img/facebook.png'
+import Youtube from '../assets/img/youtube.png'
 import { Link } from 'react-router-dom'
 
 function Footer() {
