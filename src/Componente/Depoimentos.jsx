@@ -1,10 +1,10 @@
 import Style from './css/Depoimentos.module.css'
 import React, { useState, useEffect } from 'react';
-import Fundodepoimento from '../assets/img/fundodepoimento.png'
-import Rosa from '../assets/img/rosa.png'
-import Laranja from '../assets/img/laranja.png'
-import Verde from '../assets/img/verde.png'
-import Azul from '../assets/img/azul.png'
+import Fundodepoimento from '../assets/images/fundodepoimento.png'
+import Rosa from '../assets/images/rosa.png'
+import Laranja from '../assets/images/laranja.png'
+import Verde from '../assets/images/verde.png'
+import Azul from '../assets/images/azul.png'
 
 function Depoimentos() {
     const [depoimentoAtual, setDepoimentoAtual] = useState(0);

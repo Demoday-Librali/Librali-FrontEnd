@@ -1,8 +1,8 @@
 import Style from './css/PaginaIa.module.css'
-import Fundoia from '../assets/img/fundoia.png'
-import Mulheria from '../assets/img/mulheria.png'
-import Iconeia from '../assets/img/iconeia.png'
-import Blocoverde from '../assets/img/blocoverde.png'
+import Fundoia from '../assets/images/fundoia.png'
+import Mulheria from '../assets/images/mulheria.png'
+import Iconeia from '../assets/images/iconeia.png'
+import Blocoverde from '../assets/images/blocoverde.png'
 
 function PaginaIa() {
     return(

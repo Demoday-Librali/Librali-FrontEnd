@@ -1,5 +1,5 @@
 import Styles from './css/Card.module.css'
-import Interpreteuser from '../assets/img/interpreteuser.jpeg'
+import Interpreteuser from '../assets/images/interpreteuser.jpeg'
 
 function Card({ nome, status, cidade, estado, especialidades, descricao, preco, imagem }) {
   return (
