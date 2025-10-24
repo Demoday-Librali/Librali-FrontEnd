@@ -1,8 +1,8 @@
 
-import Style from './css/Comeco.module.css'
+import Style from './css/Aomeco.module.css'
 import videoFundo from '../assets/img/video/librali_video.mp4'
 
-function Comeco() {
+function Aomeco() {
     return (
 
         <div className={Style.video_fundo}>
@@ -20,4 +20,4 @@ function Comeco() {
     )
 }
 
-export default Comeco
+export default Aomeco

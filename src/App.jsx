@@ -2,7 +2,7 @@ import './App.css'
 import Header from './Componente/Header.jsx'
 import Footer from './Componente/Footer.jsx'
 import Home from './Componente/Home.jsx'
-import Comeco from './Componente/Comeco.jsx'
+import Aomeco from './Componente/Aomeco.jsx'
 import Oquee from './Componente/Oquee.jsx'
 import Setores from './Componente/Setores.jsx'
 import PaginaIa from './Componente/PaginaIa.jsx'
@@ -26,7 +26,7 @@ function App() {
           element={
             <>
               
-              <Comeco />
+              <Aomeco />
               <Oquee />
               <Setores />
               <PaginaIa />
