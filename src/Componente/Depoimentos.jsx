@@ -12,7 +12,7 @@ function Depoimentos() {
     const depoimentos = [
         {
             texto: "O Librali transformou completamente minha experiência como intérprete. Conseguir conectar com clientes de forma tão simples e eficiente é incrível!",
-            autor: "Ana Silva",
+            autor: "Ana Silva.",
             cargo: "Intérprete de Libras - 5 anos de experiência"
         },
         {
