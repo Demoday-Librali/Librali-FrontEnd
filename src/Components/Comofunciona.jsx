@@ -1,7 +1,7 @@
 import Style from './css/Comofunciona.module.css'
-import Categoria from '../../assets/images/categoria.png'
-import Interprete from '../../assets/images/interprete.png'
-import Cadastro from '../../assets/images/cadastro.png'
+import Categoria from '../assets/images/categoria.png'
+import Interprete from '../assets/images/interprete.png'
+import Cadastro from '../assets/images/cadastro.png'
 
 function Comofunciona(){
     return(

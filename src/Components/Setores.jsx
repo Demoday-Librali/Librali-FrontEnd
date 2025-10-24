@@ -1,7 +1,7 @@
 import Style from './css/Setores.module.css'
-import Educacional from '../../assets/images/educacional.png'
-import Juridico from '../../assets/images/juridico.png'
-import Saude from '../../assets/images/saude.png'
+import Educacional from '../assets/images/educacional.png'
+import Juridico from '../assets/images/juridico.png'
+import Saude from '../assets/images/saude.png'
 
 
 function Setores(){

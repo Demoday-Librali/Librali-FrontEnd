@@ -1,5 +1,5 @@
 import Style from './css/Header.module.css'
-import Logo from '../../assets/images/logo-completo.png'
+import Logo from '../assets/images/logo-completo.png'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
