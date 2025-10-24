@@ -3,7 +3,7 @@ import Header from './Componente/Header.jsx'
 import Footer from './Componente/Footer.jsx'
 import Home from './Componente/Home.jsx'
 import Aomeco from './Componente/Aomeco.jsx'
-import Oquee from './Componente/Oquee.jsx'
+import Oque from './Componente/Oque.jsx'
 import Setores from './Componente/Setores.jsx'
 import PaginaIa from './Componente/PaginaIa.jsx'
 import Comofunciona from './Componente/Comofunciona.jsx'
@@ -27,7 +27,7 @@ function App() {
             <>
               
               <Aomeco />
-              <Oquee />
+              <Oque />
               <Setores />
               <PaginaIa />
               <Comofunciona />
