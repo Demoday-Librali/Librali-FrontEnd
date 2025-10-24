@@ -18,13 +18,14 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Heade />
+      
 
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Heade />
               <Comeco />
               <Oquee />
               <Setores />
