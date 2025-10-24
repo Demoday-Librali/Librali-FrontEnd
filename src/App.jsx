@@ -9,7 +9,7 @@ import PaginaIa from './Componente/PaginaIa.jsx'
 import Comofunciona from './Componente/Comofunciona.jsx'
 import Impulso from './Componente/Impulso.jsx'
 import Depoimentos from './Componente/Depoimentos.jsx'
-import Duvidas from './Componente/Duvidas.jsx'
+import Duvida from './Componente/Duvida.jsx'
 import Privacidade from './Componente/Privacidade.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './Componente/ScrollToTop.jsx'
@@ -33,7 +33,7 @@ function App() {
               <Comofunciona />
               <Impulso />
               <Depoimentos />
-              <Duvidas />
+              <Duvida />
             </>
           }
         />
