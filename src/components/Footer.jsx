@@ -1,8 +1,7 @@
 import Style from './css/Footer.module.css'
-import rodape from '../assets/images/footer.png'
 import Logo from '../assets/images/logo-completo.png'
 import TikTok from '../assets/images/tiktok.png'
-import Instagram from '../assets/images/instagram.png'
+import Instagram from '../assets/images/Instagram.png'
 import X from '../assets/images/twitter.png'
 import Facebook from '../assets/images/facebook.png'
 import YouTube from '../assets/images/Youtube.png'
@@ -10,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <footer id={Style.footer}>
+        <footer className={Style.footer}>
             {/* Aqui começa o código da logo do footer */}
             <div className={Style.logo_footer}>
                 <Link to="/"> <img src={Logo} alt="Logo da Librali" /></Link>
