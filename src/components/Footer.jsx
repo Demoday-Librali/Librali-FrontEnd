@@ -4,7 +4,7 @@ import TikTok from '../assets/images/tiktok.png'
 import Instagram from '../assets/images/Instagram.png'
 import X from '../assets/images/twitter.png'
 import Facebook from '../assets/images/facebook.png'
-import YouTube from '../assets/images/Youtube.png'
+import YouTube from '../assets/images/YouTube.png'
 import { Link } from 'react-router-dom'
 
 function Footer() {
