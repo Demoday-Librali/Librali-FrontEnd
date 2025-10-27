@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* Aqui começa a config da logo */
 #logo{
     position: relative;
@@ -30,7 +31,6 @@ nav a{
     color: #381A72;
     margin-top: -22%;
     transition: all 0.3s ease-in-out;
-    
 }
 nav a:hover{
     color: #381A72;
@@ -49,7 +49,6 @@ nav a:hover{
     justify-content: space-around;
     align-content: center;
     gap: 10px;
-    
 }
 #cadastro, #login{
     position: relative;
@@ -73,4 +72,182 @@ nav a:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
-/* Aqui termina oa config dos botões */
+/* Aqui termina a config dos botões */
+
+/* RESPONSIVIDADE */
+
+/* Tablets grandes (até 1200px) */
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 25%;
+        left: 52%;
+        font-size: 1.6rem;
+    }
+    
+    #botoes {
+        width: 23%;
+        left: 74%;
+    }
+}
+
+/* Tablets e telas médias (até 1024px) */
+@media screen and (max-width: 1024px) {
+    #logo {
+        width: 250px;
+        margin-top: 2%;
+    }
+    
+    nav {
+        width: 30%;
+        left: 48%;
+        font-size: 1.4rem;
+    }
+    
+    #botoes {
+        width: 28%;
+        left: 70%;
+        margin-top: -4.5%;
+    }
+    
+    #cadastro, #login {
+        width: 120px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablets pequenos e celulares landscape (até 900px) */
+@media screen and (max-width: 900px) {
+    #logo {
+        width: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px auto;
+    }
+    
+    nav {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        margin-top: 20px;
+        font-size: 1.3rem;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    nav a {
+        margin-top: 0;
+    }
+    
+    #botoes {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    #cadastro, #login {
+        width: 140px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Celulares como S20 FE e similares (até 412px) */
+@media screen and (max-width: 412px) {
+    #logo {
+        width: 180px;
+        margin: 15px auto;
+    }
+    
+    nav {
+        width: 95%;
+        flex-direction: column;
+        margin-top: 15px;
+        font-size: 1.2rem;
+        gap: 12px;
+    }
+    
+    nav a {
+        padding: 8px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    #botoes {
+        width: 95%;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 12px;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    #cadastro, #login {
+        width: 100%;
+        max-width: 280px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Celulares estreitos (até 360px) */
+@media screen and (max-width: 360px) {
+    #logo {
+        width: 160px;
+        margin: 12px auto;
+    }
+    
+    nav {
+        font-size: 1.1rem;
+        gap: 10px;
+        margin-top: 12px;
+    }
+    
+    nav a {
+        padding: 6px 0;
+    }
+    
+    #botoes {
+        margin-top: 12px;
+        gap: 10px;
+    }
+    
+    #cadastro, #login {
+        max-width: 260px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+    #logo {
+        width: 140px;
+        margin: 10px auto;
+    }
+    
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+    }
+    
+    nav a {
+        padding: 5px 0;
+    }
+    
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+    }
+    
+    #cadastro, #login {
+        max-width: 240px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
