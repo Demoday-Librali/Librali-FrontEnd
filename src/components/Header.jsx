@@ -11,17 +11,18 @@ function Header() {
   return (
     <header>
       <div id={Style.logo}>
-        <Link to="/"><img src={Logo} alt="Logo da Librali" /></Link>
+        <Link to="/"><img src={Logo} alt="Logo da Librali" id={Style.logo_img}/></Link>
       </div>
       
-      <nav id={Style.links}>
-        <Link to="/">Início</Link>
-        <Link to="/interpretes">Intérpretes</Link>
-      </nav>
-
-      <div id={Style.botoes}>
-        <button id={Style.cadastro}>Cadastro</button>
-        <button id={Style.login}>Login</button>
+      <div id={Style.menu}>
+        <nav id={Style.links}>
+          <Link to="/">Início</Link>
+          <Link to="/interpretes">Intérpretes</Link>
+        </nav>
+        <div id={Style.botoes}>
+          <button id={Style.cadastro}>Cadastro</button>
+          <button id={Style.login}>Login</button>
+        </div>
       </div>
     </header>
   )
