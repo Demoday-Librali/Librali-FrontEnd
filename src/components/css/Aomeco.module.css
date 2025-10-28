@@ -5,7 +5,7 @@
   height: 870px;
   width: 100%;
   top:10px;
-  overflow: hidden; /* Garante que o vídeo não ultrapasse os limites do contêiner */
+  overflow: hidden;
   display: flex;
   background: rgba(56,26,114,0.40);
 }
@@ -39,6 +39,89 @@
   max-width: 750px; 
   line-height: 1.5; 
   font-weight: bold;
-  font-family: Verdana;
   font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .video_fundo {
+    height: 700px;
+  }
+  
+  .texto_video h1 {
+    font-size: 70px;
+  }
+  
+  .texto_video p {
+    font-size: 22px;
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video_fundo {
+    height: 600px;
+  }
+  
+  .texto_video {
+    top: 30%;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .texto_video h1 {
+    font-size: 50px;
+  }
+  
+  .texto_video p {
+    font-size: 18px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video_fundo {
+    height: 500px;
+  }
+  
+  .texto_video {
+    top: 25%;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .texto_video h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .texto_video p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .video_fundo {
+    height: 450px;
+    top: 5px;
+  }
+  
+  .texto_video {
+    top: 20%;
+    left: 4%;
+    right: 4%;
+  }
+  
+  .texto_video h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  
+  .texto_video p {
+    font-size: 14px;
+    max-width: 100%;
+    line-height: 1.4;
+  }
 }
