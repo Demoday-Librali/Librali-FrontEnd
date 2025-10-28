@@ -160,7 +160,7 @@ nav a:hover{
 @media screen and (max-width: 412px) {
     #logo {
         width: 180px;
-        margin: 15px auto;
+        left: 20%;
     }
     
     nav {
@@ -198,7 +198,7 @@ nav a:hover{
 @media screen and (max-width: 360px) {
     #logo {
         width: 160px;
-        margin: 12px auto;
+        left: 20%;
     }
     
     nav {
@@ -228,8 +228,8 @@ nav a:hover{
     /* Celulares muito pequenos (até 320px) */
     #logo {
         position: relative;
-        width: 1000px;
-        left: auto;
+        width: 10px;
+        left: 15%;
         transform: none;
         margin: 10px 20px 10px auto;
     }
