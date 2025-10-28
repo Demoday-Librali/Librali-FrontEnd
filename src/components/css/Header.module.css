@@ -197,8 +197,8 @@ nav a:hover{
 /* Celulares estreitos (até 360px) */
 @media screen and (max-width: 360px) {
     #logo {
-        width: 160px;
-        left: -50%;
+        width: 100px;
+        left: -20%;
     }
     
     nav {
