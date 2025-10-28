@@ -229,7 +229,7 @@ nav a:hover{
     #logo {
         position: relative;
         width: 10px;
-        left: 1%;
+        left: -10%;
         transform: none;
         margin: 10px 20px 10px auto;
     }
