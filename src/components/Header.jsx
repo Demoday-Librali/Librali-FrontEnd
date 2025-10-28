@@ -1,25 +1,21 @@
 import Style from './css/Header.module.css'
 import Logo from '../assets/images/logo-completo.png'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  // Função para controlar o menu hambúrguer
+  // Função para abrir/fechar o menu
   const toggleMenu = () => {
-    const menuToggle = document.getElementById('menuToggle')
-    const mobileMenu = document.getElementById('mobileMenu')
-    const menuOverlay = document.getElementById('menuOverlay')
-    
-    menuToggle.classList.toggle('active')
-    mobileMenu.classList.toggle('active')
-    menuOverlay.classList.toggle('active')
+    setIsMenuOpen(!isMenuOpen)
     
     // Prevenir scroll quando o menu estiver aberto
-    if (mobileMenu.classList.contains('active')) {
+    if (!isMenuOpen) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
@@ -28,14 +24,16 @@ function Header() {
 
   // Fechar menu ao clicar em um link
   const handleLinkClick = () => {
-    toggleMenu()
+    setIsMenuOpen(false)
+    document.body.style.overflow = ''
   }
 
   // Fechar menu com ESC
   useEffect(() => {
     const handleEscKey = (e) => {
-      if (e.key === 'Escape' && document.getElementById('mobileMenu')?.classList.contains('active')) {
-        toggleMenu()
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false)
+        document.body.style.overflow = ''
       }
     }
 
@@ -43,7 +41,13 @@ function Header() {
     return () => {
       document.removeEventListener('keydown', handleEscKey)
     }
-  }, [])
+  }, [isMenuOpen])
+
+  // Fechar menu ao clicar no overlay
+  const handleOverlayClick = () => {
+    setIsMenuOpen(false)
+    document.body.style.overflow = ''
+  }
 
   return (
     <header>
@@ -62,25 +66,36 @@ function Header() {
       </div>
 
       {/* Botão do menu hambúrguer */}
-      <div className={Style.menuToggle} id="menuToggle" onClick={toggleMenu}>
+      <div 
+        className={`${Style.menuToggle} ${isMenuOpen ? Style.active : ''}`} 
+        id="menuToggle" 
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       {/* Overlay para fechar o menu ao clicar fora */}
-      <div className={Style.menuOverlay} id="menuOverlay" onClick={toggleMenu}></div>
+      <div 
+        className={`${Style.menuOverlay} ${isMenuOpen ? Style.active : ''}`} 
+        id="menuOverlay" 
+        onClick={handleOverlayClick}
+      ></div>
 
       {/* Menu mobile */}
-      <div className={Style.mobileMenu} id="mobileMenu">
+      <div 
+        className={`${Style.mobileMenu} ${isMenuOpen ? Style.active : ''}`} 
+        id="mobileMenu"
+      >
         <nav>
           <Link to="/" onClick={handleLinkClick}>Início</Link>
           <Link to="/interpretes" onClick={handleLinkClick}>Intérpretes</Link>
         </nav>
         
         <div className={Style.mobileBotoes}>
-          <button id={Style.cadastro}>Cadastro</button>
-          <button id={Style.login}>Login</button>
+          <button id={Style.cadastro} onClick={handleLinkClick}>Cadastro</button>
+          <button id={Style.login} onClick={handleLinkClick}>Login</button>
         </div>
       </div>
     </header>

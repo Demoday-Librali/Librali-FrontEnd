@@ -387,3 +387,80 @@
         font-size: 1rem;
     }
 }
+
+
+
+/* Menu Hambúrguer - Escondido por padrão */
+.menuToggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.menuToggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #381A72;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuToggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menuToggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuToggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Overlay do Menu */
+.menuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menuOverlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Menu Mobile */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobileMenu.active {
+    right: 0;
+}
