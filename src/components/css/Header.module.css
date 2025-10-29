@@ -331,7 +331,7 @@ nav a:hover{
 }
 @media screen and (max-width: 770px) {
     #logo {
-        width: 150px;
+        width: 190px;
         left: 25%;
     }
     #logo img{
@@ -339,17 +339,18 @@ nav a:hover{
     }
     nav {
         font-size: 1rem;
-        gap: 8px;
         margin-top: 10px;
-        margin-left: -30%;
+        margin-left: -200%;
+        margin-right: 200%;
         text-align: center;
+        gap: 5%;
     }
     nav a{
         gap: 8%;
         font-size: 1.2rem;
         text-align: center;
         margin-top: -40%;
-        margin-right: -30%;
+        margin-left: 3200%;
     }
     #botoes {
         margin-top: 10px;
