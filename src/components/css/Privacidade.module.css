@@ -52,6 +52,7 @@ body {
     margin-bottom: 10%;
     margin-top: 1%;
     overflow-x: hidden;
+    position: relative; /* <-- ESTA É A CORREÇÃO */
 }
 
 .maintitle {
