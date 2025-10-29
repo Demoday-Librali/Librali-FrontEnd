@@ -13,3 +13,41 @@
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
 }
+
+/* RESPONSIVIDADE - TABLET */
+@media (max-width: 1024px) {
+    .pagina_atual {
+        margin-bottom: 10%;
+        margin-top: 3%;
+    }
+
+    .pagina_atual p {
+        font-size: 19px;
+    }
+}
+
+/* RESPONSIVIDADE - MOBILE */
+@media (max-width: 768px) {
+    .pagina_atual {
+        margin-bottom: 15%;
+        margin-top: 4%;
+    }
+
+    .pagina_atual p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+/* RESPONSIVIDADE - MOBILE PEQUENO */
+@media (max-width: 480px) {
+    .pagina_atual {
+        margin-bottom: 20%;
+        margin-top: 5%;
+    }
+
+    .pagina_atual p {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+}

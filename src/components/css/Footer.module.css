@@ -64,6 +64,8 @@ footer a {
   footer {
     height: auto;
     padding-bottom: 80px;
+    background-image: url(../../assets/images/Footer_mobile.png);
+    background-size: 100vh;
   }
 
   .logo_footer img {
