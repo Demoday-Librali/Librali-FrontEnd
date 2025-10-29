@@ -194,3 +194,154 @@
         font-size: 32px;
     }
 }
+
+/* ========================= */
+/*        TABLET             */
+/* ========================= */
+@media (max-width: 1024px) {
+  .carrossel {
+    max-width: 90%;
+    margin-top: -40%; /* Ajuste intermediário da margem negativa */
+  }
+
+  /* Vamos "puxar" as bolinhas de volta para a tela */
+  .Rosa {
+    margin-left: 85%;
+    margin-top: -50%;
+  }
+  .Azul {
+    margin-left: 88%;
+    margin-top: -45%;
+  }
+  .Azulv {
+    margin-left: 10%;
+    margin-top: -40%;
+  }
+  .Verde {
+    margin-left: 8%;
+    margin-top: -38%;
+  }
+
+  .carrosselTitulo {
+    font-size: 48px; /* Fonte um pouco menor */
+    margin-top: -5%;
+  }
+
+  .depoimentosContainer {
+    height: 500px; /* Altura um pouco menor */
+  }
+
+  .depoimentoTexto {
+    font-size: 28px;
+    margin-top: -3%;
+  }
+
+  .depoimentoAutor {
+    font-size: 24px;
+  }
+
+  .depoimentoCargo {
+    font-size: 20px;
+  }
+}
+
+/* ========================= */
+/*         MOBILE            */
+/* ========================= */
+@media (max-width: 768px) {
+  /* A SOLUÇÃO MAIS SEGURA:
+    Em telas pequenas, é melhor esconder elementos decorativos 
+    que são difíceis de posicionar.
+  */
+  .Rosa,
+  .Azul,
+  .Azulv,
+  .Verde {
+    display: none;
+  }
+
+  .carrossel {
+    max-width: 95%; /* Ocupar quase toda a tela */
+    padding: 20px 10px;
+    margin: 30px auto 0 auto; /* Removemos a margem negativa grande */
+  }
+
+  .carrosselTitulo {
+    font-size: 28px; /* Tamanho bom para mobile */
+    margin-top: 0;   /* Removemos a margem negativa */
+    margin-bottom: 30px;
+  }
+
+  .depoimentosContainer {
+    /* ESTA É A MUDANÇA MAIS IMPORTANTE:
+      Trocamos a altura fixa por uma altura mínima.
+      Agora o card pode "crescer" se o texto for longo.
+    */
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+  }
+
+  .depoimentoSlide {
+    padding: 20px; /* Menor padding interno */
+  }
+
+  .depoimentoTexto {
+    font-size: 18px; /* Tamanho confortável para leitura */
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .depoimentoAutor {
+    font-size: 16px;
+  }
+
+  .depoimentoCargo {
+    font-size: 14px; /* Também precisamos ajustar este */
+    color: #7B9CFF;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .carrosselBotoes {
+    gap: 40px; /* Reduz o espaço entre os botões */
+    margin-top: 25px;
+  }
+
+  .carrosselBtn {
+    width: 50px; /* Botões menores */
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .indicador {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ========================= */
+/*     MOBILE PEQUENO        */
+/* ========================= */
+@media (max-width: 480px) {
+  .carrosselTitulo {
+    font-size: 24px;
+  }
+
+  .depoimentosContainer {
+    min-height: 400px; /* Pode precisar de mais altura em telas finas */
+  }
+
+  .depoimentoTexto {
+    font-size: 16px;
+  }
+
+  .depoimentoAutor {
+    font-size: 14px;
+  }
+
+  .depoimentoCargo {
+    font-size: 12px;
+  }
+}
