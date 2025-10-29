@@ -167,9 +167,9 @@
   }
 
   .home_interpretes h1 {
-    font-size: 4vw;
-    margin-top: 60px;
-    margin-left: -80px;
+    font-size: 4.5vw;
+    margin-top: 30px;
+    margin-left: 10px;
     width: 90%;
   }
 
@@ -191,8 +191,10 @@
 /* Elipse decorativa (atrás da mulher) */
 .fundo_elipse {
     position: absolute;
-    top: -30px;
-    right: 80px;
+    width: 100px;
+    height: 200px;
+    top: -10px;
+    right: 50px;
     z-index: 3;
 }
 
@@ -200,7 +202,7 @@
     position: absolute;
     width: 350px;
     height: auto;
-    left: 60px;
+    left: 120px;
     bottom: 19px;
     z-index: 4;
     transform: rotate(-5deg);
