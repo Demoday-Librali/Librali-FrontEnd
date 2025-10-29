@@ -12,7 +12,7 @@ header{
     position: relative;
     width: 300px;
     height: auto;
-    left: -10%;
+    left: -15%;
     margin-top: 1%;
     filter: drop-shadow(1px 2px 2px rgb(91, 91, 91));
 }
@@ -29,7 +29,7 @@ header{
 /* Aqui começa a config dos links */
 nav{
     position: relative;
-    width: 30%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -39,12 +39,13 @@ nav{
     color: #381A72;
     text-shadow: 1px 1px 2px rgb(91, 91, 91);
     gap: 100px;
+    z-index: 50;
 }
 nav a{
+    width: 150px;
     text-decoration: none;
     color: #381A72;
     transition: all 0.3s ease-in-out;
-    margin-left: -30%;
 }
 nav a:hover{
     color: #381A72;
@@ -60,8 +61,8 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    gap: 50px;
-    margin-left: 20%;
+    gap: 10px;
+    margin-right: 20%;
 }
 #cadastro, #login{
     position: relative;
@@ -275,6 +276,43 @@ nav a:hover{
         margin-right: -2100%;
     }
 }
+@media screen and (max-width: 790px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width: 780px) {
     #logo {
         width: 220px;
@@ -291,21 +329,633 @@ nav a:hover{
         margin-right: -3800%;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 770px) {
     #logo {
-        width: 220px;
+        width: 150px;
         left: 25%;
     }
-    #botoes{
-        font-size: 2.5rem;
+    #logo img{
         width: 100%;
-        margin-left: 300%;
-        margin-right: -300%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -30%;
+        text-align: center;
     }
     nav a{
-        font-size: 2rem;
-        margin-left: 3600%;
-        margin-right: -3500%;
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -30%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 730px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 710px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 690px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 660px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -240%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -5%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -5%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 630px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 620px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 610px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 599px) {
@@ -328,6 +978,191 @@ nav a:hover{
         font-size: 2rem;
         margin-left: 4200%;
         margin-right: -4000%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 590px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 570px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -230%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3000%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 560px) {
+    #logo {
+        width: 150px;
+        left: 25%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav {
+        font-size: 1rem;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: -250%;
+        text-align: center;
+    }
+    nav a{
+        gap: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -40%;
+        margin-right: -3700%;
+    }
+    #botoes {
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 1.5rem;
+        margin-left: 0%;
+        margin-right: -10%;
+        margin-top: 1%;
+    }
+    
+    #cadastro, #login {
+        max-width: 110%;
+        height: 32px;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 550px) {
