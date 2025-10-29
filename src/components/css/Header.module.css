@@ -460,6 +460,7 @@ nav a:hover{
         font-size: 1rem;
         gap: 8px;
         margin-top: 10px;
+        margin-left: -150%;
     }
     
     nav a {
@@ -467,18 +468,17 @@ nav a:hover{
     }
     
     #botoes {
-        width: 200%;
+        width: 100%;
         flex-direction: column;
         margin-top: 10px;
         gap: 8px;
         font-size: 1.5rem;
-        margin-left: 180%;
-        margin-right: -250%;
+        margin-left: 150%;
+        margin-right: -190%;
     }
     
     #cadastro, #login {
-        width: 100%;
-        max-width: 240px;
+        max-width: 150px;
         height: 42px;
         font-size: 1.5rem;
     }
