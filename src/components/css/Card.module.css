@@ -185,6 +185,11 @@
 
 /* RESPONSIVIDADE - MOBILE */
 @media (max-width: 768px) {
+
+  .card:first-child {
+  margin-top: 300px; /* ajuste conforme a altura do menu */
+}
+
   .card {
     width: 100%;
     max-width: 500px;

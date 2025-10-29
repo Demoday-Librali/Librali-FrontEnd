@@ -113,30 +113,47 @@
   }
 
   .home_interpretes h1 {
-    font-size: 7vw;
-    top: 20%;
-    left: 50%;
+    font-size: 4.5vw;
+    top: 30%;
+    left: 30%;
     transform: translateX(-50%);
     width: 80%;
     text-align: center;
+    z-index: 5;
   }
 
-  .img_mulher {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 5vw;
-    width: 70vw;
-    max-width: 400px;
-  }
-
-  .fundo_elipse {
-    right: 50%;
-    transform: translateX(50%);
-    top: 5vw;
-    width: 25vw;
-  }
+  .fundo_escuro {
+    position: absolute;
+    height: 350px;
+    z-index: 2;
 }
 
+/* Fundo claro (parte de baixo, com a curvatura) */
+.fundo_claro {
+    position: absolute;
+    height: 350px;
+    top: 1px;
+    z-index: 1;
+}
+
+/* Elipse decorativa (atrás da mulher) */
+.fundo_elipse {
+    position: absolute;
+    top: -30px;
+    right: 80px;
+    z-index: 3;
+}
+
+.img_mulher {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    left: 290px;
+    bottom: 75px;
+    z-index: 4;
+
+  }
+}
 /* RESPONSIVIDADE - MOBILE PEQUENO */
 @media (max-width: 480px) {
   .container {
@@ -178,8 +195,6 @@
     right: 80px;
     z-index: 3;
 }
-
-
 
 .img_mulher {
     position: absolute;

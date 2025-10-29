@@ -95,9 +95,13 @@ select.quadrado {
 /* RESPONSIVIDADE - MOBILE */
 @media (max-width: 768px) {
   .container_pai {
-    width: 95%;
+    width: 60%;
     padding: 30px 20px;
     top: 85%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    top: 500px;
   }
 
   .formulario {
