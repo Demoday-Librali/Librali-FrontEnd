@@ -176,4 +176,51 @@
     bottom: 20px;
     transform: translateX(-50%) rotate(-5deg);
   }
+
+  /* ========================= */
+/*    MOBILE PEQUENO (Moto E6s e similares) */
+/* ========================= */
+@media (max-width: 360px) {
+  .container {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .home_interpretes {
+    margin-bottom: 40%;
+    min-height: 340px;
+  }
+
+  .home_interpretes h1 {
+    font-size: 3.5vw;
+    top: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 85%;
+    text-align: center;
+  }
+
+  .fundo_escuro,
+  .fundo_claro {
+    position: absolute;
+    height: 250px;
+    top: 0;
+  }
+
+  .fundo_elipse {
+    width: 80px;
+    top: -10px;
+    right: 30px;
+  }
+
+  .img_mulher {
+    width: 80vw;
+    top: 31px;
+    left: 55%;
+    transform: translateX(-50%) rotate(-4deg);
+  }
 }
+
+
+}
+

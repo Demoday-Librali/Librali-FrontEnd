@@ -254,7 +254,7 @@
 @media (max-width: 480px) {
 
   .card:first-child {
-  margin-top: 330px; /* ajuste conforme a altura do menu */
+  margin-top: 300px; /* ajuste conforme a altura do menu */
 }
 
   .card {
