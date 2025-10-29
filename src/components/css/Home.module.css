@@ -118,8 +118,8 @@
 
   .home_interpretes h1 {
     font-size: 6vw;
-    top: 30%;
-    left: 50%;
+    top: 20%;
+    left: 30%;
     transform: translateX(-50%);
     width: 80%;
     text-align: center;
@@ -139,10 +139,10 @@
   }
 
   .img_mulher {
-    width: 60vw;
-    left: 50%;
-    bottom: 40px;
-    transform: translateX(-50%) rotate(-3deg);
+    width: 55vw;
+    left: 65%;
+    bottom: 70px;
+    transform: translateX(-50%) rotate(-2deg);
   }
 }
 
@@ -162,7 +162,8 @@
 
   .home_interpretes h1 {
     font-size: 6vw;
-    top: 25%;
+    top: 30%;
+    left: 30%;
   }
 
   .fundo_elipse {
@@ -174,6 +175,7 @@
   .img_mulher {
     width: 70vw;
     bottom: 20px;
+    left: 60%;
     transform: translateX(-50%) rotate(-5deg);
   }
 
@@ -192,13 +194,14 @@
   }
 
   .home_interpretes h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     top: 20%;
-    left: 30%;
+    left: 25%; /* Lembre-se da minha sugestão de usar 50% aqui */
     transform: translateX(-50%);
-    width: 85%;
+    width: 85%; 
+    max-width: 200px; 
     text-align: center;
-  }
+ }
 
   .fundo_escuro,
   .fundo_claro {
@@ -220,7 +223,6 @@
     transform: translateX(-50%) rotate(-4deg);
   }
 }
-
 
 }
 
