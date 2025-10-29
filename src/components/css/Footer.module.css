@@ -59,3 +59,42 @@ footer a {
     margin-top: 10%;
     white-space: nowrap;
 }
+
+@media (max-width: 992px) {
+  footer {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .logo_footer img {
+    margin-top: 10%;
+    width: 250px;
+    left: 0;
+  }
+
+  .links_footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    font-size: 1.2rem;
+    left: 0;
+    top: 5%;
+  }
+
+  .contator_footer {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .links {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .meio {
+    right: 0;
+    margin-top: 8%;
+    white-space: normal;
+  }
+}
