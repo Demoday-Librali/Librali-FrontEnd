@@ -1,25 +1,23 @@
 .PaginaIa {
-    position: relative; /* Permite que elementos filhos usem position absolute */
-    display: inline-block; /* Ajusta o tamanho ao da imagem */
-    height: 850px;
+    position: relative; 
     width: 100%;
-    display: flex;
+    min-height: 850px;
     margin-top: 10%;
     margin-bottom: 10%;
 }
+
 .Titulo {
    color: #FFE385;
    position: absolute;
    top: 10%; 
-   left: 105%; 
+   left: 75%;
    transform: translate(-50%, -50%); 
    font-size: 3em;
    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-   width: 100%; 
+   width: 40%;
    height: auto;
 }
 .Texto1 {
-   color: #FFE385;
    position: absolute;
    top: 35%; 
    left: 75%; 
@@ -31,7 +29,6 @@
    height: auto;
 }
 .Texto2 {
-   color: #FFE385;
    position: absolute;
    top: 65%; 
    left: 75%; 
@@ -43,11 +40,15 @@
    height: auto;
    font-weight: 600;
 }
+
 .Fundoia {
-    position: relative;
-  display: block; /* Remove espaços em branco indesejados */
-  width: 100%; /* Ajusta o tamanho da imagem, opcional */
-  height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
 }
 .Mulheria{
   position: absolute;
@@ -55,23 +56,18 @@
   left: 35%;
   transform: translate(-50%, -50%);
   width: 550px; 
-  height: auto;  
+  height: auto;
   max-width: 90%;
 }
 .Iconeia{
-position: absolute;
+  position: absolute;
   top: 25%; 
   left: 23%;
   transform: translate(-50%, -50%);
   width: 250px; 
-  height: auto;  
+  height: auto;
   max-width: 90%; 
   animation: flutuaricone 3s ease-in-out infinite;
-}
-@keyframes flutuaricone {
-  100% { transform: translate(-50%, -50%) translateY(0);}
-  0% { transform: translate(-50%, -50%) translateY(0);}
-  50% { transform: translate(-50%, -50%) translateY(8px);}
 }
 .Blocoverde{
     position: absolute;
@@ -79,33 +75,40 @@ position: absolute;
     left: 45%;
     transform: translate(-50%, -50%);
     width: 300px; 
-    height: auto;  
+    height: auto;
     max-width: 90%; 
     animation: flutuarbloco 3s ease-in-out infinite;
+}
+
+@keyframes flutuaricone {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
 }
 @keyframes flutuarbloco {
   0% { transform: translate(-50%, -50%) translateY(0);}
   50% { transform: translate(-50%, -50%) translateY(-10px);}
   100% { transform: translate(-50%, -50%) translateY(0);}
 }
-#botoes{
-    position: relative;
-    width: 20%;
-    height: auto;
-    left: -35%;
-    margin-top: 35%;
+
+.botoes{
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
-    gap: 10px;    
+    gap: 1.5rem;
 }
-#cadastro, #login{
-    position: relative;
-    width: 200px;
-    height: 70px;
+.cadastro, .login{
+    padding: 0.8rem 1.5rem;
+    flex: 1;
+    max-width: 200px;
     border: 2px solid #FFFAFA;
     border-radius: 10px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #FFFAFA;
     background-color: transparent;
@@ -113,12 +116,83 @@ position: absolute;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
 }
-#login{
+.login{
     background-color: #FFE385;
     color: #49038A;
 }
-#cadastro:hover, #login:hover{
+.cadastro:hover, .login:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
-/* Aqui termina oa config dos botões */
+
+@media (max-width: 1200px) {
+    .Titulo { font-size: 2.5em; }
+    .Texto1, .Texto2 { font-size: 1.8em; }
+}
+
+@media (max-width: 992px) {
+    .PaginaIa {
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .Titulo, .Texto1, .Texto2, .botoes {
+        left: 50%;
+        width: 80%;
+    }
+    .Mulheria {
+        left: 50%;
+        width: 450px;
+        top: 70%;
+    }
+    .Texto1 { top: 25%; }
+    .Texto2 { top: 45%; }
+    .botoes { top: 60%; }
+
+    .Iconeia, .Blocoverde {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .PaginaIa {
+        min-height: auto;
+        height: auto;
+        padding: 15% 0;
+        margin: 0;
+    }
+
+    .Titulo, .Texto1, .Texto2, .botoes, .Mulheria {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+    }
+
+    .Titulo {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+    .Texto1, .Texto2 {
+        font-size: 1.2rem;
+    }
+    .Mulheria {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 2rem;
+        order: 10;
+    }
+    .botoes {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .cadastro, .login {
+        font-size: 1.2rem;
+        width: 100%;
+        max-width: 300px;
+    }
+}
