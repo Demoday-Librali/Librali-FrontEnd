@@ -958,3 +958,153 @@
     width: 100%;
   }
 }
+
+
+
+
+@media screen and (max-width: 360px) {
+  .esquerda:hover,
+  .meio:hover,
+  .direita:hover,
+  .esquerda:hover *,
+  .meio:hover *,
+  .direita:hover * {
+    all: unset; /* remove qualquer efeito, cor, animação, etc */
+  }
+  /* Restaura o layout padrão */
+  .esquerda, .meio, .direita {
+    transition: none !important;
+    width: 90% !important;
+    height: auto !important;
+  }
+  .Oquee{
+    position: relative;
+    height: 950px;
+    width: 100%;
+    background-color: #421167;
+    display: flex;
+    align-items: center;
+    clip-path: ellipse(100% 60% at 50% 50%);
+    margin-top: -1px;
+    z-index: 0;
+}
+ .esquerda img{
+    display: none;
+  }
+  .esquerda {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+  }
+
+  .paragrafoesquerda {
+    opacity: 1;
+    transform: translateX(0);
+    display: block;
+    position: relative;
+    width: 82%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-left: 7%;
+    color: #421167;
+  }
+
+  .titleesquerda {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #421167;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .esquerda{
+    width: 82%;
+    height: 250px;
+    margin-top: -55%;
+  }
+
+
+  .meio img{
+    display: none;
+  }
+  .meio {
+    width: 1090% !important;
+    height: 3000px;
+    margin-top: 10%;
+  }
+  .paragrafomeio {
+    opacity: 1;
+    transform: translateX(0);
+    display: block;
+    position: relative;
+    width: 82%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-left: 7%;
+    color: #421167;
+  }
+
+  .titlemeio {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #421167;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+  .direita img{
+    display: none;
+  }
+  .direita {
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90%;
+  }
+  .paragrafodireita {
+    opacity: 1;
+    transform: translateX(0);
+    display: block;
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #421167;
+  }
+
+  .titledireita {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 57%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #421167;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
