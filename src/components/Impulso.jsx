@@ -58,7 +58,7 @@ function Impulso(){
                 </div>
             </div>
             
-            <img src={Visibilidade} alt="" />
+            <img src={Visibilidade} id={Style.forma} alt="" />
             <img className={Style.Rosa} src={Rosa} alt=""/>
             <img className={Style.Laranja} src={Laranja} alt=""/>
             <img className={Style.Verde} src={Verde} alt=""/>

@@ -132,7 +132,6 @@
     position: relative;
     height: auto;
     left: 0%;
-    margin-top: 6%;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -244,4 +243,126 @@
 .checkgif{
     width: 40px;
     margin-bottom: -13px;
+}
+
+@media (max-width: 1336px) {
+    .fundo {
+        background-color: #381A72;
+        height: 2160px;
+        margin-bottom: 150px;
+    }
+    .caixasbrancas{
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px; 
+        margin-bottom: 0%; 
+        margin-top: 30px;
+    }
+
+    .caixa1, .caixa2, .caixa3 {
+        width: 90%; 
+        max-width: 400px; 
+        height: auto; 
+        margin-bottom: 0; 
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    /* Ajusta os botões */
+    #login, #login2, #login3 {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #botoa2 #login2 {
+        margin-top: 20px;
+    }
+    #botoa3 #login3 {
+        margin-top: 20px; 
+    }
+    #Vermais{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    #botoa, #botoa2, #botoa3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #forma {
+        width: 0%;
+        height: 0%;
+        display: none;  
+    }
+}
+
+@media (max-width: 768px) {
+    .fundo {
+        background-color: #49038A;
+        height: 1960px;
+    }
+    .Rosa, .Laranja, .Verde, .Azul {
+        display: none;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-top: -15%;
+    }
+    .paragrafo {
+        font-size: 18px;
+    }
+
+    .caixasbrancas {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px; 
+        margin-bottom: 10%; 
+        margin-top: 30px;
+    }
+
+    .caixa1, .caixa2, .caixa3 {
+        width: 90%; 
+        max-width: 400px; 
+        height: auto; 
+        margin-bottom: 0; 
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    /* Ajusta os botões */
+    #login, #login2, #login3 {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #botoa2 #login2 {
+        margin-top: 20px;
+    }
+
+    #botoa3 #login3 {
+        margin-top: 20px; 
+    }
+
+    #Vermais{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #botoa, #botoa2, #botoa3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    #forma {
+        width: 0%;
+        height: 0%;
+        display: none;  
+    }
 }

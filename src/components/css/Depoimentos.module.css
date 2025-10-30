@@ -1,3 +1,10 @@
+.fundo {
+    background-image: url('../assets/images/fundodepoimento.png'); /* Verifique o caminho! */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Adiciona espaço para o conteúdo respirar */
+}
 .Rosa{
     position: absolute;
     margin-left: 90%;
@@ -175,6 +182,19 @@
     transform: scale(1.2);
 }
 
+@media (max-width: 1336px) {
+    #forma {
+        width: 0%;
+        height: 0%;
+        display: none;  
+    }
+    .fundo {
+        background-color: #7C54B1;
+        height: 730px;
+        margin-bottom: 200px;
+    }
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .carrossel {
@@ -242,6 +262,11 @@
 
   .depoimentoCargo {
     font-size: 20px;
+  }
+  #forma{
+    display: none;
+    width: 0%;
+    height: 0%;
   }
 }
 
