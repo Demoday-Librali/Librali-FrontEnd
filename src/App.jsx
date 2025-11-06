@@ -14,6 +14,7 @@ import Privacidade from './components/Privacidade.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
+import Cadastro from './components/Cadastro.jsx'
 
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
         <Route path="/privacidade" element={<Privacidade />} />
 
         <Route path="/login" element={<Login />}/>
+
+        <Route path="/cadastro" element={<Cadastro />}/>
       </Routes>
 
       <Footer />
