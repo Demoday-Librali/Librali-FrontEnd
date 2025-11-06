@@ -102,6 +102,10 @@ nav a:hover{
   z-index: 100;
 }
 
+#links {
+  margin-right: 30px;
+}
+
 /*Responsividade para diversas tamanhos de telas*/
 /* Para telas grandes, entre 1660px e 1024px) */
 @media (max-width: 1660px) {
