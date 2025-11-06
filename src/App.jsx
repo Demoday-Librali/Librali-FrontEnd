@@ -13,6 +13,8 @@ import Duvida from './components/Duvida.jsx'
 import Privacidade from './components/Privacidade.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
+import Login from './components/Login.jsx'
+
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Route path="/interpretes" element={<Home />} />
 
         <Route path="/privacidade" element={<Privacidade />} />
+
+        <Route path="/login" element={<Login />}/>
       </Routes>
 
       <Footer />

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
+
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
