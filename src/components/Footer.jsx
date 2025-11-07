@@ -20,14 +20,14 @@ function Footer() {
             <div className={Style.links_footer}>
                 <div className={Style.Mapa}>
                     <h3>Mapa do Site</h3>
-                    <a href="#">Página Inicial</a>
-                    <a href="#">Intérpretes</a>
-                    <a href="#">Sobre</a>
+                    <Link to="/">Página Inicial</Link>
+                    <Link to="/interpretes">Intérpretes</Link>
+                    <Link to="/sobre">Sobre</Link>
                 </div>
                 <div className={Style.Ferramentas}>
                     <h3>Ferramentas</h3>
-                    <a href="#">Agendamento</a>
-                    <a href="#">IA</a>
+                    <Link to="#">Agendamento</Link>
+                    <Link to="#">IA</Link>
                 </div>
             </div>
             {/* Aqui termina os links do footer */}

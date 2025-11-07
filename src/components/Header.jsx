@@ -1,9 +1,8 @@
-import Style from './css/Header.module.css'
-import Logo from '../assets/images/logo-completo.png'
-import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
-
+import Style from './css/Header.module.css';
+import Logo from '../assets/images/logo-completo.png';
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false)

@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
+import Sobre from './components/Sobre.jsx'
 
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
         <Route path="/login" element={<Login />}/>
 
         <Route path="/cadastro" element={<Cadastro />}/>
+
+        <Route path="/sobre" element={<Sobre />} />
       </Routes>
 
       <Footer />
