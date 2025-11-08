@@ -16,6 +16,8 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
 import Sobre from './components/Sobre.jsx'
+import Lara from "./components/Lara.jsx";
+
 
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />}/>
 
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/assistente" element={<Lara />} />
+
       </Routes>
 
       <Footer />
