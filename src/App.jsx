@@ -15,6 +15,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
+import Lara from "./components/Lara.jsx";
+
 
 
 function App() {
@@ -47,6 +49,9 @@ function App() {
         <Route path="/login" element={<Login />}/>
 
         <Route path="/cadastro" element={<Cadastro />}/>
+
+        <Route path="/assistente" element={<Lara />} />
+
       </Routes>
 
       <Footer />

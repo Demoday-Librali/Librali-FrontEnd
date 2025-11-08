@@ -9,7 +9,7 @@ header{
     background-color: white;
 }
 
-/* Aqui começa a config da logo */
+/* Aqui começa a configuração da logo */
 #logo{
     position: relative;
     filter: drop-shadow(1px 2px 2px rgb(91, 91, 91));
@@ -103,7 +103,7 @@ nav a:hover{
 }
 
 #links {
-  margin-right: 30px;
+  margin-right: 1px;
 }
 
 /*Responsividade para diversas tamanhos de telas*/
