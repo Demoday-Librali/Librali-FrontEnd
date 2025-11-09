@@ -51,7 +51,7 @@
     border-radius: 10px;
     font-weight: bold;
     font-size: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, cdbox-shadow 0.3s ease-in-out;
 }
 
 .botao:hover {

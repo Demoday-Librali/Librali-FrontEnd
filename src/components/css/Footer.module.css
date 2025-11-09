@@ -100,3 +100,9 @@ footer a {
     white-space: normal;
   }
 }
+
+@media (max-width: 370px) {
+  .links{
+    width: 300px;
+}
+}
