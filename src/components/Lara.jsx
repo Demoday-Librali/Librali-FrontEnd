@@ -4,17 +4,9 @@ import { GoogleGenAI } from "@google/genai";  // Biblioteca para o funcionamento
 import Imglara from "./../assets/images/lara1.jpeg"
 
 // importação da API através de um arquivo 
-const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-
-let ai;
-
-if (apiKey) {
-  ai = new GoogleGenAI({ apiKey });
-} else {
-  console.warn("⚠️ API Key do Gemini não encontrada. O recurso de IA será desativado.");
-  ai = null; // Evita erro de inicialização
-}
-
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
+});
 
 // Dados mockados de profissionais - Usado lista para armanenzar os dados ( O ideal é substituir por uma API real - será necessario mexer na página de Setores)
 const profissionaisMock = [
