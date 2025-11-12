@@ -21,7 +21,7 @@ import Lara from "./components/Lara.jsx";
 
 
 function App() {
-  return (
+  return (    
     <Router>
       <ScrollToTop />
       <Header />

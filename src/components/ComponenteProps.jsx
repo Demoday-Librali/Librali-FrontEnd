@@ -1,6 +1,6 @@
 import Style from './css/componenteProps.module.css';
 
-export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete, Footer}) {
+export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete, Footer, ImgSobre, BolinhaSobre, Missao, Visao, Valores, Ods8, Ods10, Ods18, Certo_sobre, Arthur, Cleyton, Gabriel, Gustavo, Ketlyn, Kevin, Mayara}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -34,6 +34,22 @@ export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, Y
             <img src={Ellipse} alt=""  className={Style.ellipse_props}/>
             <img src={Mulherinterprete} alt=""  className={Style.img_home_props}/>
             <img src={Footer} alt=""  className={Style.img_footer_props}/>
+            <img src={ImgSobre} alt="" className={Style.img_sobre_props}/>
+            <img src={BolinhaSobre} alt="" className={Style.bolinhna_sobre_props}/>
+            <img src={Missao} alt="" className={Style.Missao_props}/>
+            <img src={Visao} alt="" className={Style.Visao_props}/>
+            <img src={Valores} alt="" className={Style.Valores_props}/>
+            <img src={Ods8} alt="" className={Style.Ods8_props}/>
+            <img src={Ods10} alt="" className={Style.Ods10_props}/>
+            <img src={Ods18} alt="" className={Style.Ods18_props}/>
+            <img src={Certo_sobre} alt="" className={Style.Certo_sobre}/>
+            <img src={Arthur} alt="" className={Style.Arthur}/>
+            <img src={Cleyton} alt="" className={Style.Cleyton}/>
+            <img src={Gabriel} alt="" className={Style.Gabriel}/>
+            <img src={Gustavo} alt="" className={Style.Gustavo}/>
+            <img src={Ketlyn} alt="" className={Style.Ketlyn}/>
+            <img src={Kevin} alt="" className={Style.kevin}/>
+            <img src={Mayara} alt="" className={Style.Mayara}/>
         </div>
     )
 }
