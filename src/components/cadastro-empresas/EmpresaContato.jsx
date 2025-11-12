@@ -1,8 +1,10 @@
 import React from 'react'
 
-const EmpresaContato = () => {
+function EmpresaContato() {
   return (
-    <div>Empresacontato</div>
+    <div>
+        <h2>Empresa contato</h2>
+    </div>
   )
 }
 

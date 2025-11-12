@@ -4,7 +4,7 @@ import React from 'react'
 import EmpresaForm from "./cadastro-empresas/EmpresaForm"
 import EmpresaEndereco from "./cadastro-empresas/EmpresaEndereco"
 import EmpresaFoto from "./cadastro-empresas/EmpresaFoto"
-import EmpresaContato from "./cadastro-empresas/Empresacontato"
+import EmpresaContato from "./cadastro-empresas/EmpresaContato"
 /*Importação dos forms de usuário*/
 // HOOKS
 import { empresaForm } from "../hooks/empresaForm"
