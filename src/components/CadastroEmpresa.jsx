@@ -18,20 +18,26 @@ function CadastroEmpresa() {
             <EmpresaFoto />
         ]
     
-    const {currentStep, currentComponent} = empresaForm(empresaComponents)
+    const {currentStep, currentComponent, changeStep, isLastStap} = empresaForm(empresaComponents)
 
   return (
     <div className={Styles.container_cadastro}>
-        <h1>{empresaComponents[1]}</h1>
-        <form>
+        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+            <h1>{currentComponent}</h1>
             <div className={Styles.input_container}></div>
             <div className={Styles.actions}>
-                <button type="submit" className={Styles.botao}>
+                <button type="button" className={Styles.botao} onClick={() => changeStep(currentStep - 1)}>
                     <span>Voltar</span>
                 </button>
-                <button type="submit" className={Styles.botao}>
-                    <span>Avançar</span>
-                </button>
+                {!isLastStap ? (
+                    <button type="submit" className={Styles.botao}>
+                        <span>Avançar</span>
+                    </button>
+                ) : (
+                    <button type="submit" className={Styles.botao}>
+                        <span>Cadastrar</span>
+                    </button>
+                )}
             </div>
         </form>
     </div>
