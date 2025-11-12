@@ -17,6 +17,7 @@ import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx";
+import DadosEmpresa from "./components/DadosEmpresa.jsx";
 
 
 
@@ -52,6 +53,8 @@ function App() {
 
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/assistente" element={<Lara />} />
+        
+        <Route path="/dadosempresa" element={<DadosEmpresa />} />
 
       </Routes>
 

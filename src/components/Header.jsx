@@ -43,6 +43,8 @@ export default function Header() {
           <Link to="/" onClick={fecharMenu}>Início</Link>
           <Link to="/interpretes" onClick={fecharMenu}>Intérpretes</Link>
           <Link to="/assistente" onClick={fecharMenu}>Ia</Link>
+          <Link to="/dadosempresa" onClick={fecharMenu}>DadosEmpresa</Link>
+
         </nav>
         <div id={Style.botoes}>
           <Link to="/cadastro" id={Style.cadastro} onClick={fecharMenu}>Cadastro</Link>
