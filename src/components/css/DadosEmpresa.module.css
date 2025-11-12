@@ -37,6 +37,7 @@ main{
     border: none;
     padding: 12px;
     background-color: var(--cor-fundo);
+    cursor: pointer;
 }
 .botao_lapis:hover{
     background-color: #c5c5c5;
