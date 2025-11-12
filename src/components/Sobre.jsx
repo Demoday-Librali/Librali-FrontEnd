@@ -7,7 +7,6 @@ import Azul from '../assets/images/azul.png'
 import Missao from '../assets/images/bandeira.gif'
 import Visao from '../assets/images/olho.gif'
 import Valores from '../assets/images/caridade.gif'
-import Visibilidade from '../assets/images/visibilidade.png'
 import Ods8 from '../assets/images/Ods8.png'
 import Ods10 from '../assets/images/Ods10.png'
 import Ods18 from '../assets/images/Ods18.png'
@@ -19,6 +18,7 @@ import Gustavo from '../assets/images/Gustavo.png'
 import Ketlyn from '../assets/images/Ketlyn.png'
 import Kevin from '../assets/images/Kevin.png'
 import Mayara from '../assets/images/Mayara.png'
+import Fundo_integrante from '../assets/images/Fundo_integrante.png'
 
 function Sobre(){
 
@@ -80,58 +80,181 @@ function Sobre(){
                     </div>
             </section>
             <section className={Style.Integrantes}>
-                    <div>
-                        <h1>Pessoas por trás do <span className={Style.roxinho}>Librali</span></h1>
-                    </div>
-                    <div className={Style.Pessoas}>
-
-                        <div className={Style.Dupla}>
-                            
-                        <div className={Style.Arthur}>
-                            <img className={Style.Img_Arthur} src={Arthur} alt=""/>
-                            <h3 className={Style.Nome}>Arthur Aparecido</h3>
-                            <p className={Style.Descricao}>Desenvolvedor Full-Stack</p>
-                        </div>
-                        <div className={Style.Cleyton}>
-                            <img className={Style.Img_Cleyton} src={Cleyton} alt=""/>
-                            <h3 className={Style.Nome}>Cleyton</h3>
-                            <p className={Style.Descricao}>Desenvolvedor Full-Stack</p>
-                            
-                        </div>
-                        </div>
-
-                        <div className={Style.Dupla}>
-                        <div className={Style.Gabriel}>
-                            <img className={Style.Img_Gabriel} src={Gabriel} alt=""/>
-                            <h3 className={Style.Nome}>Gabriel Damasceno Almeida</h3>
-                            <p className={Style.Descricao}>Desenvolvedor Full-Stack e Desing UI/UX</p>
-                        </div>
-                        <div className={Style.Gustavo}>
-                            <img className={Style.Img_Gustavo} src={Gustavo} alt=""/>
-                            <h3 className={Style.Nome}>Gustavo Moura De Jesus</h3>
-                            <p className={Style.Descricao}>Scrum Master Desenvolvedor Front-End</p>
+                <div>
+                    <h1>Pessoas por trás do <span className={Style.roxinho}>Librali</span></h1>
+                </div>
+                <div className={Style.Pessoas}>
+                    {/* Primeira linha - 2 integrantes */}
+                    <div className={Style.dupla_especial}>
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Arthur} src={Arthur} alt="Arthur"/>
+                                    <h3 className={Style.Nome}>Arthur Aparecido</h3>
+                                    <p className={Style.Descricao}>Desenvolvedor Full-Stack</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre o Arthur</h3>
+                                    <p>Desenvolvedor Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js e Next.js</li>
+                                        <li>Node.js e Express</li>
+                                        <li>Banco de dados SQL e NoSQL</li>
+                                        <li>APIs RESTful</li>
+                                        <li>Deploy e DevOps</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        </div>
-
-                        <div className={Style.Dupla}>
-                        <div className={Style.Ketlyn}>
-                            <img className={Style.Img_Ketlyn} src={Ketlyn} alt=""/>
-                            <h3 className={Style.Nome}>Ketlyn</h3>
-                            <p className={Style.Descricao}>Procutc Owner e Desenvolvedora Full-Stack</p>
-                        </div>
-                        <div className={Style.Kevin}>
-                            <img className={Style.Img_Kevin} src={Kevin} alt=""/>
-                            <h3 className={Style.Nome}>Kevin De Jesus Ferreira</h3>
-                            <p className={Style.Descricao}>Desenvolvedor Back-End e Financeiro</p>
-                        </div>
-                        </div>
-                        <div className={Style.Mayara}>
-                            <img className={Style.Img_Mayara} src={Mayara} alt=""/>
-                            <h3 className={Style.Nome}>Mayara Vitória Da Silva</h3>
-                            <p className={Style.Descricao}>Desenvolvedora Full-Stack e Marketing</p>
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Cleyton} src={Cleyton} alt="Cleyton é um homem negro de 21 anos de cabelos crespos e olhos castanhos. Vestindo nessa imagem o uniforme azul do ProaProfissão"/>
+                                    <h3 className={Style.Nome}>Cleyton Durval</h3>
+                                    <p className={Style.Descricao}>Desenvolvedor Full-Stack</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre o Cleyton</h3>
+                                    <p>Desenvolvedor Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>MySQL</li>
+                                        <li>Inglês</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    {/* Segunda linha - 3 integrantes */}
+                    <div className={Style.trio}>
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Gabriel} src={Gabriel} alt="Gabriel é um homem de 18 anos, afrodescendente de estatura alta. Tenho cabelo alto e crespo, possuo olhos castanhos claros. Vestindo nessa imagem o uniforme azul do ProaProfissão"/>
+                                    <h3 className={Style.Nome}>Gabriel Damasceno Almeida</h3>
+                                    <p className={Style.Descricao}>Desenvolvedor Full-Stack<br></br>e Desing UI/UX</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre o Gabriel</h3>
+                                    <p>Desenvolvedor Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js e Next.js</li>
+                                        <li>Node.js e Express</li>
+                                        <li>Banco de dados SQL e NoSQL</li>
+                                        <li>APIs RESTful</li>
+                                        <li>Deploy e DevOps</li>
+                                    </ul>
+                                    <p style={{marginTop: '20px', fontStyle: 'italic'}}>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Gustavo é um homem moreno de 1,70 metros de altura de 22 anos com cabelo e olhos escuros, vestindo na imagem o uniforme do azul do ProaProfissão."/>
+                                    <img className={Style.Img_Gustavo} src={Gustavo} alt="Gustavo"/>
+                                    <h3 className={Style.Nome}>Gustavo Moura De Jesus</h3>
+                                    <p className={Style.Descricao}>Scrum Master e <br></br> Desenvolvedor Back-End</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre o Gustavo</h3>
+                                    <p>Desenvolvedor Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Java</li>
+                                        <li>Figma</li>
+                                        <li>Canva</li>
+                                        <li>Deploy e DevOps</li>
+                                    </ul>
+                                    <p style={{marginTop: '20px', fontStyle: 'italic'}}>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Ketlyn} src={Ketlyn} alt="Ketlyn"/>
+                                    <h3 className={Style.Nome}>Ketlyn</h3>
+                                    <p className={Style.Descricao}>Procutc Owner e <br></br>Desenvolvedora Full-Stack</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre a Ketlyn</h3>
+                                    <p>Desenvolvedora Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js e Next.js</li>
+                                        <li>Node.js e Express</li>
+                                        <li>Banco de dados SQL e NoSQL</li>
+                                        <li>APIs RESTful</li>
+                                        <li>Deploy e DevOps</li>
+                                    </ul>
+                                    <p style={{marginTop: '20px', fontStyle: 'italic'}}>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Terceira linha - 2 integrantes */}
+                    <div className={Style.dupla_especial}>
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Kevin} src={Kevin} alt="Kevin é um homem de 18 anos, de pele parda, de estatura baixa, cabelo curto e preto e meus olhos são castanhos.  Vestindo nessa imagem o uniforme azul do ProaProfissão"/>
+                                    <h3 className={Style.Nome}>Kevin De Jesus Ferreira</h3>
+                                    <p className={Style.Descricao}>Desenvolvedor Back-End<br></br> e Financeiro</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre o Kevin</h3>
+                                    <p>Desenvolvedor Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Java</li>
+                                        <li>DevOps</li>
+                                        <li>Linux</li>
+                                        <li>Banco De Dados</li>
+                                    </ul>
+                                    <p style={{marginTop: '20px', fontStyle: 'italic'}}>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Style.flip_card}>
+                            <div className={Style.flip_card_inner}>
+                                <div className={Style.flip_card_front}>
+                                    <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
+                                    <img className={Style.Img_Mayara} src={Mayara} alt="Mayara é mulher de 19 anos, estatura baixa, cabelos grande cacheados e escuros, assim como meus olhos, e pele parda. Vestindo na imagem o uniforme do azul do ProaProfissão."/>
+                                    <h3 className={Style.Nome}>Mayara</h3>
+                                    <p className={Style.Descricao}>Desenvolvedora Full-Stack<br></br> e Marketing</p>
+                                </div>
+                                <div className={Style.flip_card_back}>
+                                    <h3>Sobre a Mayara</h3>
+                                    <p>Desenvolvedora Full-Stack com experiência em:</p>
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Java</li>
+                                        <li>MySQL</li>
+                                        <li>Git e GitHub</li>
+                                        <li>Figma e Canva</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     )
