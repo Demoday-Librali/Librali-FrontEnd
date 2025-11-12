@@ -31,13 +31,18 @@
     flex: 1;
     min-width: 300px;
     max-width: 380px;
-    border: 2px solid #5E5C5C;
+    box-shadow: 9px 5px 6px 0 rgba(0, 0, 0, 0.13);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.caixinha:hover{
+   transform: translateY(-6px);
 }
 
 .caixinha img{
@@ -66,8 +71,8 @@
 
 .linha {
     width: 90%;
-    height: 4px;
-    background-color: #5E5C5C;
+    height: 2px;
+    background-color: #5e5c5c6b;
     color: transparent;
     margin: 20px auto;
 }
@@ -75,7 +80,7 @@
 .botao, .botao2 {
     padding: 1rem 1.5rem;
     width: 90%;
-    max-width: 280px;
+    max-width: 320px;
     text-align: center;
     background-color: #6D038A;
     border: none;
