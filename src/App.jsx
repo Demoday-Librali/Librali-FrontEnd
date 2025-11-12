@@ -18,6 +18,7 @@ import Cadastro from './components/Cadastro.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx";
 import DadosEmpresa from "./components/DadosEmpresa.jsx";
+import CadastroEmpresa from './components/CadastroEmpresa.jsx'
 
 
 
@@ -55,6 +56,8 @@ function App() {
         <Route path="/assistente" element={<Lara />} />
         
         <Route path="/dadosempresa" element={<DadosEmpresa />} />
+
+        <Route path='/empresa' element={<CadastroEmpresa />} />
 
       </Routes>
 
