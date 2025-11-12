@@ -42,7 +42,7 @@ export default function Header() {
         <nav id={Style.links}>
           <Link to="/" onClick={fecharMenu}>Início</Link>
           <Link to="/interpretes" onClick={fecharMenu}>Intérpretes</Link>
-          <Link to="/assistente" onClick={fecharMenu}>Ia</Link>
+          <Link to="/assistente" onClick={fecharMenu}>IA Lara</Link>
 
         </nav>
         <div id={Style.botoes}>
