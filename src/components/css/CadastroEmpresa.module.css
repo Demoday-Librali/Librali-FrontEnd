@@ -12,7 +12,7 @@
 .form_container {
     width: 50%;
     height: 483px;
-    background-color: #FFFAFA;
+    background-color: #cf1919;
     border-radius: 16px;
     display: flex;
     flex-direction: row;
@@ -20,11 +20,40 @@
     align-items: center;
 }
 
+.conteudo_esquerda {
+    width: 65%;
+    height: 483px;
+    background-color: #FFFAFA;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_direito {
+    width: 35%;
+    height: 483px;
+    background-image: url(../../assets/images/sinal-inscricao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 .botao {
     width: 160px;
-    height: 30px;
+    height: 41px;
     background-color: #421167;
     color: #FFFAFA;
     border: 1px solid #FFFAFA;
-    border-radius: 5px;
+    border-radius: 7px;
+    font-size: 25px;
 }
