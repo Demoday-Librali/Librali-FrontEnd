@@ -110,94 +110,6 @@
     font-family: Verdana;
     margin-left: 5%;
 }
-@media (max-width: 2560px){
-    .Sobre {
-    background-color: #421167;
-    position: relative;
-    height: 1000px;
-    width: 110%;
-    }
-        .ImgSobre{
-    position: absolute;
-    margin-left: 60%;
-    margin-top: -30%;
-    z-index: 2;
-    width: 750px;
-}
-        .title {
-    color: white;
-    font-size: 10rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    margin-left: 5%;
-    font-family: Verdana;
-    margin-top: 3%;
-}
-
-.paragrafo {
-    color: white;
-    font-size: 4rem;
-    line-height: 1.8;
-    max-width: 1400px;
-    font-family: Verdana;
-    margin-left: 5%;
-}
-.Rosa{
-    position: absolute;
-    margin-left: 65%;
-    z-index: 3;
-    margin-top: -29%;
-    animation: rosa 3s ease-in-out infinite;
-    width: 200px;
-}
-@keyframes rosa {
-  100% { transform: translate(-50%, -50%) translateY(0);}
-  0% { transform: translate(-50%, -50%) translateY(0);}
-  50% { transform: translate(-50%, -50%) translateY(8px);}
-  
-}
-.BolinhaSobre{
-    position: absolute;
-    margin-left: 62%;
-    z-index: 1;
-    margin-top: -26%;
-    width: 100px;
-    animation: bolinhasobre 3s ease-in-out infinite;
-}
-@keyframes bolinhasobre {
-  0% { transform: translate(-50%, -50%) translateY(0);}
-  50% { transform: translate(-50%, -50%) translateY(-10px);}
-  100% { transform: translate(-50%, -50%) translateY(0);}
-  
-}
-.Laranja{
-    position: absolute;
-    margin-left: 84%;
-    z-index: 2;
-    margin-top: 5%;
-    animation: laranja 3s ease-in-out infinite;
-    width: 200px;
-}
-@keyframes laranja {
-  0% { transform: translate(-50%, -50%) translateY(0);}
-  50% { transform: translate(-50%, -50%) translateY(-10px);}
-  100% { transform: translate(-50%, -50%) translateY(0);}
-  
-}
-.Azul{
-    position: absolute;
-    margin-left: 86%;
-    z-index: 2;
-    margin-top: 1%;
-    width: 100px;
-    animation: azul 3s ease-in-out infinite;
-}
-@keyframes azul {
-  100% { transform: translate(-50%, -50%) translateY(0);}
-  0% { transform: translate(-50%, -50%) translateY(0);}
-  50% { transform: translate(-50%, -50%) translateY(8px);}
-}
-}
 @media (max-width: 1440px) {
     .Sobre {
     background-color: #421167;
@@ -306,19 +218,20 @@
     color: white;
     font-size: 1.5rem;
     line-height: 1.8;
-    max-width: 500px;
+    max-width: 400px;
     font-family: Verdana;
     margin-left: 5%;
 }
     .ImgSobre{
     position: absolute;
-    margin-left: 50%;
+    margin-left: 45%;
+    margin-top: -35%;
 }
     .Rosa{
     position: absolute;
-    margin-left: 53%;
+    margin-left: 50%;
     z-index: 3;
-    margin-top: -28%;
+    margin-top: -34%;
     animation: rosa 3s ease-in-out infinite;
     width: 120px;
 }
@@ -330,9 +243,9 @@
 }
 .BolinhaSobre{
     position: absolute;
-    margin-left: 51.5%;
+    margin-left: 46%;
     z-index: 1;
-    margin-top: -22%;
+    margin-top: -28%;
     width: 70px;
     animation: bolinhasobre 3s ease-in-out infinite;
 }
@@ -344,9 +257,9 @@
 }
 .Laranja{
     position: absolute;
-    margin-left: 81%;
+    margin-left: 74%;
     z-index: 2;
-    margin-top: 15%;
+    margin-top: 10%;
     animation: laranja 3s ease-in-out infinite;
     width: 120px;
 }
@@ -358,9 +271,250 @@
 }
 .Azul{
     position: absolute;
-    margin-left: 82%;
+    margin-left: 75%;
     z-index: 2;
-    margin-top: -0.5%;
+    margin-top: 3%;
+    width: 70px;
+    animation: azul 3s ease-in-out infinite;
+}
+@keyframes azul {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+}
+}
+@media (max-width: 768px) {
+    .Sobre {
+    background-color: #421167;
+    position: relative;
+    height: 600px;
+    width: 100%;
+    }
+    .title {
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    margin-left: 5%;
+    font-family: Verdana;
+    margin-top: 3%;
+}
+    .paragrafo {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 400px;
+    font-family: Verdana;
+    margin-left: 5%;
+}
+    .ImgSobre{
+    position: absolute;
+    margin-left: 55%;
+    margin-top: -48%;
+    width: 300px;
+}
+    .Rosa{
+    position: absolute;
+    margin-left: 58%;
+    z-index: 3;
+    margin-top: -51%;
+    animation: rosa 3s ease-in-out infinite;
+    width: 120px;
+}
+@keyframes rosa {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+  
+}
+.BolinhaSobre{
+    position: absolute;
+    margin-left: 57%;
+    z-index: 1;
+    margin-top: -41%;
+    width: 70px;
+    animation: bolinhasobre 3s ease-in-out infinite;
+}
+@keyframes bolinhasobre {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Laranja{
+    display: none;
+}
+@keyframes laranja {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Azul{
+    position: absolute;
+    margin-left: 88%;
+    z-index: 2;
+    margin-top: 3%;
+    width: 70px;
+    animation: azul 3s ease-in-out infinite;
+}
+@keyframes azul {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+}
+}
+@media (max-width: 425px) {
+    .Sobre {
+    background-color: #421167;
+    position: relative;
+    height: 1000px;
+    width: 150%;
+    }
+    .title {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    font-family: Verdana;
+    margin-top: 3%;
+}
+    .paragrafo {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    font-family: Verdana;
+    margin-left: 5%;
+}
+    .ImgSobre{
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 2%;
+}
+    .Rosa{
+    position: absolute;
+    margin-left: 30%;
+    z-index: 1;
+    margin-top: 6%;
+    width: 100px;
+    animation: rosa 3s ease-in-out infinite;
+}
+@keyframes rosa {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+  
+}
+.BolinhaSobre{
+    position: absolute;
+    margin-left: 25%;
+    z-index: 1;
+    margin-top: 18%;
+    width: 70px;
+    animation: bolinhasobre 3s ease-in-out infinite;
+}
+@keyframes bolinhasobre {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Laranja{
+    display: none;
+}
+@keyframes laranja {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Azul{
+    position: absolute;
+    margin-left: 65%;
+    z-index: 2;
+    margin-top: 63%;
+    width: 70px;
+    animation: azul 3s ease-in-out infinite;
+}
+@keyframes azul {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+}
+}
+@media (max-width: 375px) {
+    .Sobre {
+    background-color: #421167;
+    position: relative;
+    height: 1170px;
+    width: 150%;
+    }
+    .title {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    font-family: Verdana;
+    margin-top: 3%;
+}
+    .paragrafo {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    font-family: Verdana;
+    margin-left: 5%;
+}
+    .ImgSobre{
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 2%;
+}
+    .Rosa{
+    position: absolute;
+    margin-left: 30%;
+    z-index: 1;
+    margin-top: 6%;
+    width: 100px;
+    animation: rosa 3s ease-in-out infinite;
+}
+@keyframes rosa {
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(8px);}
+  
+}
+.BolinhaSobre{
+    position: absolute;
+    margin-left: 25%;
+    z-index: 1;
+    margin-top: 25%;
+    width: 70px;
+    animation: bolinhasobre 3s ease-in-out infinite;
+}
+@keyframes bolinhasobre {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Laranja{
+    display: none;
+}
+@keyframes laranja {
+  0% { transform: translate(-50%, -50%) translateY(0);}
+  50% { transform: translate(-50%, -50%) translateY(-10px);}
+  100% { transform: translate(-50%, -50%) translateY(0);}
+  
+}
+.Azul{
+    position: absolute;
+    margin-left: 65%;
+    z-index: 2;
+    margin-top: 63%;
     width: 70px;
     animation: azul 3s ease-in-out infinite;
 }
