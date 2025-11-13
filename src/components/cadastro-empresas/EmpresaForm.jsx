@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from './css/empresaForm.module.css'
+import Styles from './css/EmpresaForm.module.css'
 
 const EmpresaForm = () => {
   return (
