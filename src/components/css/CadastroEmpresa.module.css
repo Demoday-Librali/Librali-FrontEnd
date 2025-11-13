@@ -57,3 +57,7 @@
     border-radius: 7px;
     font-size: 25px;
 }
+#voltar {
+    margin-right: 10px;
+    margin-left: -10px;
+}

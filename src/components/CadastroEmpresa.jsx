@@ -30,7 +30,7 @@ function CadastroEmpresa() {
                     <div className={Styles.actions}>
                 
                         {!isFirstStep && (
-                            <button type="button" className={Styles.botao} onClick={() => changeStep(currentStep - 1)}>
+                            <button type="button" className={Styles.botao} id={Styles.voltar} onClick={() => changeStep(currentStep - 1)}>
                                 <span>Voltar</span>
                             </button>
                             )}
