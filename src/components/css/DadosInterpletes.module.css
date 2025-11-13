@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Reset */
+.pageWrapper {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* Reduzi o padding externo para o cartão chegar mais perto da borda */
+    padding: 20px; 
+    background: linear-gradient(to bottom, #fff 0%, #f5f5fa 100%);
+}
+
+/* --- MUDANÇA PRINCIPAL: LARGURA --- */
+.profileCard {
+    background: #fff;
+    /* Agora ele tenta ocupar 100% do espaço disponível, com limite apenas em telas gigantescas (1800px) */
+    width: 100%;
+    max-width: 1800px; 
+    border-radius: 20px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+/* Banner Bem Alto */
+.banner {
+    height: 220px; /* Aumentado para ficar proporcional */
+    background-color: #f2f2f2;
+    background-image: linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee), 
+    linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-family: serif;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+/* Header do Perfil */
+.profileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 4rem; /* Bastante espaço nas laterais */
+    margin-top: -80px; /* Avatar sobe mais */
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.avatarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Avatar Super Gigante */
+.avatarCircle {
+    width: 160px; /* Bem grande */
+    height: 160px;
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid #5c2d91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.editIconSmall {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.editLink {
+    font-size: 1.1rem;
+    color: #5c2d91;
+    text-decoration: underline;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.statsSection {
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    font-weight: 600;
+    font-size: 1.3rem; /* Fonte maior */
+}
+
+.stars {
+    color: #f4c542;
+    font-size: 1.4rem;
+}
+
+.servicesCount {
+    font-size: 1.2rem;
+    color: #5c2d91;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0 4rem 3rem 4rem;
+}
+
+/* Grid Principal */
+.infoGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Coluna da esquerda um pouco mais larga */
+    gap: 3rem;
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.leftColumn, .rightColumn {
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 2.5rem;
+    min-height: 350px;
+}
+
+.sectionTitle, .sectionTitlePurple {
+    color: #5c2d91;
+    font-size: 1.6rem; /* Títulos grandes */
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.subText {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.experienceText {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #444;
+}
+
+.formationList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.camIcon {
+    font-size: 1.4rem;
+}
+
+.btnEditOutline {
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    background: transparent;
+    border: 2px solid #a08ec2;
+    color: #5c2d91;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btnEditOutline:hover {
+    background: #eeeaf6;
+}
+
+/* Biografia */
+.bioSection {
+    margin: 0 4rem 3rem 4rem;
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.bioContent p {
+    font-size: 1.2rem; /* Texto de leitura maior */
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+.rightAlignBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Serviços Anteriores */
+.servicesSection {
+    margin: 0 4rem 2rem 4rem;
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.serviceItem {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.serviceLogoContainer {
+    width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.logoCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoRect {
+    width: 65px;
+    height: 35px;
+    border-radius: 18px;
+}
+
+.logoProa svg {
+    stroke: #2d4d91;
+    width: 40px;
+    height: 40px;
+}
+.logoOracle {
+    border: 5px solid #d93025;
+    background: transparent;
+}
+
+.serviceText h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: #5c2d91;
+    font-weight: 700;
+}
+
+.serviceText p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Ajustes para telas menores para não quebrar */
+@media (max-width: 1024px) {
+    .profileHeader, .infoGrid, .bioSection, .servicesSection, .divider {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .infoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating, .statsSection {
+        justify-content: flex-start;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .profileHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
