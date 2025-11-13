@@ -57,3 +57,28 @@
 #uf {
     width: 53px;
 }
+
+@media (max-width: 425px) {
+    #superior {
+        width: 310px;
+    }
+    #meio {
+        width: 310px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 46px;
+    }
+
+
+    #rua {
+        width: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+}

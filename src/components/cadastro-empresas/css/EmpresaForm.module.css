@@ -37,3 +37,12 @@
     width: 154px;
     height: 40px;
 }
+
+@media (max-width: 375px) {
+    .senhas {
+        width: 270px;
+    }
+    #form_senha {
+        width: 120px;
+    }
+}

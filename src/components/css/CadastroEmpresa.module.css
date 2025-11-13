@@ -12,7 +12,6 @@
 .form_container {
     width: 50%;
     height: 483px;
-    background-color: #cf1919;
     border-radius: 16px;
     display: flex;
     flex-direction: row;
@@ -60,4 +59,35 @@
 #voltar {
     margin-right: 10px;
     margin-left: -10px;
+}
+
+@media (max-width: 1024px) {
+    .container_cadastro {
+        margin-bottom: 40px;
+        height: 700px;
+    }
+    .form_container {
+        width: 78%;
+    }
+    .conteudo_esquerda {
+        width: 100%;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    .conteudo_esquerda input {
+        width: 310px;
+    }
+    .conteudo_direito {
+        display: none;
+    }
+    .botao {
+        width: 150px;
+        height: 41px;
+    }
+}
+
+@media (max-width: 375px) {
+    .conteudo_esquerda input {
+        width: 270px;
+    }
 }
