@@ -1,9 +1,25 @@
 import React from 'react'
 
+
 const EmpresaForm = () => {
   return (
     <div>
-        <h2>Cadastro de empresa perfil</h2>
+        <div className='form-control'>
+            <input
+             type="text" 
+             name='name' 
+             id='name' 
+             placeholder='Digite seu nome' 
+             required/>
+        </div>
+        <div className='form-control'>
+            <input
+             type="email" 
+             name='email' 
+             id='email' 
+             placeholder='Digite seu e-mail' 
+             required/>
+        </div>
     </div>
   )
 }

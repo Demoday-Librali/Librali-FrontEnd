@@ -15,6 +15,7 @@ export function empresaForm(steps) {
         currentStep,
         currentComponent: steps[currentStep],
         changeStep,
-        isLastStap: currentStep + 1 === steps.length ? true : false,
+        isLastStep: currentStep + 1 === steps.length ? true : false,
+        isFirstStep: currentStep === 0 ? true : false
     };
 }

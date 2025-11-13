@@ -21,7 +21,10 @@
 }
 
 .esquerdo {
-    background-color: #EEEDE9;
+    background-image: url(../../assets/images/sinal-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 45%;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
