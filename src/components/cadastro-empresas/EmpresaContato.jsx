@@ -1,0 +1,44 @@
+import React from 'react'
+import Styles from './css/EmpresaContato.module.css'
+
+function EmpresaContato() {
+  return (
+    <div className={Styles.empresa}>
+            <h1>Cadastro Empresas</h1>
+            <div className={Styles.form_control}>
+                <input
+                 type="email" 
+                 name='email' 
+                 id='email' 
+                 placeholder='e-mail' 
+                 />
+            </div>
+            <div className={Styles.form_control}>
+                <input
+                 type="tel" 
+                 name='phone' 
+                 id='phone' 
+                 placeholder='Telefone comercial' 
+                 />
+            </div>
+            <div className={Styles.form_control}>
+                <input
+                 type="tel" 
+                 name='cel' 
+                 id='cel' 
+                 placeholder='Telefone celular' 
+                 />
+            </div>
+              <div className={Styles.form_control}>
+                  <input
+                   type="url"
+                   name='site'
+                   id='site'
+                   placeholder='Site da empresa'
+                   />
+              </div>
+        </div>
+  )
+}
+
+export default EmpresaContato

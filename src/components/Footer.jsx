@@ -28,6 +28,8 @@ function Footer() {
                     <h3>Ferramentas</h3>
                     <Link to="#">Agendamento</Link>
                     <Link to="#">IA</Link>
+                    <Link to="/dadosempresa">Dados Empresa (Apenas para visualizar)</Link>
+                    <Link to="/dados-interpretes">Dados Interplétes (Apenas para visualizar)</Link>
                 </div>
             </div>
             {/* Aqui termina os links do footer */}

@@ -14,3 +14,50 @@ body{
     overflow-x: hidden;
 }
 /* Aqui termina a config padrão do site */
+/*Botão Acessibilidade*/
+.leitor-controles {
+    width: 120px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 80px;
+    font-family: var(--fonte-poppins);
+    right: 22px;
+    z-index: 11000;
+}
+
+.leitor-controles.ativo {
+    display: flex;
+    z-index: 11000;
+}
+
+.leitor-btn {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 11000;
+}
+
+.leitor-btn:hover {
+    background: #333;
+    z-index: 11000;
+}
+
+.leitor-toggle {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    font-family: var(--fonte-poppins);
+    right: 20px;
+    z-index: 11000;
+}

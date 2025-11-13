@@ -6,7 +6,7 @@ export default function Login() {
         <div className={Styles.container_login}>
                 <div className={Styles.content}>
                     <div className={Styles.esquerdo}>
-                        imagem
+                        {/*Imagem de login*/}
                     </div>
                     <div className={Styles.direito}>
                         <h1 id={Styles.login_titulo}>Login</h1>

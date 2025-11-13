@@ -8,7 +8,7 @@ footer{
 }
 .logo_footer img{
     position: relative;
-    margin-top: 23%;
+    margin-top: 26%;
     left: 5%;
     width: 400px;
 }
@@ -19,7 +19,7 @@ footer{
     align-items: center;
     gap: 200px;
     font-size: 1.5rem;
-    left: 10%;
+    left: 6%;
     top: 10%;
 }
 .Mapa{
@@ -38,8 +38,8 @@ footer a {
 }
 .contator_footer{
     font-size: 1.5rem;
-    margin-left: 75%;
-    margin-top: -3%;
+    margin-left: 70%;
+    margin-top: -2%;
 }
 .contator_footer h3{
     display: flex;
@@ -49,7 +49,7 @@ footer a {
     justify-content: space-around;
     align-items: center;
     width: 350px;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 .meio{
     margin: 0 auto;

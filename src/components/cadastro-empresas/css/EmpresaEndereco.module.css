@@ -1,0 +1,84 @@
+.empresa {
+    height: 280px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.empresa h1 {
+    color: #49038A;
+    font-size: 32px;
+    align-self: center;
+}
+
+.form_control input{
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+.form_control input::placeholder {
+    color: #49038A;
+}
+
+#superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#cep {
+    width: 108px;
+}
+
+#numero {
+    width: 64px;
+}
+
+#complemento {
+    width: 118px;
+}
+
+#meio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rua {
+    width: 260px;
+}
+
+#uf {
+    width: 53px;
+}
+
+@media (max-width: 425px) {
+    #superior {
+        width: 310px;
+    }
+    #meio {
+        width: 310px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 46px;
+    }
+
+
+    #rua {
+        width: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+}

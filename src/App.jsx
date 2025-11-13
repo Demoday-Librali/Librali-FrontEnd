@@ -17,10 +17,15 @@ import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx"
+import Lara from "./components/Lara.jsx";
+import DadosEmpresa from "./components/DadosEmpresa.jsx";
+import CadastroEmpresa from './components/CadastroEmpresa.jsx'
+import DadosInterpletes from './components/DadosInterpletes.jsx';
+
 
 
 function App() {
-  return (
+  return (    
     <Router>
       <ScrollToTop />
       <Header />
@@ -47,6 +52,13 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/assistente" element={<Lara />} />
+        
+        <Route path="/dadosempresa" element={<DadosEmpresa />} />
+
+        <Route path='/empresa' element={<CadastroEmpresa />} />
+
+        <Route path="/dados-interpretes" element={<DadosInterpletes />} />
+
       </Routes>
 
       <Footer />
