@@ -24,3 +24,36 @@
 .form_control input::placeholder {
     color: #49038A;
 }
+
+#superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#cep {
+    width: 108px;
+}
+
+#numero {
+    width: 64px;
+}
+
+#complemento {
+    width: 118px;
+}
+
+#meio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rua {
+    width: 260px;
+}
+
+#uf {
+    width: 53px;
+}
