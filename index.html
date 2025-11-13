@@ -13,29 +13,15 @@
   <body>
     <div id="root"></div> 
 
-     <!-- Botão de acessibilidade --> 
-     <div class="leitor-tela-container"> 
-        <button id="abrirLeitor" class="leitor-toggle">🔊 Leitor de Tela</button> 
-        <div class="leitor-controles"> 
-            <button id="lerPagina" class="leitor-btn">▶️ Ler página</button> 
-            <button id="pausarAudio" class="leitor-btn">⏸ Pausar</button> 
-            <button id="retomarAudio" class="leitor-btn">▶️ Retomar</button> 
-        </div> 
-     </div> 
-<!-- Fim do botão de acessibilidade -->
-
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <script type="module" src="/src/main.jsx"></script>
-    <!-- import do js de acessibilidade -->
+    <div class="leitor-tela-container"> 
+      <button id="abrirLeitor" class="leitor-toggle"> Leitor de Tela</button> 
+      <div class="leitor-controles"> 
+          <button id="lerPagina" class="leitor-btn">Ler página</button> 
+          <button id="pausarAudio" class="leitor-btn"> Pausar</button> 
+          <button id="retomarAudio" class="leitor-btn"> Retomar</button> 
+      </div> 
+    </div> 
+<script type="module" src="/src/main.jsx"></script>
     <script src="/index.js"></script>
   </body>
 </html>

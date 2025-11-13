@@ -51,7 +51,9 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    font-weight: 550;
+  }
+
 nav a:hover{
     color: #381A72;
     transform: scale(1.1);
