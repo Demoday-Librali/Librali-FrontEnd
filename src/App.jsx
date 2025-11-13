@@ -17,10 +17,9 @@ import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx"
-import Lara from "./components/Lara.jsx";
-import DadosEmpresa from "./components/DadosEmpresa.jsx";
+import DadosEmpresa from "./components/DadosEmpresa.jsx"
 import CadastroEmpresa from './components/CadastroEmpresa.jsx'
-import DadosInterpletes from './components/DadosInterpletes.jsx';
+import DadosInterpletes from './components/DadosInterpletes.jsx'
 
 
 
