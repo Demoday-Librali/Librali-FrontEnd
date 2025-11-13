@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-/* Reset */
+/* =========================================
+   ESTILOS GERAIS (BASE / DESKTOP GIGANTE)
+   ========================================= */
+
 .pageWrapper {
     font-family: 'Inter', sans-serif;
     background-color: #fcfcfc;
@@ -14,27 +17,25 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    /* Reduzi o padding externo para o cartão chegar mais perto da borda */
     padding: 20px; 
     background: linear-gradient(to bottom, #fff 0%, #f5f5fa 100%);
 }
 
-/* --- MUDANÇA PRINCIPAL: LARGURA --- */
+/* Cartão "Tela Cheia" */
 .profileCard {
     background: #fff;
-    /* Agora ele tenta ocupar 100% do espaço disponível, com limite apenas em telas gigantescas (1800px) */
     width: 100%;
-    max-width: 1800px; 
-    border-radius: 20px; /* Bordas mais arredondadas */
+    max-width: 1800px; /* Limite apenas em telas 4K */
+    border-radius: 20px;
     box-shadow: 0 8px 40px rgba(0,0,0,0.08);
     border: 1px solid #e0e0e0;
     padding-bottom: 4rem;
     overflow: hidden;
 }
 
-/* Banner Bem Alto */
+/* Banner */
 .banner {
-    height: 220px; /* Aumentado para ficar proporcional */
+    height: 220px;
     background-color: #f2f2f2;
     background-image: linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee), 
     linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee);
@@ -49,13 +50,13 @@
     position: relative;
 }
 
-/* Header do Perfil */
+/* Header (Avatar + Stats) */
 .profileHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 4rem; /* Bastante espaço nas laterais */
-    margin-top: -80px; /* Avatar sobe mais */
+    padding: 0 4rem;
+    margin-top: -80px;
     position: relative;
     margin-bottom: 2rem;
 }
@@ -67,9 +68,8 @@
     gap: 1rem;
 }
 
-/* Avatar Super Gigante */
 .avatarCircle {
-    width: 160px; /* Bem grande */
+    width: 160px;
     height: 160px;
     background: #fff;
     border-radius: 50%;
@@ -79,6 +79,7 @@
     justify-content: center;
     position: relative;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2; /* Garante que fique acima de tudo */
 }
 
 .editIconSmall {
@@ -92,6 +93,9 @@
     height: 40px;
     cursor: pointer;
     font-size: 1.2rem;
+    display: flex; /* Centralizar ícone */
+    align-items: center;
+    justify-content: center;
 }
 
 .editLink {
@@ -113,7 +117,7 @@
     justify-content: flex-end;
     gap: 0.8rem;
     font-weight: 600;
-    font-size: 1.3rem; /* Fonte maior */
+    font-size: 1.3rem;
 }
 
 .stars {
@@ -126,6 +130,7 @@
     color: #5c2d91;
     font-weight: 700;
     margin-top: 8px;
+    display: block;
 }
 
 .divider {
@@ -138,7 +143,7 @@
 /* Grid Principal */
 .infoGrid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; /* Coluna da esquerda um pouco mais larga */
+    grid-template-columns: 1.5fr 1fr; /* Desktop: 2 colunas */
     gap: 3rem;
     padding: 0 4rem;
     margin-bottom: 3rem;
@@ -153,7 +158,7 @@
 
 .sectionTitle, .sectionTitlePurple {
     color: #5c2d91;
-    font-size: 1.6rem; /* Títulos grandes */
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
@@ -169,6 +174,7 @@
     font-size: 1.1rem;
     line-height: 1.9;
     color: #444;
+    word-wrap: break-word; /* Evita quebra de layout com texto longo */
 }
 
 .formationList li {
@@ -178,10 +184,6 @@
     margin-bottom: 1.2rem;
     font-size: 1.2rem;
     color: #444;
-}
-
-.camIcon {
-    font-size: 1.4rem;
 }
 
 .btnEditOutline {
@@ -203,8 +205,8 @@
     background: #eeeaf6;
 }
 
-/* Biografia */
-.bioSection {
+/* Seções de Texto Corrido */
+.bioSection, .servicesSection {
     margin: 0 4rem 3rem 4rem;
     background: #f5f5f5;
     border-radius: 16px;
@@ -212,7 +214,7 @@
 }
 
 .bioContent p {
-    font-size: 1.2rem; /* Texto de leitura maior */
+    font-size: 1.2rem;
     line-height: 1.8;
     color: #444;
     text-align: justify;
@@ -224,14 +226,7 @@
     width: 100%;
 }
 
-/* Serviços Anteriores */
-.servicesSection {
-    margin: 0 4rem 2rem 4rem;
-    background: #f5f5f5;
-    border-radius: 16px;
-    padding: 2.5rem;
-}
-
+/* Lista de Serviços */
 .servicesList {
     display: flex;
     flex-direction: column;
@@ -249,7 +244,7 @@
 }
 
 .serviceLogoContainer {
-    width: 80px;
+    min-width: 80px; /* Garante que o logo não amasse */
     height: 70px;
     display: flex;
     align-items: center;
@@ -296,7 +291,7 @@
     line-height: 1.4;
 }
 
-/* Ajustes para telas menores para não quebrar */
+/* Tablet (Telas menores que 1024px) */
 @media (max-width: 1024px) {
     .profileHeader, .infoGrid, .bioSection, .servicesSection, .divider {
         padding-left: 2rem;
@@ -304,19 +299,118 @@
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .infoGrid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .sectionTitle, .sectionTitlePurple {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile (Celulares menores que 768px) */
+@media (max-width: 768px) {
+    /* Ajuste do Container Principal */
+    .mainContainer {
+        padding: 10px; /* Menos borda na tela do celular */
+    }
+    
+    .profileCard {
+        padding-bottom: 2rem;
     }
 
-    .rating, .statsSection {
-        justify-content: flex-start;
-        text-align: left;
-        margin-top: 10px;
+    /* Banner menor no celular */
+    .banner {
+        height: 140px;
+        font-size: 1.5rem;
     }
 
+    /* Header empilhado */
     .profileHeader {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Centraliza Avatar */
+        text-align: center;
+        padding: 0 1.5rem;
+        margin-top: -50px;
+        gap: 1rem;
+    }
+
+    /* Ajuste Avatar Mobile */
+    .avatarCircle {
+        width: 110px;
+        height: 110px;
+        border-width: 3px;
+    }
+    
+    .editIconSmall {
+        width: 32px;
+        height: 32px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .editLink {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    /* Stats centralizados */
+    .statsSection {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .rating {
+        justify-content: center; /* Estrelas no meio */
+        font-size: 1rem;
+    }
+
+    /* Transforma Grid em 1 Coluna Só */
+    .infoGrid {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+        gap: 1.5rem;
+    }
+
+    /* Caixas internas */
+    .leftColumn, .rightColumn, .bioSection, .servicesSection {
+        padding: 1.5rem; /* Menos padding interno */
+        min-height: auto;
+    }
+    
+    .bioSection, .servicesSection {
+        margin: 0 1.5rem 2rem 1.5rem;
+    }
+
+    .divider {
+        margin: 0 1.5rem 2rem 1.5rem;
+    }
+
+    /* Ajuste de Fontes Mobile */
+    .sectionTitle, .sectionTitlePurple {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .bioContent p, .experienceText, .formationList li {
+        font-size: 0.95rem; /* Texto legível, mas não gigante */
+    }
+
+    /* Ajuste dos Itens de Serviço */
+    .serviceItem {
+        flex-direction: column; /* Logo em cima, texto embaixo */
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .serviceLogoContainer {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .serviceText h3 {
+        font-size: 1.1rem;
     }
 }
