@@ -90,7 +90,7 @@ function Sobre(){
                             <div className={Style.flip_card_inner}>
                                 <div className={Style.flip_card_front}>
                                     <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
-                                    <img className={Style.Img_Arthur} src={Arthur} alt="Arthur"/>
+                                    <img className={Style.Img_Arthur} src={Arthur} alt="Arthur é um homem pardo de 18 anos, com estratura baixa e cabelos escuros e olhos castanhos, vestindo nessa imagem o uniforme do ProaProfissão na cor azul escuro"/>
                                     <h3 className={Style.Nome}>Arthur Aparecido</h3>
                                     <p className={Style.Descricao}>Desenvolvedor Full-Stack</p>
                                 </div>
@@ -185,7 +185,7 @@ function Sobre(){
                             <div className={Style.flip_card_inner}>
                                 <div className={Style.flip_card_front}>
                                     <img className={Style.Fundo_integrante} src={Fundo_integrante} alt="Fundo_integrante"/>
-                                    <img className={Style.Img_Ketlyn} src={Ketlyn} alt="Ketlyn"/>
+                                    <img className={Style.Img_Ketlyn} src={Ketlyn} alt="Ketlyn é uma mulher de 21 anos, pele clara, cabelo escuro e cacheado, olhos castanhos e de estatura baixa. Vestindo nessa imagem o uniforme do ProaProfissão na cor azul escuro."/>
                                     <h3 className={Style.Nome}>Ketlyn</h3>
                                     <p className={Style.Descricao}>Procutc Owner e <br></br>Desenvolvedora Full-Stack</p>
                                 </div>
@@ -193,11 +193,11 @@ function Sobre(){
                                     <h3>Sobre a Ketlyn</h3>
                                     <p>Desenvolvedora Full-Stack com experiência em:</p>
                                     <ul>
-                                        <li>React.js e Next.js</li>
-                                        <li>Node.js e Express</li>
-                                        <li>Banco de dados SQL e NoSQL</li>
-                                        <li>APIs RESTful</li>
-                                        <li>Deploy e DevOps</li>
+                                        <li>UI/UX</li>
+                                        <li>MySQL</li>
+                                        <li>React.js</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
                                     </ul>
                                     <p style={{marginTop: '20px', fontStyle: 'italic'}}>
                                     </p>
