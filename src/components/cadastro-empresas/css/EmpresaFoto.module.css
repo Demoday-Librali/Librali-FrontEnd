@@ -1,0 +1,47 @@
+.empresa {
+    height: 280px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.empresa h1 {
+    color: #49038A;
+    font-size: 32px;
+    align-self: center;
+}
+
+#meio {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+
+.form_control textarea{
+    min-height: 145px;
+    min-width: 243px;
+    max-width: 243px;
+    max-height: 145px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+.form_control textarea::placeholder {
+    color: #49038A;
+}
+
+#imagem_empresa {
+    background-color: aquamarine;
+    width: 149px;
+    height: 145px;
+}
+
+#image {
+    width: 149px;
+    height: 145px;
+}
