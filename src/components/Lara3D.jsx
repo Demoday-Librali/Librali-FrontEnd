@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Laravideo from '../assets/images/video/Lara3D.mp4'
-import { FiSettings, FiBook } from "react-icons/fi"
+import { FiSettings, FiBook, FiX } from "react-icons/fi"
 
 const VLara = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -148,7 +148,7 @@ const VLara = () => {
                 }}
                 title="Fechar"
               >
-                ✕
+                <FiX size={18} color="#FFFAFA" />
               </button>
             </div>
           </div>
@@ -180,7 +180,6 @@ const VLara = () => {
             
           </div>
 
-          {/* BARRA INFERIOR MINIMALISTA */}
            
         </div>
       )}
