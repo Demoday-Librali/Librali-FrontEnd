@@ -10,15 +10,15 @@ const VLara = () => {
 
   return (
     <>
-      {/* BOTÃO FLUTUANTE - IDÊNTICO AO V-LIBRAS */}
+      {/* BOTÃO FLUTUANTE - RESPONSIVO */}
       <div
         onClick={handleClick}
         style={{
           position: 'fixed',
-          bottom: '120px',
-          right: '10px',
-          width: '60px',
-          height: '60px',
+          bottom: 'clamp(80px, 15vh, 120px)', // Responsivo
+          right: 'clamp(10px, 2vw, 20px)',    // Responsivo
+          width: 'clamp(50px, 8vw, 60px)',    // Responsivo
+          height: 'clamp(50px, 8vw, 60px)',   // Responsivo
           backgroundColor: '#CA8BD4',
           borderRadius: '50%',
           display: 'flex',
@@ -26,28 +26,29 @@ const VLara = () => {
           justifyContent: 'center',
           cursor: 'pointer',
           zIndex: 10000,
+          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
         }}
       >
         <img 
           src="/libras.svg"
           alt="VLara - Tradutor de Libras"
           style={{ 
-            width: '30px', 
-            height: '30px',
+            width: 'clamp(25px, 5vw, 30px)',   // Responsivo
+            height: 'clamp(25px, 5vw, 30px)',  // Responsivo
             filter: 'brightness(0) invert(1)'
           }}
         />
       </div>
 
-      {/* MODAL - LAYOUT EXATO V-LIBRAS (SÓ VÍDEO + BARRA SUPERIOR) */}
+      {/* MODAL - RESPONSIVO */}
       {isOpen && (
         <div
           style={{
             position: 'fixed',
-            bottom: '175px',
-            right: '12px',
-            width: '208px',
-            height: '420px',
+            bottom: 'clamp(140px, 25vh, 175px)', // Responsivo
+            right: 'clamp(10px, 2vw, 12px)',     // Responsivo
+            width: 'clamp(180px, 40vw, 208px)',  // Responsivo
+            height: 'clamp(300px, 60vh, 420px)', // Responsivo
             backgroundColor: 'white',
             borderRadius: '8px',
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.15)',
@@ -56,10 +57,12 @@ const VLara = () => {
             flexDirection: 'column',
             border: '1px solid #FFFAFA',
             overflow: 'hidden',
-            fontFamily: 'Segoe UI, Arial, sans-serif'
+            fontFamily: 'Segoe UI, Arial, sans-serif',
+            maxWidth: '90vw', // Não ultrapassa a tela
+            maxHeight: '80vh' // Não ultrapassa a tela
           }}
         >
-          {/* BARRA SUPERIOR - COM ÍCONES DO V-LIBRAS */}
+          {/* BARRA SUPERIOR - CORRIGIDA */}
           <div
             style={{
               padding: '12px 16px',
@@ -68,46 +71,39 @@ const VLara = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              mborderBottom: '1px solid  #A13BB1'
+              borderBottom: '1px solid #A13BB1' // ← CORRIGIDO AQUI
             }}
-                  >
+          >
+            {/* LADO ESQUERDO: ÍCONE LIVRO + NOME LARA */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button
+                onClick={() => alert('Dicionário de libras em desenvolvimento')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  cursor: 'pointer',
+                  padding: '4px',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                title="Dicionário"
+              >
+                <FiBook size={18} color="#FFFAFA" />
+              </button>
 
-                      {/* LADO ESQUERDO: ÍCONE LIVRO + NOME LARA */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-
-                          {/* ÍCONE DO LIVRO */}
-                          <button
-                              onClick={() => alert('Dicionário de libras em desenvolvimento')}
-                              style={{
-                                  background: 'none',
-                                  border: 'none',
-                                  color: 'white',
-                                  cursor: 'pointer',
-                                  padding: '4px',
-                                  borderRadius: '4px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center'
-                              }}
-                              title="Dicionário"
-                          >
-                              <FiBook size={18} color="#FFFAFA" />
-                          </button>
-
-                          {/* NOME LARA */}
-                          <span style={{
-                              fontSize: '14px',
-                              fontWeight: '600',
-                              display: 'flex',
-                              alignItems: 'center',
-                              gap: '6px'
-                          }}>
-                              Lara
-                          </span>
-
-                      </div>
-
-
+              <span style={{
+                fontSize: 'clamp(12px, 3vw, 14px)', // Responsivo
+                fontWeight: '600',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Lara
+              </span>
+            </div>
 
             {/* LADO DIREITO: ÍCONES DE CONFIGURAÇÃO */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -153,7 +149,7 @@ const VLara = () => {
             </div>
           </div>
 
-          {/* ÁREA PRINCIPAL - APENAS O VÍDEO DA LARA */}
+          {/* ÁREA PRINCIPAL - VÍDEO RESPONSIVO */}
           <div
             style={{
               flex: 1,
@@ -162,25 +158,24 @@ const VLara = () => {
               alignItems: 'center',
               justifyContent: 'center',
               position: 'relative',
+              minHeight: '200px' // Altura mínima
             }}
           >
-            {/* VÍDEO DA LARA - USANDO O VÍDEO IMPORTADO */}
             <video
               src={Laravideo}  
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover"
+                objectFit: "cover",
+                minWidth: "100%",
+                minHeight: "100%"
               }}
               autoPlay
               loop
               muted
-              controls={false} // Remove controles do player
+              controls={false}
             />
-            
           </div>
-
-           
         </div>
       )}
     </>
