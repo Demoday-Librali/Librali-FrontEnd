@@ -29,22 +29,24 @@ const EmpresaForm = () => {
              placeholder='CNPJ' 
              />
         </div>
-        <div className={Styles.senhas}>
-          <div className={Styles.form_control}>
-              <input
-               type="password"
-               name='senha'
-               id={Styles.form_senha}
-               placeholder='Senha'
-               />
-          </div>
-          <div className={Styles.form_control}>
-              <input
-               type="password"
-               name='conf_senha'
-               id={Styles.form_senha}
-               placeholder='Confirmar senha'
-               />
+        <div className={Styles.form_control}> 
+          <div className={Styles.senhas}>
+            <div className={Styles.form_control}>
+                <input
+                 type="password"
+                 name='senha'
+                 id={Styles.form_senha}
+                 placeholder='Senha'
+                 />
+            </div>
+            <div className={Styles.form_control}>
+                <input
+                 type="password"
+                 name='conf_senha'
+                 id={Styles.form_senha}
+                 placeholder='Confirmar senha'
+                 />
+            </div>
           </div>
         </div>
     </div>

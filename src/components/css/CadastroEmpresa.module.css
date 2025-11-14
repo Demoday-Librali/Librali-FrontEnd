@@ -87,7 +87,23 @@
 }
 
 @media (max-width: 375px) {
-    .conteudo_esquerda input {
-        width: 270px;
+    .conteudo_esquerda input{
+        width: 200px;        
     }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+    #voltar {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
 }

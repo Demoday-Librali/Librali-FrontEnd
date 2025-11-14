@@ -39,10 +39,26 @@
 }
 
 @media (max-width: 375px) {
+    .empresa h1 {
+        font-size: 28px;
+    }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
     .senhas {
-        width: 270px;
+        width: 225px;
     }
     #form_senha {
-        width: 120px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .empresa h1 {
+        font-size: 22px;
+        margin-top: -10px;
     }
 }

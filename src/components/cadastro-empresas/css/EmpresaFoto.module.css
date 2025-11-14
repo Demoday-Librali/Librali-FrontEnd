@@ -45,3 +45,7 @@
     width: 149px;
     height: 145px;
 }
+
+@media (max-width:425px) {
+
+}

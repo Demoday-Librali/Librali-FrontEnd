@@ -24,3 +24,24 @@
 .form_control input::placeholder {
     color: #49038A;
 }
+
+@media (max-width: 375px) {
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    .empresa h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .empresa h1 {
+        font-size: 22px;
+        margin-top: -10px;
+    }
+}
+
+

@@ -80,5 +80,74 @@
 }
 
 @media (max-width: 375px) {
-    
+    .empresa h1 {
+        font-size: 28px;
+    }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    #superior {
+        width: 280px;
+    }
+    #meio {
+        width: 280px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 40px;
+    }
+
+    #rua {
+        width: 210px;
+    }
+
+    #cidade {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 320px) { 
+    .empresa h1 {
+        font-size: 20px;
+    }
+    .empresa {
+        width: 240px;
+    }
+    .form_control {
+        width: 240px;
+    }
+    #superior {
+        width: 240px;
+    }
+    #meio {
+        width: 240px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 40px;
+    }
+
+    #rua {
+        width: 170px;
+    }
+
+    #cidade {
+        width: 100%;
+    }
+    #complemento {
+        width: 70px;
+    } 
+    #complemento::placeholder {
+        font-size: 9px;
+    }  
 }
