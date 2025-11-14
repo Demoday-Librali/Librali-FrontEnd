@@ -1,22 +1,22 @@
-.footer {
+.rodape {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footerimg {
+.imagem_rodape {
     width: 100%;
     height: 380px; 
 }
 
-.footerimg img {
+.imagem_rodape img {
     width: 100%;
     height: 100%;
     object-fit: cover;   /*Usado o object para ajustar a imagem com mais facilidade, aqui a mesma cobre a div por inteiro*/
     display: block;
 }
 
-.footer_container {
+.container_rodape {
     width: 100%;
     background: #FFFAFA; 
     padding: 5rem 0;
@@ -28,84 +28,84 @@
     align-items: start;
 }
 
-/* Logo Section */
-.logo_section {
+/* Seção da Logo */
+.secao_logo {
     display: flex;
     justify-content: center;
 }
 
-.logo_section img {
+.secao_logo img {
     max-width: 200px;
     height: auto;
 }
 
-.links_section {
+.secao_links {
     display: grid; /*Usado display grid para ajudar na responsividade*/
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.Mapa h3,
-.Ferramentas h3 {
+.mapa_site h3,
+.ferramentas h3 {
     margin-bottom: 1rem;
     color: #1D0B3F;
 }
 
-.Mapa a,
-.Ferramentas a {
+.mapa_site a,
+.ferramentas a {
     display: block;
     margin-bottom: 0.5rem;
     color: #1D0B3F;
     text-decoration: none;
 }
 
-.Mapa a:hover,
-.Ferramentas a:hover {
+.mapa_site a:hover,
+.ferramentas a:hover {
     color: #7c33b3;
 }
 
-.contact_section {
+.secao_contato {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.social_media h3,
-.contact_info h3 {
+.redes_sociais h3,
+.informacoes_contato h3 {
     margin-bottom: 1rem;
     color: #1D0B3F;
 }
 
-.social_links {
+.links_redes {
     display: flex;
     gap: 1rem;
 }
 
-.social_links img {
+.links_redes img {
     width: 24px;
     height: 24px;
     transition: opacity 0.3s ease;
 }
 
-.social_links img:hover {
+.links_redes img:hover {
     opacity: 0.7;
 }
 
-.contact_info h4 {
+.informacoes_contato h4 {
     margin: 0.5rem 0;
     color: #1D0B3F;
 }
 
-.contact_info a {
+.informacoes_contato a {
     color: #7c33b3;
     text-decoration: none;
 }
 
-.contact_info a:hover {
+.informacoes_contato a:hover {
     text-decoration: underline;
 }
 
-.footer_bottom {
+.rodape_inferior {
     padding-top: 1rem;
     margin-top: 1rem;
     display: flex;
@@ -117,47 +117,44 @@
     width: 100%; 
 }
 
-.footer_bottom a {
+.rodape_inferior a {
     color: #1D0B3F;
-    text-decoration: none
+    text-decoration: none;
 }
 
-.footer_bottom a:hover {
+.rodape_inferior a:hover {
     color: #7c33b3;
 }
 
-.footer_bottom p {
+.rodape_inferior p {
     margin: 0; 
     color: #1D0B3F;
     font-size: 0.9rem;
 }
 
-
-
-
 /* Responsividade da página*/
 @media (max-width: 768px) {
-    .footerimg {
+    .imagem_rodape {
         height: 200px; 
     }
     
-    .footer_container {
+    .container_rodape {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
         padding: 2rem 1rem;
     }
 
-    .links_section {
+    .secao_links {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
-    .social_links {
+    .links_redes {
         justify-content: center;
     }
 
-    .footer_bottom {
+    .rodape_inferior {
         gap: 0.75rem; 
     }
 }
