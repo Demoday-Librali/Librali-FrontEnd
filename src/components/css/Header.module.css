@@ -51,7 +51,7 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 550;
+    font-weight: 450;
   }
 
 nav a:hover{

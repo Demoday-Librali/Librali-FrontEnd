@@ -20,6 +20,9 @@ import Lara from "./components/Lara.jsx"
 import DadosEmpresa from "./components/DadosEmpresa.jsx"
 import CadastroEmpresa from './components/CadastroEmpresa.jsx'
 import DadosInterpletes from './components/DadosInterpletes.jsx'
+import Lara3D from "./components/Lara3D.jsx";
+
+
 
 
 
@@ -62,8 +65,7 @@ function App() {
 
       <Footer />
 
-
-
+      <Lara3D />
 
 
     </Router>
