@@ -38,6 +38,7 @@
     height: 40px;
 }
 
+
 @media (max-width: 375px) {
     .empresa h1 {
         font-size: 28px;

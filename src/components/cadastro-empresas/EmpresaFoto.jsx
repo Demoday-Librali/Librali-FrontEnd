@@ -10,7 +10,7 @@ const EmpresaFoto = () => {
               <div className={Styles.form_control}>
                   <div id={Styles.imagem_empresa}>
                     <img src={company} alt="" id={Styles.image}/>
-                      <p>empresa</p>
+                      <p>Imagem da empresa</p>
                   </div>
               </div>
               <div className={Styles.form_control}>

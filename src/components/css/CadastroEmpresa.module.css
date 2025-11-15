@@ -61,13 +61,24 @@
     margin-left: -10px;
 }
 
+@media (max-width: 2560px) {
+    .container_cadastro {
+        height: 1020px;
+        margin-bottom: -0.5px;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .form_container {
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .container_cadastro {
-        margin-bottom: 40px;
-        height: 700px;
-    }
-    .form_container {
-        width: 78%;
+        height: 600px;
     }
     .conteudo_esquerda {
         width: 100%;
@@ -86,7 +97,17 @@
     }
 }
 
+@media (max-width: 425px) {
+    .form_container {
+        width: 96%;
+    }
+}
+
+
 @media (max-width: 375px) {
+    .form_container {
+        width: 85%;
+    }
     .conteudo_esquerda input{
         width: 200px;        
     }

@@ -17,7 +17,6 @@
     width: 450px;
     display: flex;
     flex-direction: row;
-    
     justify-content: space-between;
 }
 
@@ -36,9 +35,19 @@
 }
 
 #imagem_empresa {
-    background-color: aquamarine;
+    color: #49038A;
     width: 149px;
     height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -16px;
+}
+
+#imagem_empresa p{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
 }
 
 #image {
@@ -46,6 +55,72 @@
     height: 145px;
 }
 
-@media (max-width:425px) {
+@media (max-width: 1440px) {
+    #imagem_empresa {
+        margin-top: 1px;
+        margin-bottom: 40px;
+    }
 
+}
+
+@media (max-width:425px) {
+    .empresa {
+        margin-bottom: 80px;
+    }
+    #meio {
+        align-items: center;
+        justify-content: space-around; 
+        width: 400px;
+    }
+    #imagem_empresa {
+        margin-top: 1px;
+        margin-bottom: 16px;
+    }
+
+    .form_control textarea{
+        min-height: 145px;
+        min-width: 149px;
+        max-width: 149px;
+        max-height: 145px;
+    }
+}
+
+@media (max-width:375px) { 
+    .empresa h1 {
+        font-size: 28px;
+    }
+    #meio {
+        flex-direction: column;
+        align-items: center;
+         
+        width: 270px;
+    }
+    #imagem_empresa {
+        width: 130px;
+        height: 130px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+    #imagem_empresa p {
+        font-size: 15px;
+    }
+    #image {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+    }
+    .form_control textarea{
+        min-height: 130px;
+        min-width: 130px;
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .empresa h1 {
+        font-size: 22px;
+        margin-top: -10px;
+    }
 }
