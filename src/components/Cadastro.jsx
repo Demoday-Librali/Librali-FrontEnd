@@ -16,7 +16,7 @@ export default function Cadastro() {
                             <img src={person} alt="" />
                             <p>Pessoa Física</p>
                          </div></Link>
-                         <Link to='/' href="#"><div className={Styles.botao} id={Styles.meio}>
+                         <Link to='/interprete'><div className={Styles.botao} id={Styles.meio}>
                             <img src={hand} alt="" />
                             <p>Intérpretes</p>
                          </div></Link>

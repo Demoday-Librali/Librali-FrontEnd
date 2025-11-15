@@ -19,6 +19,7 @@ import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx"
 import DadosEmpresa from "./components/DadosEmpresa.jsx"
 import CadastroEmpresa from './components/CadastroEmpresa.jsx'
+import CadastroInterprete from './components/CadastroInterprete.jsx'
 import DadosInterpletes from './components/DadosInterpletes.jsx'
 import Lara3D from "./components/Lara3D.jsx";
 
@@ -57,6 +58,7 @@ function App() {
         
         <Route path="/dadosempresa" element={<DadosEmpresa />} />
 
+        <Route path='/interprete' element={<CadastroInterprete />} />
         <Route path='/empresa' element={<CadastroEmpresa />} />
 
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />

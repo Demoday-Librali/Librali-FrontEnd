@@ -1,4 +1,5 @@
 import React from 'react'
+import Styles from './css/CadastroInterprete.module.css'
 
 import InterpretePerfil from './Cadastro-interpretes/InterpretePerfil'
 import InterpretePessoal from './Cadastro-interpretes/InterpretePessoal'
