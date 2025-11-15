@@ -4,7 +4,7 @@ import Styles from './css/InterpretePerfil.module.css'
 const InterpretePerfil = () => {
   return (
     <div className={Styles.interprete}>
-            <h1>Cadastro Interpretes</h1>
+            <h1>Cadastro Intérpretes</h1>
             <div className={Styles.form_control}>
                 <input
                  type="text" 

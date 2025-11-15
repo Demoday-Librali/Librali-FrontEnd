@@ -28,6 +28,7 @@
     border-radius: 8px;
     border: 1px solid #000101;
     padding-left: 10px;
+    margin-top: -25px;
 }
 
 .form_control textarea::placeholder {
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -16px;
+    margin-top: -25px;
 }
 
 #imagem_empresa p{
