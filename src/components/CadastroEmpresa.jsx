@@ -9,6 +9,8 @@ import EmpresaContato from "./cadastro-empresas/EmpresaContato"
 // HOOKS
 import { empresaForm } from "../hooks/empresaForm"
 import Styles from "./css/CadastroEmpresa.module.css"
+import inscricao from '../assets/images/sinal-inscricao.png'
+import bem_vindo from '../assets/images/sinal-bem-vindo.png'
 
 function CadastroEmpresa() {
     const empresaComponents = [
@@ -46,9 +48,13 @@ function CadastroEmpresa() {
                     </div>
                 </form>
             </div>
-            <div className={Styles.conteudo_direito}>
-
-            </div>
+            {!isLastStep ? (
+                <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${inscricao})`}}>
+                </div>
+            ) : (
+                <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${bem_vindo})`}}>
+                </div>
+            ) }
         </div>
     </div>
   )

@@ -5,6 +5,8 @@ import InterpretePerfil from './Cadastro-interpretes/InterpretePerfil'
 import InterpretePessoal from './Cadastro-interpretes/InterpretePessoal'
 import InterpreteContato from './Cadastro-interpretes/InterpreteContato'
 import InterpreteFoto from './Cadastro-interpretes/InterpreteFoto'
+import inscricao from '../assets/images/sinal-inscricao.png'
+import bem_vindo from '../assets/images/sinal-bem-vindo.png'
 
 import { InterpreteForm } from '../hooks/InterpreteForm'
 
@@ -39,13 +41,18 @@ export default function CadastroInterprete() {
                                 <button type="submit" className={Styles.botao}>
                                     <span>Cadastrar</span>
                                 </button>
-                            )}
+                            ) }
+                            
                         </div>
                     </form>
                 </div>
-                <div className={Styles.conteudo_direito}>
-    
-                </div>
+                {!isLastStep ? (
+                    <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${inscricao})`}}>
+                    </div>
+                ) : (
+                    <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${bem_vindo})`}}>
+                    </div>
+                ) }
             </div>
         </div>
   )

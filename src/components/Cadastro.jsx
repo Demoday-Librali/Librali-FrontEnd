@@ -12,7 +12,7 @@ export default function Cadastro() {
                 <div className={Styles.content}>
                     <h1>Tipo de cadastro</h1>
                      <div id={Styles.botoes}>
-                         <Link to='/'><div className={Styles.botao}>
+                         <Link to='/cadastropf'><div className={Styles.botao}>
                             <img src={person} alt="" />
                             <p>Pessoa Física</p>
                          </div></Link>
