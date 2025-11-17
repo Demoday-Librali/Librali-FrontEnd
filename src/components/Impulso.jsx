@@ -29,7 +29,7 @@ function Impulso(){
                 </div>
                 <div className={Style.caixa2}>
                     <p className={Style.plano}>Plano Mãos de Ouro</p>
-                    <h1 className={Style.valor}>R$49,90/mês </h1>
+                    <h1 className={Style.valor}>R$79,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
                     <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios do gratuito.</p>
@@ -43,7 +43,7 @@ function Impulso(){
                 </div>
                 <div className={Style.caixa3}>
                     <p className={Style.plano}>Plano Mãos de Diamente</p>
-                    <h1 className={Style.valor}>R$79,90/mês </h1>
+                    <h1 className={Style.valor}>R$149,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
                     <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios dos planos anteriores.</p>

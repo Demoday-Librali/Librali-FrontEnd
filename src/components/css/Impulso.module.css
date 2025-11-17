@@ -74,7 +74,7 @@
 .caixa1{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 580px;
     margin-bottom: -46%;
     z-index: 2;
     background-color: #fffafa;
@@ -84,7 +84,7 @@
 .caixa2{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 580px;
     margin-bottom: -43%;
     margin-top: -2%;
     z-index: 2;
@@ -95,7 +95,7 @@
 .caixa3{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 580px;
     margin-bottom: -31%;
     z-index: 2;
     background-color: #fffafa;

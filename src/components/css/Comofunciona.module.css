@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #616060;
+    color: #1D0B3F;
     max-width: 600px;
     margin: 0 auto 3rem auto;
 }
@@ -31,6 +31,7 @@
     min-width: 300px;
     max-width: 400px;
     text-align: center;
+    color: #1D0B3F;
 }
 
 .passo1 img, .passo2 img, .passo3 img{
@@ -52,7 +53,7 @@
     color: #421167;
 }
 .passo3 h1{
-    color: #C9038A;
+    color: #82109C;
 }
 
 .passo1 p, .passo2 p, .passo3 p {

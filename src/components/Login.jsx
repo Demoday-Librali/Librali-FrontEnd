@@ -19,7 +19,7 @@ export default function Login() {
 
                         <button id={Styles.btn_logar}>Entrar</button>
 
-                        <p>Não possui conta? <a href="#">Crie aqui!</a></p>
+                        <p>Não possui conta? <Link to="/cadastro">Clique aqui! </Link></p>
                     </div>
                 </div>
         </div>
