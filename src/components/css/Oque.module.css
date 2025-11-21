@@ -976,12 +976,14 @@
   transition: transform 1s ease, opacity 1s ease;
   margin-top: 20%;
   margin-left: -73%;
+  display: none;
 }
 
 /* Quando passar o mouse */
 .direita:hover .paragrafodireita {
   opacity: 1;
   transform: translateX(0); /* entra suavemente da direita pra esquerda */
+  display: block;
 }
 }
 
