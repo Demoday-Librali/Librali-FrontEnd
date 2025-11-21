@@ -1,0 +1,87 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.cadastro h1 {
+    color: #49038A;
+    font-size: 32px;
+}
+
+.form_control input{
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+#meio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#data_nascimento {
+    width: 100%;
+}
+
+#data_nasc {
+    width: 100%;
+}
+
+.form_control input::placeholder {
+    color: #49038A;
+}
+
+.senhas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#form_senha {
+    width: 154px;
+    height: 40px;
+}
+
+
+@media (max-width: 375px) {
+    .cadastro h1 {
+        font-size: 28px;
+    }
+    
+    .form_control input {
+        width: 290px;
+    }
+    .senhas {
+        width: 225px;
+        gap: 40px;
+    }
+    #form_senha {
+        width: 140px;
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .cadastro h1 {
+        font-size: 22px;
+        margin-top: -10px;
+    }
+    .form_control input {
+        width: 260px;
+    }
+    #form_senha {
+        width: 120px;
+        margin-left: -18px;
+    }
+
+}
