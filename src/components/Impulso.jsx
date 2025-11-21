@@ -54,15 +54,15 @@ function Impulso(){
                     <div id={Style.botoa3}>
                     <button id={Style.login3}>Inscrever-se</button>
                     </div>
-                    <button id={Style.Vermais}>Ver mais</button>
+                    
                 </div>
             </div>
             
-            <img src={Visibilidade} id={Style.forma} alt="" />
             <img className={Style.Rosa} src={Rosa} alt=""/>
             <img className={Style.Laranja} src={Laranja} alt=""/>
             <img className={Style.Verde} src={Verde} alt=""/>
             <img className={Style.Azul} src={Azul} alt=""/>
+            <button id={Style.Vermais}>Ver mais</button>
         </div>
         
     )
