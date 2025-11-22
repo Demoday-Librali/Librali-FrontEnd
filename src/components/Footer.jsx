@@ -8,6 +8,7 @@ import YouTube from '../assets/images/You-tube.png'
 import { Link } from 'react-router-dom'
 import FooterImg from '../assets/images/footer.png'
 
+
 function Footer() {
     return (
         <footer className={Style.rodape}>
@@ -33,6 +34,8 @@ function Footer() {
                         <Link to="/">Página Inicial</Link>
                         <Link to="/interpretes">Intérpretes</Link>
                         <Link to="/sobre">Sobre</Link>
+                        <Link to="/PlanoInterprete">Plano Interpretes</Link>
+                        <Link to="/PlanoEmpresa">Plano Empresas</Link>
                     </div>
                     <div className={Style.ferramentas}>
                         <h3>Ferramentas</h3>

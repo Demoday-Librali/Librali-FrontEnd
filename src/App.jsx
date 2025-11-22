@@ -24,7 +24,8 @@ import CadastroPf from './components/CadastroPf.jsx'
 import CadastroOficial from './components/CadastroOficial.jsx'
 import DadosInterpletes from './components/DadosInterpletes.jsx'
 import Lara3D from "./components/Lara3D.jsx";
-
+import PlanoInterprete from './components/PlanoInterprete.jsx'
+import PlanoEmpresa from './components/PlanoEmpresa.jsx'
 
 
 
@@ -56,6 +57,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<CadastroOficial />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/PlanoInterprete" element={<PlanoInterprete />} />
+        <Route path="/PlanoEmpresa" element={<PlanoEmpresa />} />
+        <Route path="/planos/interprete" element={<PlanoInterprete />} />
+        <Route path="/planos/empresa" element={<PlanoEmpresa />} />
+
         <Route path="/assistente" element={<Lara />} />
         
         <Route path="/dadosempresa" element={<DadosEmpresa />} />

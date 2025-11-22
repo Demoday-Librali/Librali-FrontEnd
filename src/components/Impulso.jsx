@@ -6,6 +6,8 @@ import Verde from '../assets/images/verde.png'
 import Azul from '../assets/images/azul.png'
 import Check from '../assets/images/check.png'
 import Checkgif from '../assets/images/video/check.gif'
+import { Link } from "react-router-dom";
+
 
 function Impulso(){
     return(
@@ -62,7 +64,9 @@ function Impulso(){
             <img className={Style.Laranja} src={Laranja} alt=""/>
             <img className={Style.Verde} src={Verde} alt=""/>
             <img className={Style.Azul} src={Azul} alt=""/>
-            <button id={Style.Vermais}>Ver mais</button>
+            <Link to="/PlanoInterprete" className={Style.Vermais}>
+    <p>Ver mais</p>
+</Link>
         </div>
         
     )

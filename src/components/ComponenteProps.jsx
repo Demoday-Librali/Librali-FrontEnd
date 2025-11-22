@@ -1,6 +1,6 @@
 import Style from './css/componenteProps.module.css';
 
-export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete, Footer, ImgSobre, BolinhaSobre, Missao, Visao, Valores, Ods8, Ods10, Ods18, Certo_sobre, Arthur, Cleyton, Gabriel, Gustavo, Ketlyn, Kevin, Mayara, Fundo_integrantes, Github}) {
+export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, YouTube, Educacional, Juridico, Saude, Fundoia, Mulheria, Iconeia, Blocoverde, Categoria, Interprete, Cadastro, Impulso, Rosa, Laranja, Verde, Azul, Fundodepoimento, Cadeado, Check, Checkgif, Fundointerprete, Fundointerprete1, Interpreteuser, Ellipse, Mulherinterprete, Footer, ImgSobre, BolinhaSobre, Missao, Visao, Valores, Ods8, Ods10, Ods18, Certo_sobre, Arthur, Cleyton, Gabriel, Gustavo, Ketlyn, Kevin, Mayara, Fundo_integrantes, Github, Check_roxo_p, Check_verde_p}) {
     return (
         <div className={Style.box}>
             <img src={Logo} alt="Logo da Librali"  className={Style.image_props}/>
@@ -52,6 +52,8 @@ export default function componenteProps({Logo, TikTok, Instagram, X, Facebook, Y
             <img src={Mayara} alt="" className={Style.Mayara}/>
             <img src={Fundo_integrantes} alt="" className={Style.Fundo_integrantes}/>
             <img src={Github} alt="" className={Style.Github}/>
+            <img src={Check_roxo_p} alt="" className={Style.CheckRP}/>
+            <img src={Check_verde_p} alt="" className={Style.CheckVP}/>
         </div>
     )
 }
