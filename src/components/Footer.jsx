@@ -43,6 +43,7 @@ function Footer() {
                         <Link to="#">IA</Link>
                         <Link to="/dadosempresa">Dados Empresa (Apenas para visualizar)</Link>
                         <Link to="/dados-interpretes">Dados Intérpretes (Apenas para visualizar)</Link>
+                        <Link to="/editar-perfil">Editar Perfil (Visualização)</Link>
                     </div>
                 </div>
 

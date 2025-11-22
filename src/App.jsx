@@ -26,8 +26,7 @@ import DadosInterpletes from './components/DadosInterpletes.jsx'
 import Lara3D from "./components/Lara3D.jsx";
 import PlanoInterprete from './components/PlanoInterprete.jsx'
 import PlanoEmpresa from './components/PlanoEmpresa.jsx'
-
-
+import EditProfile from './components/EditProfile.jsx'
 
 
 function App() {
@@ -72,6 +71,7 @@ function App() {
 
 
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />
+        <Route path="/editar-perfil" element={<EditProfile />} />
 
 
       </Routes>
