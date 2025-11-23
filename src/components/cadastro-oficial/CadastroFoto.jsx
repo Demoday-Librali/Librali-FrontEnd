@@ -2,7 +2,7 @@ import React from 'react'
 import Styles from './css/CadastroFoto.module.css'
 import imagem from '../../assets/images/perfilusuario.png'
 
-export default function CadastroFoto() {
+export default function CadastroFoto({data, updateFieldHandler}) {
   return (
     <div className={Styles.cadastro}>
        <h1>Cadastro</h1>
@@ -16,7 +16,7 @@ export default function CadastroFoto() {
                      <div className={Styles.form_control}>
                          <textarea
                           type="text"
-                          name='nome'
+                          name='descricao'
                           id='nome'
                           placeholder='Sua descrição aqui'
                           />

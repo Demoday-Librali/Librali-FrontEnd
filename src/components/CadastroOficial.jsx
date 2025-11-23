@@ -1,3 +1,4 @@
+
 import Styles from './css/CadastroOficial.module.css'
 
 import CadastroPessoal from './cadastro-oficial/CadastroPessoal'
@@ -7,17 +8,48 @@ import CadastroContato from './cadastro-oficial/CadastroContato'
 import Steps from './Steps'
 
 import { cadastroForm } from '../hooks/cadastroForm'
+import { useState } from 'react'
+
 
 import inscricao from '../assets/images/sinal-inscricao.png'
 import bem_vindo from '../assets/images/sinal-bem-vindo.png'
 import logo from '../assets/images/logo-completo.png'
 
+const formTemplate = {
+    nome_razao: '',
+    cpf_cnpj: '',
+    data_nasc:'',
+    email:'',
+    senha: '',
+    conf_senha: '',
+    cep: '',
+    numero: '',
+    complemento: '',
+    rua:'',
+    uf:'',
+    cidade:'',
+    email:'',
+    phone:'',
+    cel:''
+}
+
 function CadastroOficial() {
+    const [data, setData] = useState(formTemplate)
+
+    const updateFieldHandler = (key, value) => {
+        setData((prev) => {
+            return {
+                ...prev,
+                [key]: value
+            }
+        })
+    }
+
     const cadastroComponents = [
-            <CadastroPerfil />,
-            <CadastroPessoal />,
-            <CadastroContato />,
-            <CadastroFoto />
+            <CadastroPerfil data={data} updateFieldHandler={updateFieldHandler} />,
+            <CadastroPessoal data={data} updateFieldHandler={updateFieldHandler}/>,
+            <CadastroContato data={data} updateFieldHandler={updateFieldHandler}/>,
+            <CadastroFoto data={data} />
         ]
     
     const {currentStep, currentComponent, changeStep, isLastStep, isFirstStep} = cadastroForm(cadastroComponents)
