@@ -27,6 +27,7 @@ import Lara3D from "./components/Lara3D.jsx";
 import PlanoInterprete from './components/PlanoInterprete.jsx'
 import PlanoEmpresa from './components/PlanoEmpresa.jsx'
 import EditProfile from './components/EditProfile.jsx'
+import AlterarCadastroEmpresas from './components/AlterarCadastroEmpresas.jsx' /*Mexi aqui*/
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
 
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />
         <Route path="/editar-perfil" element={<EditProfile />} />
+        <Route path="/editar-empresa" element={<AlterarCadastroEmpresas />} />  {/*Mexi aqui*/}
 
 
       </Routes>

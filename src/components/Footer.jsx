@@ -44,6 +44,7 @@ function Footer() {
                         <Link to="/dadosempresa">Dados Empresa (Apenas para visualizar)</Link>
                         <Link to="/dados-interpretes">Dados Intérpretes (Apenas para visualizar)</Link>
                         <Link to="/editar-perfil">Editar Perfil (Visualização)</Link>
+                        <Link to="/editar-empresa">Alterar Cadastro Empresa (Visualização)</Link> {/*Mexi aqui*/}
                     </div>
                 </div>
 
