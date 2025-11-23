@@ -1,0 +1,61 @@
+.steps {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto ;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.steps::after {
+    content: '';
+    width: 380px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 27px;
+}
+
+.step {
+    text-align: center;
+    background-color: #FFFAFA;
+    z-index: 1;
+    width: 120px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+ 
+#internop {
+    font-size: 14px;
+    color: #454545;
+    transition: all 0.3s ease;
+}
+
+.step svg {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #49038A;
+    border: 1px solid #49038A;
+}
+
+.active {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.active > svg {
+    fill: #FFFAFA;
+    background-color: #49038A;
+    transition: all 0.3s ease;
+}
+
+.active > #internop {
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}

@@ -38,6 +38,16 @@
     background-repeat: no-repeat;
     background-position: 40%;
     border-radius: 0px 16px 16px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.conteudo_direito img {
+    width: 140px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .actions {
