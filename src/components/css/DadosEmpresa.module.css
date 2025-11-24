@@ -213,7 +213,7 @@ p{
 
 .bloco button {
     margin-top: 50px;
-    margin-left: 130px;
+    align-items: center;
 }
 
 .conteudo_unico{
