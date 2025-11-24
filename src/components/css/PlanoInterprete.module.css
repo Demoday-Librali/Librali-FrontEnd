@@ -94,6 +94,9 @@
 .MaosDeOuro h2{
   color: white;
 }
+.MaosDeOuro .valor{
+  color: #A5F391;
+}
 .MaosDeOuro p{
   margin-left: 26%;
   color: white;
@@ -175,4 +178,51 @@
   margin-top: 10%;
   margin-bottom: 10%;
   font-size: 1.5rem;
+}
+@media (width: 1440px){
+  .beneficios p{
+    width: 350px;
+  }
+  .selecionar{
+    width: 400px;
+  }
+}
+@media (width: 1024px){
+  .beneficios p{
+    width: 250px;
+  }
+  .Planos{
+    height: 1700px;
+  }
+  .selecionar{
+    width: 250px;
+  }
+  .MaosDePrata{
+  position: relative;
+  width: 33.3%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.MaosDePrata h2{
+  width: 280px;
+  text-align: center;
+  align-items: center;
+}
+.MaosDePrata .valor{
+  margin-left: 20%;
+}
+.MaosDePrata p {
+  margin-left: 25.5%;
+}
+.MaosDeOuro h2{
+  width: 280px;
+  text-align: center;
+  align-items: center;
+}
+.MaosDeOuro .valor{
+  margin-left: 20%;
+}
+.MaosDeOuro p {
+  margin-left: 25.5%;
+}
 }

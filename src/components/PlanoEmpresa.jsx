@@ -71,7 +71,7 @@ function PlanoEmpresa() {
 
                 <div className={Style.MaosDeDiamantes}>
                     <h2 className={Style.titleP}>Impactar</h2>
-                    <p className={Style.valor}>R$ 149,90</p>
+                    <p className={Style.valor}>R$ 999,90</p>
                     <div className={Style.beneficios}>
                         <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Todos os benefícios do Inclusão</p>
                         <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Prioridade na recomendação de intérpretes mais ativos</p>
