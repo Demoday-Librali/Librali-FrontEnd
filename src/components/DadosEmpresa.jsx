@@ -32,7 +32,7 @@ function DadosEmpresa() {
                         <h3>Contato</h3>
                         <div><img src={Telefone} alt="Icone de telefone" /> 
                         <p>(11) 3333-3333</p></div>
-                        <div><img src={Email} alt="Icone de carta" /> <p>libraliproa@gmail.com</p></div>
+                        <div className={Styles.email_mobile}><img src={Email} alt="Icone de carta" /> <p>libraliproa@gmail.com</p></div>
                     </div>
 
 
@@ -53,9 +53,10 @@ function DadosEmpresa() {
                 </section>
             
 
+                        <button className={Styles.botao_editar}> Editar </button>
             </section>
 
-                <button className={Styles.botao_editar}> Editar </button>
+                
 
             {/*Segundo Bloco*/}
             <section className={Styles.bloco}>
@@ -65,12 +66,13 @@ function DadosEmpresa() {
                         <h3>Sobre</h3>
                         <p>Uma descrição da empresa é o ato de expor as características e os detalhes da empresa ou ideia, seja de forma oral, escrita ou imagética. Seu objetivo é tornar algo visível e dar a entender como aquilo é, detalhando suas propriedades.</p>
                     </div>
-
                 </section>            
 
+
+                <button className={Styles.botao_editar_segundo}> Editar </button>
             </section>
 
-                <button className={Styles.botao_editar}> Editar </button>
+                
 
         </section>
 
