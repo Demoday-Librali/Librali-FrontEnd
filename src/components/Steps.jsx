@@ -8,7 +8,7 @@ import './css/Steps.css'
 const Steps = ({currentStep}) => {
   return (
     <div className="steps">
-        <div className='step active'>
+        <div className='step active' id='first'>
           <FaUser />
             <p id="internop">Perfil</p>
         </div>
@@ -20,7 +20,7 @@ const Steps = ({currentStep}) => {
             <IoIosMail />
             <p id="internop">Contato</p>
         </div>
-        <div className={`step ${currentStep >=3 ? 'active' : ''}`}>
+        <div className={`step ${currentStep >=3 ? 'active' : ''}`} id='last'>
             <AiFillPicture />
             <p id="internop">Foto</p>
         </div>

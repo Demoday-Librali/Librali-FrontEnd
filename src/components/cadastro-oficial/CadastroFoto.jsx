@@ -5,7 +5,6 @@ import imagem from '../../assets/images/perfilusuario.png'
 export default function CadastroFoto({data, updateFieldHandler}) {
   return (
     <div className={Styles.cadastro}>
-       <h1>Cadastro</h1>
                    <div id={Styles.meio}>
                      <div className={Styles.form_control}>
                          <div id={Styles.imagem_cadastro}>

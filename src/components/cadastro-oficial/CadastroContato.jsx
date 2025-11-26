@@ -4,7 +4,6 @@ import Styles from './css/CadastroContato.module.css'
 export default function CadastroContato({data, updateFieldHandler}) {
   return (
     <div className={Styles.cadastro}>
-                <h1>Cadastro</h1>
                 <div className={Styles.form_control}>
                     <input
                      type="email" 

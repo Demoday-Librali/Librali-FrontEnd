@@ -41,7 +41,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
 
   return (
     <div className={Styles.cadastro}>
-                    <h1>Cadastro</h1>
+              
                     <div id={Styles.superior}>
                       <div className={Styles.form_control}>
                           <input

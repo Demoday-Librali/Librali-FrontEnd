@@ -5,7 +5,7 @@ import Steps from '../Steps'
 const CadastroPerfil = ({data, updateFieldHandler}) => {
   return (
     <div className={Styles.cadastro}>
-            <h1>Cadastro</h1>
+            
             <div className={Styles.form_control}>
                 <input
                  type="text" 

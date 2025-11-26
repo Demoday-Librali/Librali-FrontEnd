@@ -1,16 +1,10 @@
 .cadastro {
-    height: 280px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.cadastro h1 {
-    color: #49038A;
-    font-size: 32px;
-    align-self: center;
+    gap: 10px;
 }
 
 .form_control input{
@@ -26,22 +20,20 @@
 }
 
 @media (max-width: 375px) {
+    .cadastro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
     .form_control {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 280px;
     }
-    .cadastro h1 {
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 320px) { 
-    .cadastro h1 {
-        font-size: 22px;
-        margin-top: -10px;
-    }
     .form_control {
         width: 240px;
     }

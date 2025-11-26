@@ -1,16 +1,9 @@
 .cadastro {
-    height: 280px;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 25px;
     margin-bottom: 20px;
-}
-
-.cadastro h1 {
-    color: #49038A;
-    font-size: 32px;
-    align-self: center;
 }
 
 #meio {
@@ -71,9 +64,6 @@
 }
 
 @media (max-width:425px) {
-    .cadastro {
-        margin-bottom: 80px;
-    }
     #meio {
         align-items: center;
         justify-content: space-around; 
@@ -92,21 +82,19 @@
 }
 
 @media (max-width:375px) { 
-    .cadastro h1 {
-        font-size: 28px;
+    .cadastro {
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     #meio {
         flex-direction: column;
         align-items: center;
-         
-        width: 270px;
+        width: 210px;
     }
     #imagem_cadastro {
         width: 130px;
         height: 130px;
-        margin-top: 20px;
         margin-bottom: 10px;
-        
     }
     #imagem_cadastro p {
         font-size: 15px;
@@ -118,21 +106,18 @@
     }
     .form_control textarea{
         min-height: 130px;
-        min-width: 130px;
-        max-width: 130px;
+        min-width: 170px;
+        max-width: 170px;
         max-height: 130px;
+        margin-bottom: -30px;
     }
 }
 
 @media (max-width: 320px) { 
-    .cadastro h1 {
-        font-size: 22px;
-        margin-top: 10px;
-    }
     .form_control textarea{
         min-height: 150px;
-        min-width: 130px;
-        max-width: 130px;
+        min-width: 170px;
+        max-width: 170px;
         max-height: 150px;
     }
 }

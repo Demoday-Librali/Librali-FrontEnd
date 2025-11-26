@@ -58,6 +58,7 @@ function CadastroOficial() {
     <div className={Styles.container_cadastro}>
         <div className={Styles.form_container}>
             <div className={Styles.conteudo_esquerda}>
+                <h1 id={Styles.titulo}>Cadastro</h1>
                 <Steps currentStep={currentStep} />
                 <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
                     <h1>{currentComponent}</h1>

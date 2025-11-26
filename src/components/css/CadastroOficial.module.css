@@ -9,6 +9,11 @@
     color: white;
 }
 
+#titulo {
+    color: #49038A;
+    font-size: 32px;
+}
+
 .form_container {
     width: 50%;
     height: 483px;
@@ -135,6 +140,9 @@
         margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 10px;
+    }
+    #titulo {
+        font-size: 26px;
     }
     
 }
