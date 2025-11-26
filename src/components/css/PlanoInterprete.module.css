@@ -290,7 +290,7 @@
     flex-direction: column;
   }
   .Selecao {
-  font-size: 0.99rem;
+  font-size: 1rem;
   width: 200px;
 }
   .title{
@@ -382,11 +382,18 @@
   }
 .Termo{
   margin-top: 600%;
+  width: 80%;
 }
 }
 
 
 @media (width: 375px){
+  *{
+    box-sizing: border-box;
+  }
+  html, body{
+    overflow-x: hidden;
+  }
 
   .Planos{
     display: flex;
@@ -409,7 +416,7 @@
     margin-top: 2%;
 }
   .beneficios p{
-    width: 500px;
+    width: 300px;
     font-size: 1.4rem;
   }
   .beneficios{
@@ -488,5 +495,7 @@
   }
 .Termo{
   margin-top: 630%;
+  width: 80%;
+  font-size: 1.5rem;
 }
 }

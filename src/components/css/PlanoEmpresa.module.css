@@ -380,7 +380,7 @@
   font-size: 2rem;
 }
 .MaosDeDiamantes .selecionar{
-    width: 150px;
+    width: 250px;
     font-size: 1.3rem;
     margin-top: 25%;
   }
@@ -391,6 +391,9 @@
 
 
 @media (width: 375px){
+  body{
+    overflow-x: hidden;
+  }
 
   .Planos{
     display: flex;
