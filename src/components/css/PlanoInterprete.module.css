@@ -179,7 +179,7 @@
   margin-bottom: 10%;
   font-size: 1.5rem;
 }
-@media (width: 1440px){
+@media screen and (width: 1440px){
   .beneficios p{
     width: 350px;
   }
@@ -187,7 +187,7 @@
     width: 400px;
   }
 }
-@media (width: 1024px){
+@media screen and (width: 1024px){
   .beneficios p{
     width: 250px;
   }
@@ -226,7 +226,7 @@
   margin-left: 25.5%;
 }
 }
-@media (width: 768px){
+@media screen and (width: 768px){
   .Selecao {
   font-size: 1rem;
   width: 250px;
@@ -283,7 +283,7 @@
   margin-left: 5%;
 }
 }
-@media (width: 425px){
+@media screen and (width: 425px){
 
   .Planos{
     display: flex;
@@ -387,7 +387,7 @@
 }
 
 
-@media (width: 375px){
+@media screen and (width: 375px){
   *{
     box-sizing: border-box;
   }
@@ -500,7 +500,7 @@
 }
 }
 
-@media (width: 320px){
+@media screen and (width: 320px){
   *{
     box-sizing: border-box;
   }
@@ -615,7 +615,7 @@
 
 
 
-@media (width: 300px){
+@media ((min-width: 300px) and (max-width:319px)){
   *{
     box-sizing: border-box;
   }
@@ -633,7 +633,123 @@
 }
   .title{
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+}
+.paragrafo{
+    font-family: Verdana;
+    color: #1D0B3F;
+    font-weight: 200;
+    font-size: 1.4rem;
+    width: 90%;
+    margin-top: 2%;
+}
+  .beneficios p{
+    width: 300px;
+    font-size: 1.4rem;
+  }
+  .beneficios{
+    height: 600px;
+  }
+  .Planos{
+    height: 700px;
+  }
+  .MaosDePrata .selecionar{
+    width: 150px;
+    font-size: 1.3rem;
+    margin-top: -130%;
+  }
+  .MaosDePrata{
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 50px ;
+  border-top-right-radius: 50px;
+  margin-bottom: 50%;
+}
+.MaosDePrata h2{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.MaosDePrata p{
+  width: 70%;
+}
+.MaosDeOuro{
+  width: 100%;
+  height: 2000px;
+  margin-top: -50%;
+  border-radius: 50px;
+}
+.MaosDeOuro h2{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.MaosDeOuro p {
+  margin-left: 25.5%;
+  width: 70%;
+  font-size: 1.4rem;
+}
+.MaosDeOuro .valor{
+  font-size: 2rem;
+}
+.MaosDeOuro .selecionar{
+    width: 150px;
+    font-size: 1.3rem;
+    margin-top: 70%;
+  }
+
+  .MaosDeDiamantes{
+  width: 100%;
+  margin-top: 30%;
+  border-radius: 50px;
+  border: 2px solid #1D0B3F;
+  border-radius: 50px;
+}
+.MaosDeDiamantes h2{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.MaosDeDiamantes p {
+  width: 70%;
+  font-size: 1.4rem;
+}
+.MaosDeDiamantes .valor{
+  font-size: 2rem;
+}
+.MaosDeDiamantes .selecionar{
+    width: 150px;
+    font-size: 1.3rem;
+    margin-top: 55%;
+  }
+.Termo{
+  margin-top: 850%;
+  width: 80%;
+  font-size: 1.5rem;
+}
+}
+
+
+
+@media ((min-width: 299px) and (max-width:200px)){
+  *{
+    box-sizing: border-box;
+  }
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .Planos{
+    display: flex;
+    flex-direction: column;
+  }
+  .Selecao {
+  font-size: 0.99rem;
+  width: 200px;
+}
+  .title{
+    width: 100%;
+    font-size: 1.5rem;
 }
 .paragrafo{
     font-family: Verdana;
