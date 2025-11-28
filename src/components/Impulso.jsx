@@ -40,7 +40,7 @@ function Impulso(){
                     <p><img className={Style.check} src={Check} alt=""/> Benefícios para você.</p>
                     </div>
                     <div id={Style.botoa2}>
-                    <button id={Style.login2}>Inscrever-se</button>
+                    <button id={Style.login2 }>Inscrever-se</button>
                     </div>
                 </div>
                 <div className={Style.caixa3}>

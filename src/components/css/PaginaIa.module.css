@@ -2,8 +2,9 @@
     position: relative; 
     width: 100%;
     min-height: 850px;
-    margin-top: 10%;
+    margin-top: -10%;
     margin-bottom: 10%;
+    overflow: hidden;
 }
 
 .Titulo {
