@@ -1,0 +1,60 @@
+.fundo {
+    background-color: #421167;
+    width: 100%;
+    height: 850px;
+    margin-bottom: 165px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_plano {
+    width: 50%;
+    height: 483px;
+    border-radius: 16px;
+    background-color: #FFFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_plano h1 {
+    font-size: 32px;
+    color: #371970;
+}
+.container_plano p {
+    font-size: 14px;
+}
+
+.planos {
+    background-color: aqua;
+    width: 75%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.plano {
+    border: 1px solid black;
+    width: 33.33%;
+}
+
+#prata p, h2{
+  margin-left: 2.5%;
+}
+
+.titleP{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.valor{
+  font-size: 18px;
+  color: #A13BB1;
+  font-weight: 800;
+}
+.beneficios{
+  position: relative;
+  font-size: 10px;
+}

@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
+import EscolhaPlano from './components/EscolhaPlano.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx"
 import DadosEmpresa from "./components/DadosEmpresa.jsx"
@@ -69,7 +70,7 @@ function App() {
         <Route path='/interprete' element={<CadastroInterprete />} />
         <Route path='/empresa' element={<CadastroEmpresa />} />
         <Route path='/cadastropf' element={<CadastroPf />} />
-
+        <Route path='/escolhaplano' element={<EscolhaPlano />} />
 
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />
         <Route path="/editar-perfil" element={<EditProfile />} />

@@ -45,9 +45,9 @@ function PlanoInterprete() {
                     <h2 className={Style.titleP}>Mãos de Prata</h2>
                     <p className={Style.valor}>Gratuito</p>
                     <div className={Style.beneficios}>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Perfil visível para empresas</p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Até 5 contatos po mês</p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Acesso às vagas básicas</p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Perfil visível para empresas</p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Até 5 contatos po mês</p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Acesso às vagas básicas</p>
                     </div>
                     <div className={Style.Botao}>
                         <button className={Style.selecionar}>Plano atual</button>
@@ -58,13 +58,12 @@ function PlanoInterprete() {
                     <h2 className={Style.titleP}>Mãos de Ouro</h2>
                     <p className={Style.valor}>R$ 79,90</p>
                     <div className={Style.beneficios}>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Todos os benefícios do Prata</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> 3x mais contatos (até 15/mês)</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Selo de recomendado</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Destaque maior nas buscas</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Receber avaliações verificadas</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Canal de suporte mais rápido</p>
-                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="" /> Mini relatórios</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> 3x mais contatos (até 15/mês)</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Selo de recomendado</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Destaque maior nas buscas</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Receber avaliações verificadas</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Canal de suporte mais rápido</p>
+                        <p><img className={Style.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Mini relatórios</p>
                     </div>
                     <div className={Style.Botao}>
                         <button className={Style.selecionar}>Selecionar este plano</button>
@@ -75,11 +74,11 @@ function PlanoInterprete() {
                     <h2 className={Style.titleP}>Mãos de Diamante</h2>
                     <p className={Style.valor}>R$ 149,90</p>
                     <div className={Style.beneficios}>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Todos os benefícios anteriores</p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Destaque visual máximo (perfil no topo)</p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Selo de <strong>Top Intérprete</strong></p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Dashboard com <strong>estatísticas avançandas</strong></p>
-                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="" /> Possibilidade de aparecer em <strong>destaque da plataforma</strong></p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Todos os benefícios anteriores</p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Destaque visual máximo (perfil no topo)</p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Selo de <strong>Top Intérprete</strong></p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Dashboard com <strong>estatísticas avançandas</strong></p>
+                        <p><img className={Style.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Possibilidade de aparecer em <strong>destaque da plataforma</strong></p>
                     </div>
                     <div className={Style.Botao}>
                         <button className={Style.selecionar}>Selecionar este plano</button>

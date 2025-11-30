@@ -9,6 +9,7 @@ import Steps from './Steps'
 
 import { cadastroForm } from '../hooks/cadastroForm'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 import inscricao from '../assets/images/sinal-inscricao.png'
@@ -75,9 +76,9 @@ function CadastroOficial() {
                                 <span>Avançar</span>
                             </button>
                         ) : (
-                            <button type="submit" className={Styles.botao}>
+                            <Link to="/escolhaplano"><button type="submit" className={Styles.botao}>
                                 <span>Cadastrar</span>
-                            </button>
+                            </button></Link>
                         )}
                     </div>
                 </form>
