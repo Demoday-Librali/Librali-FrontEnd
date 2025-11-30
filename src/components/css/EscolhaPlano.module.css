@@ -128,3 +128,162 @@
   width: 17px;
 }
 
+
+@media (max-width: 1440px) {
+  .container_plano {
+    width: 65%;
+    height: 580px;
+}
+
+  .planos {
+    width: 80%;
+    height: 440px;
+}
+
+#beneficios_prata {
+  margin-bottom: 50px;
+}
+
+#beneficios_ouro {
+  margin-bottom: 56px;
+}
+
+#beneficios_diamante {
+  margin-bottom:7px;
+}
+}
+
+@media (max-width: 1024px) { 
+  .container_plano {
+    width: 90%;
+    height: 580px;
+}
+#beneficios_ouro {
+  margin-bottom: 31px;
+}
+
+}
+
+@media (max-width: 768px) { 
+.planos {
+    width: 90%;
+    height: 440px;
+}
+#beneficios_prata {
+  margin-bottom: 74px;
+}
+}
+
+@media (max-width: 425px) {
+  .fundo {
+    height: fit-content;
+    margin-bottom: 0px;
+  }
+
+  .container_plano {
+    height: fit-content;
+    margin-top: 20px;
+  }
+  .planos {
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .plano {
+      border: 1px solid black;
+      width: 100%;
+      height: 460px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+  #beneficios_prata {
+    gap: 25px;
+    margin-bottom: 80px;
+  }
+
+  .beneficios p{
+    font-size: 18px;
+  }
+
+  #beneficios_ouro {
+    margin-bottom: 46px;
+  }
+
+  #beneficios_diamante {
+    margin-bottom:15px;
+  }
+  .titleP {
+    text-align: center;
+  }
+  .selecionar {
+  width: 90%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 600;
+}
+} 
+@media (max-width: 375px) { 
+  .planos {
+    width: 85%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .plano {
+      border: 1px solid black;
+      width: 100%;
+      height: 445px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+  #beneficios_prata {
+    gap: 25px;
+    margin-bottom: 37px;
+  }
+  #beneficios_ouro {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  #beneficios_diamante {
+    gap: 5px;
+    margin-bottom:20px;
+  }
+  .beneficios p{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 320px) { 
+  .plano {
+      border: 1px solid black;
+      width: 100%;
+      height: 425px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+  #beneficios_prata {
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  #beneficios_ouro {
+    gap: 15px;
+    margin-bottom: 23px;
+  }
+
+  #beneficios_diamante {
+    gap: 1px;
+    margin-bottom: 1px;
+    margin-top: -5px;
+  }
+  .beneficios p{
+    font-size: 16px;
+  }
+}
