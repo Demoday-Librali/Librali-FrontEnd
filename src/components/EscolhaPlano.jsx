@@ -11,46 +11,43 @@ const EscolhaPlano = () => {
             <h1>Para finalizar</h1>
             <p>Escolha o seu plano</p>
             <div className={Styles.planos} >
-                <div className={Styles.plano} id={Styles.prata}>
-                    <h2 className={Styles.titleP}>Mãos de Prata</h2>
-                    <p className={Styles.valor}>Gratuito</p>
-                    <div className={Styles.beneficios}>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Perfil visível para empresas</p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Até 5 contatos po mês</p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Acesso às vagas básicas</p>
-                        <div className={Styles.Botao}>
+                <div className={Styles.plano} id={Styles.MaosDePrata}>
+                        <h2 className={Styles.titleP}>Conectar</h2>
+                        <p className={Styles.valor}>R$299,90</p>
+                        <div className={Styles.beneficios} id={Styles.beneficios_prata}>
+                            <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Acesso ao diretório de intérpretes</p>
+                            <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Contato direto com intérpretes sem taxas adicionais</p>
+                            <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Limite de até <span>3 bsucas por mês</span></p>
+                        </div>
+                        <div className={Styles.botao}>
                             <button className={Styles.selecionar}>Plano atual</button>
                         </div>
                     </div>
-                </div>
 
-                <div className={Styles.plano} id={Styles.ouro}>
-                    <h2 className={Styles.titleP}>Mãos de Ouro</h2>
-                    <p className={Styles.valor}>R$ 79,90</p>
-                    <div className={Styles.beneficios}>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> 3x mais contatos (até 15/mês)</p>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Selo de recomendado</p>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Destaque maior nas buscas</p>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Receber avaliações verificadas</p>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Canal de suporte mais rápido</p>
-                        <p><img className={Styles.check_verde_p} src={Check_verde_p} alt="Check verde pequeno" /> Mini relatórios</p>
+                <div className={Styles.plano} id={Styles.MaosDeOuro}>
+                    <h2 className={Styles.titleP}>Inclusão</h2>
+                    <p className={Styles.valor}>R$599,90</p>
+                    <div className={Styles.beneficios} id={Styles.beneficios_ouro}>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_verde_p} src={Check_verde_p} alt="" /> Acesso ilimitado ao diretório de intérpretes</p>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_verde_p} src={Check_verde_p} alt="" /> Filtros avançado de busca (experiência, localização, área de atuação)</p>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_verde_p} src={Check_verde_p} alt="" /> Relatório mensal simples de acessos e contatos realizados</p>
                     </div>
-                    <div className={Styles.Botao}>
+                    <div className={Styles.botao}>
                         <button className={Styles.selecionar}>Selecionar este plano</button>
                     </div>
                 </div>
                 
-                <div className={Styles.plano} id={Styles.diamante}>
-                    <h2 className={Styles.titleP}>Mãos de Diamante</h2>
-                    <p className={Styles.valor}>R$ 149,90</p>
-                    <div className={Styles.beneficios}>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Todos os benefícios anteriores</p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Destaque visual máximo (perfil no topo)</p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Selo de <strong>Top Intérprete</strong></p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Dashboard com <strong>estatísticas avançandas</strong></p>
-                        <p><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="Check roxo pequeno" /> Possibilidade de aparecer em <strong>destaque da plataforma</strong></p>
+                <div className={Styles.plano} id={Styles.MaosDeDiamantes}>
+                    <h2 className={Styles.titleP}>Impactar</h2>
+                    <p className={Styles.valor}>R$999,90</p>
+                    <div className={Styles.beneficios} id={Styles.beneficios_diamante}>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Todos os benefícios do Inclusão</p>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Prioridade na recomendação de intérpretes mais ativos</p>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Relatórios avançados detalhando buscas e contatos</p>
+                        <p className={Styles.p_beneficios}><img className={Styles.check_roxo_p} src={Check_roxo_p} alt="" /> Suporte majoritário
+                            (atendimento prioritário e consultoria rápida)</p>
                     </div>
-                    <div className={Styles.Botao}>
+                    <div className={Styles.botao}>
                         <button className={Styles.selecionar}>Selecionar este plano</button>
                     </div>
                 </div>

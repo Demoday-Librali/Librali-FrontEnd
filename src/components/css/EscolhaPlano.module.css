@@ -2,38 +2,39 @@
     background-color: #421167;
     width: 100%;
     height: 850px;
-    margin-bottom: 165px;
+    margin-bottom: 1px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .container_plano {
-    width: 50%;
-    height: 483px;
+    width: 55%;
+    height: 545px;
     border-radius: 16px;
     background-color: #FFFAFA;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
+    
 }
 
 .container_plano h1 {
     font-size: 32px;
     color: #371970;
 }
-.container_plano p {
-    font-size: 14px;
+.p_beneficios {
+    font-size: 15px;
 }
 
 .planos {
-    background-color: aqua;
-    width: 75%;
-    height: 350px;
+    width: 76%;
+    height: 410px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border: 1px solid black;
+    margin-top: 16px;
 }
 
 .plano {
@@ -41,20 +42,89 @@
     width: 33.33%;
 }
 
-#prata p, h2{
-  margin-left: 2.5%;
-}
-
 .titleP{
-  font-size: 20px;
-  margin-top: 10px;
+  color: #1D0B3F;
+  font-size: 30px;
+  margin-left: 10px;
 }
 .valor{
-  font-size: 18px;
+  font-size: 22px;
   color: #A13BB1;
   font-weight: 800;
+  margin-left: 10px;
 }
+
+.selecionar{
+  width: 190px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 7px;
+  background-color: #381A72;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+.selecionar:hover{
+  transform: scale(1.1);
+}
+
+.botao{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+#MaosDeOuro {
+  background-color: #381A72;
+}
+#MaosDeOuro .selecionar{
+  background-color: #A5F391;
+  color: #381A72;
+}
+
+#MaosDeOuro .valor {
+  color: #A5F391;
+}
+
+#MaosDeOuro .titleP {
+  color: white;
+}
+
+#MaosDeOuro .p_beneficios {
+  color: white;
+}
+
 .beneficios{
   position: relative;
-  font-size: 10px;
+  display: flex;
+  flex-direction: column; 
+  margin-left: 10px;
+  margin-top: 10px;
 }
+
+#beneficios_prata {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+#beneficios_ouro {
+  gap: 27px;
+  margin-bottom: 32px;
+}
+
+#beneficios_diamante {
+  gap: 10px;
+  margin-bottom:7px;
+}
+.check_verde_p,
+.check_roxo_p {
+  width: 17px;
+}
+
