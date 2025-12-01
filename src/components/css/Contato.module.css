@@ -1,0 +1,319 @@
+.Container{
+    position: relative;
+    background-color: #d4d4d4;
+    width: 90%;
+    height: 2500px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 2px solid #A4A4A4;
+}
+.Title{
+    color: #421167;
+    text-align: center;
+    font-size: 3rem;
+}
+.Inicio{
+    width: 80%;
+    height: 500px;
+    margin-left: 5%;
+}
+.Profissao{
+    font-size: 2.5rem;
+    color: #421167;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.Foto{
+    background-image: url(../../assets/images/Gustavo.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+.Infos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 270px;
+    margin-left: 30%;
+    margin-top: -21%;
+}
+.Nome{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.Funcao{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    color: #888888;
+}
+.Avaliacao{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: -1%;
+}
+.Especialidade{
+    display: flex;
+    flex-direction: column;
+}
+.Especialidade h2{
+    font-size: 1.5rem;
+    color: #421167;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.Tags{
+    display: flex;
+    gap: 10px;
+}
+
+.Tags p{
+    background-color: #421167;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+hr{
+    width: 90%;
+    height: 2px;
+    margin-left: 5%;
+    border: none;
+    background-color: #C6C3C3;
+}
+.Descricao {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.SubTitle {
+    color: #421167;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.Textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 250px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+}
+
+.Textarea:focus {
+    outline: none;
+    border-color: #7C54B1;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(124, 84, 177, 0.1);
+}
+
+.Textarea::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.HelperText {
+    display: block;
+    margin-top: 8px;
+    color: #666;
+    font-size: 1.2rem;
+}
+.InfosEvento .SubTitle {
+    color: #421167;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+.InfosEvento {
+    margin: 30px 5%;
+    width: 90%;
+}
+
+.GridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+    
+}
+
+.Coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.SectionTitle {
+    color: #421167;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #7C54B1;
+    padding-bottom: 8px;
+    
+}
+
+/* Inputs */
+.InputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.Label {
+    color: #421167;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.InputRow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+}
+
+.Input:focus {
+    outline: none;
+    border-color: #7C54B1;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(124, 84, 177, 0.1);
+}
+
+.Input::placeholder {
+    color: #888;
+}
+
+/* Select */
+.Select {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.Select:focus {
+    outline: none;
+    border-color: #7C54B1;
+}
+
+/* Checkboxes */
+.CheckboxGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.CheckboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #333;
+    
+}
+
+.CheckboxLabel input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    
+}
+
+/* Separador de horário */
+.HorarioSeparador {
+    color: #666;
+    font-weight: 500;
+    margin: 0 5px;
+    
+}
+
+/* Botão */
+.BotaoContainer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.BotaoEnviar {
+    background-color: #421167;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.BotaoEnviar:hover {
+    background-color: #7C54B1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.Final h1{
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+.Cliqueaqui{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #381A72;
+    border-radius: 10px;
+    margin-left: 5%;
+    border: 1px solid #381A72;
+}
+.Contratar{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: #381A72;
+    border-radius: 10px;
+    margin-left: 60%;
+    border: 1px solid #381A72;
+}
+.Final p{
+    margin-left: 5%;
+    margin-top: 1.5%;
+    color: #9B9A9A;
+    
+}
