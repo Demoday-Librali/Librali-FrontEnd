@@ -33,7 +33,7 @@ import Contato from './components/Contato.jsx'
 
 
 function App() {
-  return (    
+  return (
     <Router>
       <ScrollToTop />
       <Header />
@@ -65,7 +65,7 @@ function App() {
         <Route path="/planos/empresa" element={<PlanoEmpresa />} />
 
         <Route path="/assistente" element={<Lara />} />
-        
+
         <Route path="/dadosempresa" element={<DadosEmpresa />} />
 
         <Route path='/interprete' element={<CadastroInterprete />} />
@@ -78,14 +78,9 @@ function App() {
         <Route path="/editar-empresa" element={<AlterarCadastroEmpresas />} />  {/*Mexi aqui*/}
         <Route path="/contato" element={<Contato />} />
 
-
       </Routes>
-
       <Footer />
-
       <Lara3D />
-
-
     </Router>
 
   )
