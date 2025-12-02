@@ -56,9 +56,21 @@ const CadastroPerfil = ({data, updateFieldHandler}) => {
                      />
                 </div>
               </div>
+              <div className={Styles.form_control} id={Styles.controle_check}>
+                    <input
+                     type="checkbox"
+                     name='check_contratante'
+                     id={Styles.check_box}
+                     /> 
+                    <label htmlFor="checkbox" id={Styles.checkbox_label}>
+                        Quero usar o Site apenas para Encontrar Intérpretes
+                    </label>
+                </div>
             </div>
         </div>
+        
   )
+    
 }
 
 export default CadastroPerfil
