@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-header{
+/* ==========================
+   ESTILOS BASE (Desktop)
+   ========================== */
+
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Aqui começa a config da logo */
-#logo{
+/* Logo */
+#logo {
     position: relative;
     width: 300px;
     height: auto;
-    left: 2%;
     filter: drop-shadow(1px 2px 2px rgb(91, 91, 91));
+    flex-shrink: 0;
 }
 
-#menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-}
-
-/* Aqui termina a config da logo */
-/* Aqui começa a config dos links */
-nav{
-    position: relative;
-    width: 30%;
+#logo_img {
+    width: 100%;
     height: auto;
+}
+
+/* Menu/Nav */
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,30 +37,33 @@ nav{
     font-weight: 600;
     color: #381A72;
     text-shadow: 1px 1px 2px rgb(91, 91, 91);
+    gap: 2rem;
+    flex: 1;
+    max-width: 600px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #381A72;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 }
-nav a:hover{
+
+nav a:hover {
     color: #381A72;
     transform: scale(1.1);
 }
-/* Aqui termina a config dos links */
 
-/* Aqui começa a config dos botões */
-#botoes{
-    position: relative;
-    width: 20%;
-    height: auto;
+/* Botões */
+#botoes {
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
 }
-#cadastro, #login{
-    position: relative;
+
+#cadastro, #login {
     width: 150px;
     height: 60px;
     border: 2px solid #381A72;
@@ -73,268 +76,553 @@ nav a:hover{
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
 }
-#login{
+
+#login {
     background-color: #381A72;
     color: white;
 }
-#cadastro:hover, #login:hover{
+
+#cadastro:hover, #login:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
-/* Aqui termina a config dos botões */
 
-/* RESPONSIVIDADE */
-@media screen and (max-width: 1724px) {
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+/* 4K e Ultra Wide (2560px+) */
+@media screen and (min-width: 2560px) {
+    header {
+        padding: 2rem 4rem;
+    }
+    
+    #logo {
+        width: 400px;
+    }
+    
     nav {
-        width: 25%;
-        
+        font-size: 2rem;
+        gap: 3rem;
+        max-width: 800px;
+    }
+    
+    #cadastro, #login {
+        width: 180px;
+        height: 70px;
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 1660px) {
+
+/* Desktop Extra Large (1920px - 2559px) */
+@media screen and (max-width: 2559px) and (min-width: 1920px) {
+    #logo {
+        width: 320px;
+    }
+    
+    nav {
+        font-size: 1.8rem;
+        gap: 2.5rem;
+    }
+    
+    #cadastro, #login {
+        width: 160px;
+        height: 65px;
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop Large (1680px - 1919px) */
+@media screen and (max-width: 1919px) and (min-width: 1680px) {
+    nav {
+        font-size: 1.7rem;
+        gap: 2rem;
+    }
+}
+
+/* Desktop Standard (1440px - 1679px) */
+@media screen and (max-width: 1679px) and (min-width: 1440px) {
     #logo {
         width: 280px;
     }
-    nav {
-        width: 30%;
-        left: 38%;
-        font-size: 1.4rem;
-    }
     
-    #botoes {
-        width: 28%;
-    }
-    
-    #cadastro, #login {
-        width: 120px;
-        height: 50px;
-        font-size: 1.4rem;
-        gap: 80px;
-    }
-}
-/* Tablets grandes (até 1200px) */
-@media screen and (max-width: 1200px) {
     nav {
-        width: 25%;
-        left: 40%;
         font-size: 1.6rem;
-    }
-    
-    #botoes {
-        width: 23%;
-        left: 74%;
-    }
-}
-
-/* Tablets e telas médias (até 1024px) */
-@media screen and (max-width: 1024px) {
-    #logo {
-        width: 250px;
-        margin-top: 2%;
-    }
-    
-    nav {
-        width: 30%;
-        left: 38%;
-        font-size: 1.4rem;
-    }
-    
-    #botoes {
-        width: 28%;
-        left: 70%;
-
-    }
-    
-    #cadastro, #login {
-        width: 120px;
-        height: 50px;
-        font-size: 1.4rem;
-    }
-}
-
-/* Tablets pequenos e celulares landscape (até 900px) */
-@media screen and (max-width: 900px) {
-    #logo {
-        width: 100px;
-        left: 27%;
-        transform: translateX(-50%);
-    }
-
-    #logo_img {
-        width: 307px;
-        height: 87px;
-    }
-    
-    nav {
-        width: 90%;
-        left: 40%;
-        transform: translateX(-50%);
-        top: 0;
-        margin-top: 20px;
-        font-size: 1.3rem;
-        justify-content: center;
-        gap: 50px;
-    }
-    
-    nav a {
-        margin-top: 0;
-    }
-    
-    #botoes {
-        width: 90%;
-        left: 40%;
-        transform: translateX(-50%);
-        margin-top: 20px;
-        justify-content: center;
-        gap: 15px;
+        gap: 1.8rem;
     }
     
     #cadastro, #login {
         width: 140px;
+        height: 55px;
+        font-size: 1.6rem;
+    }
+}
+
+/* Desktop Medium (1366px - 1439px) */
+@media screen and (max-width: 1439px) and (min-width: 1366px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+    
+    #logo {
+        width: 260px;
+    }
+    
+    nav {
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    #cadastro, #login {
+        width: 130px;
+        height: 52px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop Small / Laptop (1280px - 1365px) */
+@media screen and (max-width: 1365px) and (min-width: 1280px) {
+    #logo {
+        width: 250px;
+    }
+    
+    nav {
+        font-size: 1.4rem;
+        gap: 1.3rem;
+    }
+    
+    #cadastro, #login {
+        width: 125px;
         height: 50px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Laptop Small (1024px - 1279px) */
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    header {
+        padding: 1rem;
+    }
+    
+    #logo {
+        width: 240px;
+    }
+    
+    nav {
+        font-size: 1.3rem;
+        gap: 1.2rem;
+    }
+    
+    #cadastro, #login {
+        width: 120px;
+        height: 48px;
         font-size: 1.3rem;
     }
 }
-@media screen and (max-width: 600px) {
+
+/* Tablet Landscape (900px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 900px) {
+    header {
+        padding: 0.8rem;
+    }
+    
     #logo {
         width: 220px;
-        left: 10%;
+        margin-left: -15%;
+    }
+    
+    nav {
+        font-size: 1.25rem;
+        margin-left: -180%;
+    }
+    nav a{
+        gap: -100%;
+    }
+    
+    #cadastro, #login {
+        width: 115px;
+        height: 46px;
+        font-size: 1.25rem;
+        margin-left: -180%;
     }
 }
-@media screen and (max-width: 500px){
+
+/* Tablet Portrait / Mobile Landscape (768px - 899px) */
+@media screen and (max-width: 899px) and (min-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
     #logo {
         width: 200px;
-        left: -2%;
+        order: 1;
     }
+    
     nav {
-        width: 95%;
-        flex-direction: column;
-        margin-top: 15px;
+        width: 100%;
+        order: 2;
+        justify-content: center;
         font-size: 1.2rem;
-        gap: 12px;
-        left: 40%;
+        gap: 2rem;
+    }
+    
+    #botoes {
+        width: auto;
+        order: 3;
+        gap: 1rem;
+    }
+    
+    #cadastro, #login {
+        width: 130px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Large / Phablet (600px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+    
+    #logo {
+        width: 220px;
+    }
+    
+    nav {
+        width: 100%;
+        justify-content: center;
+        font-size: 1.15rem;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    #botoes {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    #cadastro, #login {
+        width: 140px;
+        height: 48px;
+        font-size: 1.15rem;
+    }
+}
+
+/* Mobile Medium (480px - 599px) */
+@media screen and (max-width: 599px) and (min-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+    
+    #logo {
+        width: 200px;
+    }
+    
+    nav {
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.1rem;
+        gap: 0.8rem;
     }
     
     nav a {
-        padding: 8px 0;
-        display: block;
+        padding: 0.5rem;
         text-align: center;
     }
     
     #botoes {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
-        margin-top: 15px;
-        gap: 12px;
-        align-items: center;
-        padding: 0 10px;
-        left: 40%;
+        gap: 0.8rem;
+        padding: 0 1rem;
     }
     
     #cadastro, #login {
         width: 100%;
         max-width: 280px;
         height: 48px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
-/* Celulares como S20 FE e similares (até 412px) */
-@media screen and (max-width: 412px) {
+/* Mobile Small (414px - 479px) - iPhone Plus, Galaxy S series */
+@media screen and (max-width: 479px) and (min-width: 414px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.8rem 0.5rem;
+    }
+    
     #logo {
         width: 180px;
-        left: 5%;
     }
     
     nav {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
-        margin-top: 15px;
-        font-size: 1.2rem;
-        gap: 12px;
+        font-size: 1.05rem;
+        gap: 0.7rem;
     }
     
     nav a {
-        padding: 8px 0;
-        display: block;
-        text-align: center;
+        padding: 0.5rem;
     }
     
     #botoes {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
-        margin-top: 15px;
-        gap: 12px;
-        align-items: center;
-        padding: 0 10px;
+        gap: 0.7rem;
+        padding: 0 1rem;
     }
     
     #cadastro, #login {
         width: 100%;
-        max-width: 280px;
-        height: 48px;
-        font-size: 1.2rem;
-    }
-}
-
-/* Celulares estreitos (até 360px) */
-@media screen and (max-width: 360px) {
-    #logo {
-        width: 10px;
-        left: -45%;
-    }
-    
-    nav {
-        font-size: 1.1rem;
-        gap: 10px;
-        margin-top: 12px;
-    }
-    
-    nav a {
-        padding: 6px 0;
-    }
-    
-    #botoes {
-        margin-top: 12px;
-        gap: 10px;
-    }
-    
-    #cadastro, #login {
         max-width: 260px;
-        height: 45px;
-        font-size: 1.1rem;
+        height: 46px;
+        font-size: 1.05rem;
     }
 }
 
-/* Celulares muito pequenos (até 320px) */
-@media screen and (max-width: 320px) {
-    /* Celulares muito pequenos (até 320px) */
+/* Mobile Small (375px - 413px) - iPhone standard, Galaxy S */
+@media screen and (max-width: 413px) and (min-width: 375px) {
+    header {
+        flex-direction: column;
+        gap: 0.9rem;
+        padding: 0.8rem 0.4rem;
+    }
+    
     #logo {
-        position: relative;
-        width: 2px;
-        left: -40%;
-        transform: none;
-        margin: 10px 20px 10px auto;
+        width: 170px;
     }
     
     nav {
+        width: 100%;
+        flex-direction: column;
         font-size: 1rem;
-        gap: 8px;
-        margin-top: 10px;
+        gap: 0.6rem;
     }
     
     nav a {
-        padding: 5px 0;
+        padding: 0.4rem;
     }
     
     #botoes {
-        margin-top: 10px;
-        gap: 8px;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 0 0.8rem;
     }
     
     #cadastro, #login {
-        max-width: 240px;
-        height: 42px;
+        width: 100%;
+        max-width: 250px;
+        height: 45px;
         font-size: 1rem;
     }
+}
 
+/* Mobile Extra Small (360px - 374px) - Galaxy A, Moto G */
+@media screen and (max-width: 374px) and (min-width: 360px) {
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0.7rem 0.3rem;
+    }
+    
+    #logo {
+        width: 160px;
+    }
+    
+    nav {
+        width: 100%;
+        flex-direction: column;
+        font-size: 0.95rem;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.4rem;
+    }
+    
+    #botoes {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    #cadastro, #login {
+        width: 100%;
+        max-width: 240px;
+        height: 44px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Tiny (320px - 359px) - iPhone SE, Galaxy Fold */
+@media screen and (max-width: 359px) and (min-width: 320px) {
+    header {
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0.6rem 0.3rem;
+    }
+    
+    #logo {
+        width: 150px;
+    }
+    
+    nav {
+        width: 100%;
+        flex-direction: column;
+        font-size: 0.9rem;
+        gap: 0.4rem;
+    }
+    
+    nav a {
+        padding: 0.3rem;
+    }
+    
+    #botoes {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.4rem;
+        padding: 0 0.5rem;
+    }
+    
+    #cadastro, #login {
+        width: 100%;
+        max-width: 220px;
+        height: 42px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Ultra Small (280px - 319px) - Dispositivos muito antigos */
+@media screen and (max-width: 319px) and (min-width: 280px) {
+    header {
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 0.5rem 0.2rem;
+    }
+    
+    #logo {
+        width: 140px;
+    }
+    
+    nav {
+        width: 100%;
+        flex-direction: column;
+        font-size: 0.85rem;
+        gap: 0.3rem;
+    }
+    
+    nav a {
+        padding: 0.3rem;
+    }
+    
+    #botoes {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0 0.3rem;
+    }
+    
+    #cadastro, #login {
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Micro (até 279px) - Smartwatches e dispositivos mínimos */
+@media screen and (max-width: 279px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.4rem 0.2rem;
+    }
+    
+    #logo {
+        width: 120px;
+    }
+    
+    nav {
+        width: 100%;
+        flex-direction: column;
+        font-size: 0.8rem;
+        gap: 0.2rem;
+    }
+    
+    nav a {
+        padding: 0.2rem;
+    }
+    
+    #botoes {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.2rem;
+        padding: 0 0.2rem;
+    }
+    
+    #cadastro, #login {
+        width: 100%;
+        max-width: 180px;
+        height: 38px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes para dispositivos com orientação landscape */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+    
+    #logo {
+        width: 150px;
+    }
+    
+    nav {
+        flex-direction: row;
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+    
+    #botoes {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    
+    #cadastro, #login {
+        width: 100px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Dispositivos com telas muito altas (tablets e phones em portrait) */
+@media screen and (min-height: 1024px) and (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    nav {
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    #botoes {
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
 }
