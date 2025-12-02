@@ -1,0 +1,134 @@
+.steps {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto ;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.steps::after {
+    content: '';
+    width: 380px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 27px;
+}
+
+.step {
+    text-align: center;
+    background-color: #FFFAFA;
+    z-index: 1;
+    width: 120px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+ 
+#internop {
+    font-size: 14px;
+    color: #454545;
+    transition: all 0.3s ease;
+}
+
+.step svg {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #49038A;
+    border: 1px solid #49038A;
+}
+
+.active {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.active > svg {
+    fill: #FFFAFA;
+    background-color: #49038A;
+    transition: all 0.3s ease;
+}
+
+.active > #internop {
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 425px) {
+    .steps {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .steps {
+    gap: 0;
+    max-width: 400px;
+    margin: 0 auto ;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #cfcfcf;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.steps::after {
+    display: none;
+}
+
+.step {
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+    width: 60px;
+    padding: 0.1rem;
+    transition: all 0.3s ease;
+    
+}
+ 
+#internop {
+    font-size: 12px;
+    color: #454545;
+    transition: all 0.3s ease;
+    
+}
+
+.step svg {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #49038A;
+}
+
+#first {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+#last {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.active > svg {
+    fill: #FFFAFA;
+    background-color: #49038A;
+    transition: all 0.3s ease;
+}
+
+.active > #internop {
+    color: #FFFAFA;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+}

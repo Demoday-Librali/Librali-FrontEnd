@@ -1,0 +1,148 @@
+.container_cadastro {
+    background-color: #421167;
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 165px;
+    color: white;
+}
+
+#titulo {
+    color: #49038A;
+    font-size: 32px;
+}
+
+.form_container {
+    width: 50%;
+    height: 483px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo_esquerda {
+    width: 65%;
+    height: 483px;
+    background-color: #FFFAFA;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_direito {
+    width: 35%;
+    height: 483px;
+    background-image: url(../../assets/images/sinal-inscricao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    border-radius: 0px 16px 16px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.conteudo_direito img {
+    width: 140px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.botao {
+    width: 160px;
+    height: 41px;
+    background-color: #421167;
+    color: #FFFAFA;
+    border: 1px solid #FFFAFA;
+    border-radius: 7px;
+    font-size: 25px;
+}
+#voltar {
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+@media (max-width: 2560px) {
+    .container_cadastro {
+        height: 1020px;
+        margin-bottom: -0.5px;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .form_container {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container_cadastro {
+        height: 600px;
+    }
+    .conteudo_esquerda {
+        width: 100%;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    .conteudo_esquerda input {
+        width: 310px;
+    }
+    .conteudo_direito {
+        display: none;
+    }
+    .botao {
+        width: 150px;
+        height: 41px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form_container {
+        width: 96%;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .form_container {
+        width: 85%;
+    }
+    .conteudo_esquerda input{
+        width: 200px;        
+    }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+    #voltar {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    #titulo {
+        font-size: 26px;
+    }
+    
+}

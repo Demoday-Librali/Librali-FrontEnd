@@ -1,53 +1,100 @@
 .comofunciona{
     width: 90%;
-    height: 750px;
-    margin-top:10%;
-    margin-left: 5%;
-    margin-bottom:10%;
+    margin: 15% auto;
+    margin-bottom: 80%;
 }
+
 .title{
     text-align: center;
-    font-size: 54px;
+    font-size: 3rem;
     color: #1B062F;
+    margin-bottom: 1rem;
 }
+
 .paragrafo{
     text-align: center;
-    font-size: 34px;
+    font-size: 1.5rem;
     font-weight: 500;
-    color: #616060;
+    color: #1D0B3F;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
 }
+
 .imagens{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
+.passo1, .passo2, .passo3 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    color: #1D0B3F;
+}
+
 .passo1 img, .passo2 img, .passo3 img{
-    width: 500px;
-    margin-top: 5%
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 1rem;
 }
+
+.passo1 h1, .passo2 h1, .passo3 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .passo1 h1{
     color: #49038A;
-    margin-left: 2%;
 }
 .passo2 h1{
     color: #421167;
-    margin-left: 2%;
 }
 .passo3 h1{
-    color: #C9038A;
-    margin-left: 2%;
+    color: #82109C;
 }
-.passo1 p{
-    width: 400px;
-    margin-left: 2%;
-    font-size: 26px;
+
+.passo1 p, .passo2 p, .passo3 p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
 }
-.passo2 p{
-    width: 400px;
-    margin-left: 2%;
-    font-size: 26px;
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .paragrafo {
+        font-size: 1.25rem;
+    }
+
+    .imagens {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .passo1, .passo2, .passo3 {
+        flex: none;
+        width: 90%;
+    }
+
+    .passo1 p, .passo2 p, .passo3 p {
+        font-size: 1rem;
+    }
 }
-.passo3 p{
-    width: 400px;
-    margin-left: 2%;
-    font-size: 26px;
+
+@media (max-width: 480px) {
+    .comofunciona {
+        width: 95%;
+        margin: 15% auto;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .paragrafo {
+        font-size: 1.1rem;
+    }
 }

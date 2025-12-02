@@ -11,8 +11,8 @@
   gap: 20px;
   width: 90%;
   height: 80px;
-  top: 90%;
-  position: absolute; /* ou fixed se quiser que fique fixo na tela ao rolar */
+  top: 100%;
+  position: relative; /* ou fixed se quiser que fique fixo na tela ao rolar */
   left: 50%;          /* centraliza horizontalmente */
   transform: translateX(-50%);
   z-index: 9999;      /* garante que fique na frente de tudo */
@@ -39,7 +39,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.quadrado {
+select.quadrado {
   background-color: #FFFF;
   color: #1B062F;
   border: none;
@@ -51,6 +51,8 @@
   box-shadow: 0 0 0 2px transparent;
   transition: box-shadow 0.2s ease;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .quadrado:hover,
@@ -58,8 +60,145 @@
   box-shadow: 0 0 0 2px #a88cd8; 
 }
 
-.opcoes {
+select.quadrado option {
   color: #1B062F;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+/* RESPONSIVIDADE - TABLET */
+@media (max-width: 1024px) {
+  .container_pai {
+    width: 92%;
+    padding: 40px 30px;
+    height: auto;
+  }
+
+  .formulario {
+    gap: 20px;
+  }
+
+  .titulo {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+select.quadrado {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE */
+@media (max-width: 768px) {
+  .container_pai {
+    width: 60%;
+    padding: 30px 20px;
+    top: 85%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    top: -150px;
+  }
+
+  .formulario {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grupo {
+    width: 100%;
+  }
+
+  .titulo {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+select.quadrado {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+select.quadrado option {
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE PEQUENO */
+@media (max-width: 480px) {
+  .container_pai {
+    width: 75%;
+    padding: 25px 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    top: -100px;
+    z-index: 9999;      /* garante que fique na frente de tudo */
+  
+  }
+
+  .formulario {
+    gap: 15px;
+  }
+
+  .titulo {
+    font-size: 15px;
+    text-align: center;
+  }
+
+select.quadrado {
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+select.quadrado option {
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
+}
+
+@media (max-width: 360px) {
+  .container_pai {
+    width: 75%;
+    padding: 25px 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;      /* garante que fique na frente de tudo */
+    top: -150px;
+  
+  }
+
+  .formulario {
+    gap: 15px;
+  }
+
+  .titulo {
+    font-size: 15px;
+    text-align: center;
+  }
+
+select.quadrado {
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+select.quadrado option {
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
 }

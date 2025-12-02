@@ -1,0 +1,110 @@
+.interprete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.interprete h1 {
+    color: #49038A;
+    font-size: 32px;
+}
+
+.form_control input{
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+#meio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_control select{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+#data_nasc {
+    width: 157px;
+}
+
+.form_control input::placeholder {
+    color: #49038A;
+}
+
+.senhas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#form_senha {
+    width: 154px;
+    height: 40px;
+}
+
+
+@media (max-width: 375px) {
+    .interprete h1 {
+        font-size: 28px;
+    }
+    
+    .form_control input {
+        width: 290px;
+    }
+    .senhas {
+        width: 225px;
+        gap: 40px;
+    }
+    #form_senha {
+        width: 140px;
+        margin-left: -30px;
+    }
+
+    #meio {
+        justify-content: space-between;
+    }
+
+    .form_control select{
+        width: 140px;
+    }
+
+    #data_nasc {
+        width: 140px;
+    }
+
+}
+
+@media (max-width: 320px) { 
+    .interprete h1 {
+        font-size: 22px;
+        margin-top: -10px;
+    }
+    .form_control input {
+        width: 260px;
+    }
+    #form_senha {
+        width: 120px;
+        margin-left: -18px;
+    }
+    .form_control select{
+        width: 130px;
+    }
+    #data_nasc {
+        width: 120px;
+    }
+
+}

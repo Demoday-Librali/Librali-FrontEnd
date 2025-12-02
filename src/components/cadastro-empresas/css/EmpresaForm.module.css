@@ -1,0 +1,65 @@
+.empresa {
+    height: 280px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.empresa h1 {
+    color: #49038A;
+    font-size: 32px;
+    align-self: center;
+}
+
+.form_control input{
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+.form_control input::placeholder {
+    color: #49038A;
+}
+
+
+.senhas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form_senha {
+    width: 154px;
+    height: 40px;
+}
+
+
+@media (max-width: 375px) {
+    .empresa h1 {
+        font-size: 28px;
+    }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    .senhas {
+        width: 225px;
+    }
+    #form_senha {
+        width: 90px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .empresa h1 {
+        font-size: 22px;
+        margin-top: -10px;
+    }
+}

@@ -1,0 +1,60 @@
+import React from 'react'
+import Styles from './css/CadastroInterprete.module.css'
+
+import PfPerfil from './Cadastro-pessoas-fisicas/PfPerfil'
+import PfPessoal from './Cadastro-pessoas-fisicas/PfPessoal'
+import PfContato from './Cadastro-pessoas-fisicas/PfContato'
+import PfFoto from './Cadastro-pessoas-fisicas/PfFoto'
+import inscricao from '../assets/images/sinal-inscricao.png'
+import bem_vindo from '../assets/images/sinal-bem-vindo.png'
+
+import { PjForm } from '../hooks/pjForm'
+
+export default function CadastroPf() {
+  const PfComponentes = [
+    <PfPerfil />,
+    <PfPessoal />,
+    <PfContato />,
+    <PfFoto />
+  ]
+
+  const {currentStep, currentComponent, changeStep, isLastStep, isFirstStep} = PjForm(PfComponentes)
+
+  return (
+    <div className={Styles.container_cadastro}>
+                <div className={Styles.form_container}>
+                    <div className={Styles.conteudo_esquerda}>
+                        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+                            <h1>{currentComponent}</h1>
+                            <div className={Styles.input_container}></div>
+                            <div className={Styles.actions}>
+                        
+                                {!isFirstStep && (
+                                    <button type="button" className={Styles.botao} id={Styles.voltar} onClick={() => changeStep(currentStep - 1)}>
+                                        <span>Voltar</span>
+                                    </button>
+                                    )}
+                                {!isLastStep ? (
+                                    <button type="submit" className={Styles.botao}>
+                                        <span>Avançar</span>
+                                    </button>
+                                ) : (
+                                    <button type="submit" className={Styles.botao}>
+                                        <span>Cadastrar</span>
+                                    </button>
+                                ) }
+                                
+                            </div>
+                        </form>
+                    </div>
+                    {!isLastStep ? (
+                        <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${inscricao})`}}>
+                        </div>
+                    ) : (
+                        <div className={Styles.conteudo_direito} style={{backgroundImage: `url(${bem_vindo})`}}>
+                        </div>
+                    ) }
+                </div>
+            </div>
+  )
+}

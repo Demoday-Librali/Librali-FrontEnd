@@ -1,0 +1,151 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cadastro h1 {
+    color: #49038A;
+    font-size: 32px;
+    align-self: center;
+}
+
+.form_control input{
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #000101;
+    padding-left: 10px;
+}
+
+.form_control input::placeholder {
+    color: #49038A;
+}
+
+#superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#cep {
+    width: 108px;
+}
+
+#numero {
+    width: 64px;
+}
+
+#complemento {
+    width: 118px;
+}
+
+#meio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rua {
+    width: 260px;
+}
+
+#uf {
+    width: 53px;
+}
+
+@media (max-width: 425px) {
+    #superior {
+        width: 310px;
+    }
+    #meio {
+        width: 310px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 46px;
+    }
+
+
+    #rua {
+        width: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cadastro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .form_control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+    #superior {
+        width: 280px;
+    }
+    #meio {
+        width: 280px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 40px;
+    }
+
+    #rua {
+        width: 210px;
+    }
+
+    #cidade {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 320px) { 
+    .cadastro {
+        width: 240px;
+    }
+    .form_control {
+        width: 240px;
+    }
+    #superior {
+        width: 240px;
+    }
+    #meio {
+        width: 240px;
+    }
+    #cep {
+        width: 90px;
+    }
+
+    #numero {
+        width: 40px;
+    }
+
+    #rua {
+        width: 170px;
+    }
+
+    #cidade {
+        width: 100%;
+    }
+    #complemento {
+        width: 70px;
+    } 
+    #complemento::placeholder {
+        font-size: 9px;
+    }  
+}

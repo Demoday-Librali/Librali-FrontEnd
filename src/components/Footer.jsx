@@ -6,52 +6,73 @@ import X from '../assets/images/twitter.png'
 import Facebook from '../assets/images/facebook.png'
 import YouTube from '../assets/images/You-tube.png'
 import { Link } from 'react-router-dom'
+import FooterImg from '../assets/images/footer.png'
+
 
 function Footer() {
     return (
-        <footer className={Style.footer}>
-            {/* Aqui começa o código da logo do footer */}
-            <div className={Style.logo_footer}>
-                <Link to="/"> <img src={Logo} alt="Logo da Librali" /></Link>
-            </div>
-            {/* Aqui termina o código da logo do footer */}
+        <footer className={Style.rodape}>
 
-            {/* Aqui começa os links do footer */}
-            <div className={Style.links_footer}>
-                <div className={Style.Mapa}>
-                    <h3>Mapa do Site</h3>
-                    <a href="#">Página Inicial</a>
-                    <a href="#">Intérpretes</a>
-                    <a href="#">Sobre</a>
+            <div className={Style.imagem_rodape}> 
+                <img src={FooterImg} alt="Background do rodapé" />
+            </div>
+
+            {/* Container principal que agrupa todo o conteúdo do rodapé */}
+            <div className={Style.container_rodape}>
+                
+                {/* Container da logo */}
+                <div className={Style.secao_logo}>
+                    <Link to="/">
+                        <img src={Logo} alt="Logo da Librali" />
+                    </Link>
                 </div>
-                <div className={Style.Ferramentas}>
-                    <h3>Ferramentas</h3>
-                    <a href="#">Agendamento</a>
-                    <a href="#">IA</a>
+
+                {/* Container dos links de navegação */}
+                <div className={Style.secao_links}>
+                    <div className={Style.mapa_site}>
+                        <h3>Mapa do Site</h3>
+                        <Link to="/">Página Inicial</Link>
+                        <Link to="/interpretes">Intérpretes</Link>
+                        <Link to="/sobre">Sobre</Link>
+                        <Link to="/PlanoInterprete">Plano Interpretes</Link>
+                        <Link to="/PlanoEmpresa">Plano Empresas</Link>
+                    </div>
+                    <div className={Style.ferramentas}>
+                        <h3>Ferramentas</h3>
+                        <Link to="#">Agendamento</Link>
+                        <Link to="/assistente">IA</Link>
+                        <Link to="/dadosempresa">Dados Empresa (Apenas para visualizar)</Link>
+                        <Link to="/dados-interpretes">Dados Intérpretes (Apenas para visualizar)</Link>
+                        <Link to="/editar-perfil">Editar Perfil (Visualização)</Link>
+                        <Link to="/editar-empresa">Alterar Cadastro Empresa (Visualização)</Link> {/*Mexi aqui*/}
+                    </div>
+                </div>
+
+                {/* Container de contato e redes sociais */}
+                <div className={Style.secao_contato}>
+                    <div className={Style.redes_sociais}>
+                        <h3>Siga nossas redes sociais</h3>
+                        <div className={Style.links_redes}>
+                            <a href='#'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
+                            <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
+                            <a href='#'> <img src={X} alt="X da Librali" /> </a>
+                            <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
+                            <a href='#'> <img src={YouTube} alt="Youtube da Librali" /> </a>
+                        </div>
+                    </div>
+
+                    <div className={Style.informacoes_contato}>
+                        <h3>Entre em contato</h3>
+                        <h4>(14) 3376-1782</h4>
+                        <a href='mailto:libraliproa@gmail.com'>libraliproa@gmail.com</a>
+                    </div>
                 </div>
             </div>
-            {/* Aqui termina os links do footer */}
-            {/* Aqui começa o código das redes sociais e contatos */}
-            <div className={Style.contator_footer}>
-                <h3>Siga nossas redes sociais</h3>
-                <div className={Style.links}>
-                    <a href='#'> <img src={TikTok} alt="Tiktok da Librali" /> </a>
-                    <a href='#'> <img src={Instagram} alt="Instagram da Librali" /> </a>
-                    <a href='#'> <img src={X} alt="X da Librali" /> </a>
-                    <a href='#'> <img src={Facebook} alt="Facebook da Librali" /> </a>
-                    <a href='#'> <img src={YouTube} alt="Youtube da Librali" /> </a>
-                </div>
-                <br></br>
-                <h3>Entre em contato</h3>
-                <h4>(14) 3376-1782</h4>
-                <br></br>
-                <a href='#'>libraliproa@gmail.com</a>
-                <div className={Style.meio}>
-                    <Link to="/privacidade">Política de Privacidade</Link>
-                    <p>© 2025 LibraLi. Todos os direitos reservados.</p>
-                </div>
+            
+            <div className={Style.rodape_inferior}>
+                <Link to="/privacidade">Política de Privacidade</Link>
+                <p>© 2025 LibraLi. Todos os direitos reservados.</p>
             </div>
-            {/* Aqui termina o código das redes sociais e contatos */}
         </footer>
     )
 }

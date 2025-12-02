@@ -6,6 +6,8 @@ import Verde from '../assets/images/verde.png'
 import Azul from '../assets/images/azul.png'
 import Check from '../assets/images/check.png'
 import Checkgif from '../assets/images/video/check.gif'
+import { Link } from "react-router-dom";
+
 
 function Impulso(){
     return(
@@ -29,7 +31,7 @@ function Impulso(){
                 </div>
                 <div className={Style.caixa2}>
                     <p className={Style.plano}>Plano Mãos de Ouro</p>
-                    <h1 className={Style.valor}>R$49,90/mês </h1>
+                    <h1 className={Style.valor}>R$79,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
                     <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios do gratuito.</p>
@@ -38,12 +40,12 @@ function Impulso(){
                     <p><img className={Style.check} src={Check} alt=""/> Benefícios para você.</p>
                     </div>
                     <div id={Style.botoa2}>
-                    <button id={Style.login2}>Inscrever-se</button>
+                    <button id={Style.login2 }>Inscrever-se</button>
                     </div>
                 </div>
                 <div className={Style.caixa3}>
                     <p className={Style.plano}>Plano Mãos de Diamente</p>
-                    <h1 className={Style.valor}>R$79,90/mês </h1>
+                    <h1 className={Style.valor}>R$149,90/mês </h1>
                     <h2 className={Style.beneficios}>Benefícios:</h2>
                     <div className={Style.itens}>
                     <p><img className={Style.check} src={Check} alt=""/> Todos os benefícios dos planos anteriores.</p>
@@ -54,15 +56,17 @@ function Impulso(){
                     <div id={Style.botoa3}>
                     <button id={Style.login3}>Inscrever-se</button>
                     </div>
-                    <button id={Style.Vermais}>Ver mais</button>
+                    
                 </div>
             </div>
             
-            <img src={Visibilidade} alt="" />
             <img className={Style.Rosa} src={Rosa} alt=""/>
             <img className={Style.Laranja} src={Laranja} alt=""/>
             <img className={Style.Verde} src={Verde} alt=""/>
             <img className={Style.Azul} src={Azul} alt=""/>
+            <Link to="/PlanoInterprete" className={Style.Vermais}>
+    <p>Ver mais</p>
+</Link>
         </div>
         
     )

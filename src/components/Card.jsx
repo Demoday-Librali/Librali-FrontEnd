@@ -1,5 +1,6 @@
 import Styles from './css/Card.module.css'
 import Interpreteuser from '../assets/images/interpreteuser.jpeg'
+import { Link } from 'react-router-dom'
 
 function Card({ nome, status, cidade, estado, especialidades, descricao, preco, imagem }) {
   return (
@@ -33,7 +34,9 @@ function Card({ nome, status, cidade, estado, especialidades, descricao, preco, 
 
       <p className={Styles.preco}>R$ {preco}/hora</p>
 
-      <button className={Styles.botao}>💬 Entrar em contato</button>
+
+        <Link to="/contato" className={Styles.botao}>Entre em contato</Link>
+        
     </div>
   )
 }

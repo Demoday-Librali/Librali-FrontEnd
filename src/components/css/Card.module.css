@@ -1,6 +1,7 @@
 *{
   font-family: "Montserrat", sans-serif;
 }
+
 .card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -14,19 +15,24 @@
   gap: 12px;
   margin-top: 50px;
   border: 2px solid transparent;
+  overflow: hidden;
 }
 
 .card:hover {
     border: 2px solid #d1b9fa;
+    overflow: hidden;
 
 }
-
+.especialidades{
+  overflow: hidden;
+}
 .topo {
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .foto {
@@ -34,6 +40,7 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+  overflow: hidden;
   
 }
 
@@ -41,16 +48,19 @@
   font-size: 24px;
   font-weight: 600;
   color: black;
+  overflow: hidden;
 }
 
 .avaliacao {
   font-size: 20px;
   color: #512C91;
+  overflow: hidden;
 }
 
 .local {
   font-size: 20px;
   color: #512C91;
+  overflow: hidden;
 }
 
 .disponivel {
@@ -60,6 +70,7 @@
   margin-bottom: 5px;
   margin-top: 10px;
   margin-left: 7px;
+  overflow: hidden;
 }
 
 .ocupado {
@@ -69,6 +80,7 @@
   margin-bottom: 5px;
   margin-top: 10px;
   margin-left: 7px;
+  overflow: hidden;
 }
 
 .especialidades p {
@@ -77,12 +89,14 @@
   font-size: 20px;
   margin-bottom: 10px;
   margin-left: 7px;
+  overflow: hidden;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  overflow: hidden;
 }
 
 .tag {
@@ -93,6 +107,7 @@
   padding: 4px 10px;
   border-radius: 8px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 
@@ -108,6 +123,7 @@
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   
 }
 
@@ -118,19 +134,207 @@
   margin: 0;
   text-align: center;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .botao {
-  background-color: #512C91;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+  display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #512C91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .botao:hover {
   background-color: #3c1f70;
+}
+
+/* RESPONSIVIDADE - TABLET */
+@media (max-width: 1024px) {
+  .card {
+    width: 450px;
+    height: auto;
+    min-height: 550px;
+    padding: 18px;
+  }
+
+  .info h3 {
+    font-size: 22px;
+  }
+
+  .avaliacao,
+  .local {
+    font-size: 18px;
+  }
+
+  .disponivel,
+  .ocupado {
+    font-size: 18px;
+  }
+
+  .especialidades p {
+    font-size: 18px;
+  }
+
+  .tag {
+    font-size: 18px;
+  }
+
+  .descricao {
+    width: 100%;
+    font-size: 18px;
+    height: auto;
+    min-height: 140px;
+  }
+
+  .preco {
+    font-size: 19px;
+  }
+
+  .botao {
+    font-size: 18px;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE */
+@media (max-width: 768px) {
+
+  .card:first-child {
+  margin-top: -60px; /* ajuste conforme a altura do menu */
+}
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 520px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .topo {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .foto {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .avaliacao,
+  .local {
+    font-size: 16px;
+  }
+
+  .disponivel,
+  .ocupado {
+    font-size: 17px;
+  }
+
+  .especialidades p {
+    font-size: 17px;
+  }
+
+  .tag {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .descricao {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    height: auto;
+    min-height: 130px;
+  }
+
+  .preco {
+    font-size: 18px;
+  }
+
+  .botao {
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE PEQUENO */
+@media (max-width: 480px) {
+
+  .card:first-child {
+  margin-top: -30px; /* ajuste conforme a altura do menu */
+}
+
+  .card {
+    padding: 16px;
+    margin-top: 20px;
+  }
+
+  .topo {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .foto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info h3 {
+    font-size: 19px;
+  }
+
+  .avaliacao,
+  .local {
+    font-size: 15px;
+  }
+
+  .disponivel,
+  .ocupado {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .especialidades p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .tag {
+    font-size: 15px;
+  }
+
+  .descricao {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .preco {
+    font-size: 17px;
+  }
+
+  .botao {
+    font-size: 16px;
+  }
 }

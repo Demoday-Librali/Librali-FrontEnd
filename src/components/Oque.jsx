@@ -46,7 +46,7 @@ function Oquee() {
             >
                 <img src={Comprimento_de_mao} alt="Comprimento de mão" />
                 <h1 className={Style.titledireita}>Como pode contratar?</h1>
-                <div className={Style.textoanimado}>
+                <div className={Style.textoanimado} id={Style.div_verde}>
                     <p className={Style.paragrafodireita}>
                     O Librali é uma plataforma que conecta intérpretes e clientes de forma acessível e rápida.
                     Nosso objetivo é facilitar a comunicação entre pessoas surdas e ouvintes, promovendo inclusão

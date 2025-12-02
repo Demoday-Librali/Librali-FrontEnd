@@ -9,8 +9,6 @@ function Privacidade() {
                 <img className={Style.fundoia} src={Fundodepoimento} alt="" />
                 <div className={Style.container}></div>
 
-                <h1 className={Style.maintitle}>Política de privacidade</h1>
-
                 <div className={Style.privacycard}>
                     <div className={`${Style.accordionItem} ${Style.active}`}>
                         <div className={Style.accordionHeader}>
