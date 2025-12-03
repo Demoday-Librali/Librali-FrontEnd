@@ -901,6 +901,184 @@
     .direita:hover {
         background-color: inherit !important; /* Mantém cor original */
     }
+}@media (max-width: 360px) {
+    .Oquee {
+        height: auto;
+        min-height: 170vh;
+        clip-path: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    
+    .esquerda, .meio, .direita {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 100px;
+        transition: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+    }
+    
+
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        width: 90% !important; 
+    }
+    
+    .esquerda:hover img,
+    .meio:hover img,
+    .direita:hover img {
+        margin-left: 0 !important; 
+    }
+    
+    .esquerda:hover .paragrafoesquerda,
+    .meio:hover .paragrafomeio,
+    .direita:hover .paragrafodireita {
+        opacity: 1 !important; /* Já está visível */
+        transform: none !important;
+    }
+    
+    .esquerda {
+        margin-top: 50%;
+        margin-left: 0;
+        width: 100%;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .meio {
+        margin-right: 10%;
+        border-radius: 100px;
+        margin-top: 170%;
+        height: 400px;
+    }
+    
+    .direita {
+        margin-right: 0;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-top: 180%;
+        margin-bottom: 10%;
+        height: 400px;
+    }
+    
+    .esquerda img {
+        display: none;
+    }
+    
+    .meio img {
+        display: none;
+    }
+    
+    .direita img {
+        display: none;
+    }
+    
+    .titleesquerda {
+        margin-top: -145%;
+        margin-left: -35%;
+        font-size: 1.5rem !important;
+        width: 90%;
+        color: #421167;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+    
+    .titlemeio {
+        margin-top: -165% !important;
+        margin-left: 2% !important;
+        font-size: 1.3rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    .titledireita {
+        margin-top: -160% !important;
+        margin-left: 10% !important;
+        font-size: 1.5rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    /* PARÁGRAFOS SEMPRE VISÍVEIS NO MOBILE */
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        position: relative !important;
+        width: 85% !important;
+        max-width: 85% !important;
+        font-size: 1rem !important;
+        opacity: 1 !important; /* SEMPRE VISÍVEL */
+        visibility: visible !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 15px auto !important;
+        padding: 0 10px;
+        text-align: center;
+        color: #421167 !important;
+        pointer-events: auto !important;
+        display: block !important; /* SEMPRE VISÍVEL */
+        transition: none !important; /* Remove transição */
+        line-height: 1.5;
+    }
+    
+    .paragrafoesquerda {
+        margin-top: 60px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafomeio {
+        margin-left: 10% !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 50px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafodireita {
+        margin-top: 30% !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    
+    /* REMOVE TODAS AS CLASSES DE ESCONDER NO MOBILE */
+    .esquerda.hidden,
+    .meio.hidden,
+    .direita.hidden,
+    .titleesquerda.hidden,
+    .titlemeio.hidden,
+    .titledireita.hidden {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+    
+    /* Remove hover effects das divs */
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        background-color: inherit !important; /* Mantém cor original */
+    }
 }
 
 @media (max-width: 320px) {
