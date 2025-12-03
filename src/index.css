@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 /* Aqui termina o css reset */
 /* Aqui começa a config padrão do site */
@@ -56,8 +57,8 @@ body{
     border-radius: 6px;
     cursor: pointer;
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     font-family: var(--fonte-poppins);
-    right: 20px;
+    right: 10px;
     z-index: 11000;
 }

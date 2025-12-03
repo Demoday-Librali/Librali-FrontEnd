@@ -40,7 +40,7 @@ function Footer() {
                     <div className={Style.ferramentas}>
                         <h3>Ferramentas</h3>
                         <Link to="#">Agendamento</Link>
-                        <Link to="#">IA</Link>
+                        <Link to="/assistente">IA</Link>
                         <Link to="/dadosempresa">Dados Empresa (Apenas para visualizar)</Link>
                         <Link to="/dados-interpretes">Dados Intérpretes (Apenas para visualizar)</Link>
                         <Link to="/editar-perfil">Editar Perfil (Visualização)</Link>

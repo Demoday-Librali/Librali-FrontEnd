@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './components/Login.jsx'
 import Cadastro from './components/Cadastro.jsx'
+import EscolhaPlano from './components/EscolhaPlano.jsx'
 import Sobre from './components/Sobre.jsx'
 import Lara from "./components/Lara.jsx"
 import DadosEmpresa from "./components/DadosEmpresa.jsx"
@@ -28,10 +29,11 @@ import PlanoInterprete from './components/PlanoInterprete.jsx'
 import PlanoEmpresa from './components/PlanoEmpresa.jsx'
 import EditProfile from './components/EditProfile.jsx'
 import AlterarCadastroEmpresas from './components/AlterarCadastroEmpresas.jsx' /*Mexi aqui*/
+import Contato from './components/Contato.jsx'
 
 
 function App() {
-  return (    
+  return (
     <Router>
       <ScrollToTop />
       <Header />
@@ -63,26 +65,22 @@ function App() {
         <Route path="/planos/empresa" element={<PlanoEmpresa />} />
 
         <Route path="/assistente" element={<Lara />} />
-        
+
         <Route path="/dadosempresa" element={<DadosEmpresa />} />
 
         <Route path='/interprete' element={<CadastroInterprete />} />
         <Route path='/empresa' element={<CadastroEmpresa />} />
         <Route path='/cadastropf' element={<CadastroPf />} />
-
+        <Route path='/escolhaplano' element={<EscolhaPlano />} />
 
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />
         <Route path="/editar-perfil" element={<EditProfile />} />
         <Route path="/editar-empresa" element={<AlterarCadastroEmpresas />} />  {/*Mexi aqui*/}
-
+        <Route path="/contato" element={<Contato />} />
 
       </Routes>
-
       <Footer />
-
       <Lara3D />
-
-
     </Router>
 
   )

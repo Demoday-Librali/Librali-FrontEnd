@@ -52,7 +52,7 @@ function Depoimentos() {
 
     return (
         <div className={Style.fundo}>
-                <img src={Fundodepoimento} id={Style.forma} alt="" />
+                
         <div className={Style.carrossel}>
             <h2 className={Style.carrosselTitulo}>O que dizem sobre nós</h2>
             

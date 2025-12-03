@@ -28,11 +28,11 @@ const VLara = () => {
           zIndex: 10000,
         }}
       >
-        <img 
+        <img
           src="/libras.svg"
           alt="VLara - Tradutor de Libras"
-          style={{ 
-            width: '30px', 
+          style={{
+            width: '30px',
             height: '30px',
             filter: 'brightness(0) invert(1)'
           }}
@@ -70,42 +70,42 @@ const VLara = () => {
               alignItems: 'center',
               mborderBottom: '1px solid  #A13BB1'
             }}
-                  >
+          >
 
-                      {/* LADO ESQUERDO: ÍCONE LIVRO + NOME LARA */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            {/* LADO ESQUERDO: ÍCONE LIVRO + NOME LARA */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
 
-                          {/* ÍCONE DO LIVRO */}
-                          <button
-                              onClick={() => alert('Dicionário de libras em desenvolvimento')}
-                              style={{
-                                  background: 'none',
-                                  border: 'none',
-                                  color: 'white',
-                                  cursor: 'pointer',
-                                  padding: '4px',
-                                  borderRadius: '4px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center'
-                              }}
-                              title="Dicionário"
-                          >
-                              <FiBook size={18} color="#FFFAFA" />
-                          </button>
+              {/* ÍCONE DO LIVRO */}
+              <button
+                onClick={() => alert('Dicionário de libras em desenvolvimento')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  cursor: 'pointer',
+                  padding: '4px',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                title="Dicionário"
+              >
+                <FiBook size={18} color="#FFFAFA" />
+              </button>
 
-                          {/* NOME LARA */}
-                          <span style={{
-                              fontSize: '14px',
-                              fontWeight: '600',
-                              display: 'flex',
-                              alignItems: 'center',
-                              gap: '6px'
-                          }}>
-                              Lara
-                          </span>
+              {/* NOME LARA */}
+              <span style={{
+                fontSize: '14px',
+                fontWeight: '600',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Lara
+              </span>
 
-                      </div>
+            </div>
 
 
 
@@ -166,7 +166,7 @@ const VLara = () => {
           >
             {/* VÍDEO DA LARA - USANDO O VÍDEO IMPORTADO */}
             <video
-              src={Laravideo}  
+              src={Laravideo}
               style={{
                 width: "100%",
                 height: "100%",
@@ -177,10 +177,10 @@ const VLara = () => {
               muted
               controls={false} // Remove controles do player
             />
-            
+
           </div>
 
-           
+
         </div>
       )}
     </>

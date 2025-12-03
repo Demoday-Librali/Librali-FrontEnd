@@ -1,24 +1,21 @@
 .fundo{
-    position: relative;
-    margin-bottom: 10%;
+    position: absolute;
+    margin-bottom: 50%;
+    width: 100%;
     background-color: #3B0F5A; 
-  color: white;
-  padding: 620px 0px; 
-  text-align: center;
-  position: relative; 
-  margin-top: -28%;
-  clip-path: polygon(
-    /* Forma 'W' de cima */
-    0% 22%,
-    50% 30%, 
-    100% 22%, 
-
-    /* Forma 'V' de baixo */
-    100% 90%,
-    50% 100%,
-    0% 90%
-  );
-    
+    padding: 100px 0px; 
+    text-align: center;
+    margin-top: -86%;
+    z-index: 1; 
+    overflow-y: hidden;
+    clip-path: polygon(
+        0% 22%,
+        50% 30%, 
+        100% 22%, 
+        100% 90%,
+        50% 100%,
+        0% 90%
+    );
 }
 .Rosa{
     position: absolute;
@@ -34,7 +31,7 @@
 .Laranja{
     position: absolute;
     margin-left: -35%;
-    margin-top: 45%;
+    margin-top: -45%;
     z-index: -1;
     animation: laranja 3s ease-in-out infinite;
 }
@@ -46,7 +43,7 @@
 .Verde{
     position: absolute;
     margin-left: 40%;
-    margin-top: 45%;
+    margin-top: -45%;
     animation: verde 3s ease-in-out infinite;
 }
 @keyframes verde {
@@ -58,7 +55,7 @@
 .Azul{
     position: absolute;
     margin-left: 45%;
-    margin-top: 41%;
+    margin-top: -41%;
     animation: azul 3s ease-in-out infinite;
 }
 @keyframes azul {
@@ -69,9 +66,9 @@
 .title{
     position: relative;
     text-align: center;
-    margin-top: -13%;
     color: #EFE2FF;
     font-size: 48px;
+    margin-top: 15%;
 }
 .Amarelo{
     color: #FFE385;
@@ -82,29 +79,27 @@
     text-align: center;
     color: #EFE2FF;
     font-size: 34px;
-    margin-bottom: 3%;
 }.caixasbrancas{
     position: relative;
     display: flex;
     justify-content: space-around;
-    margin-bottom: -13.5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 .caixa1{
     position: relative;
     width: 400px;
     height: 550px;
-    margin-bottom: -46%;
     z-index: 2;
     background-color: #fffafa;
     border-radius: 5%;
     margin-right: -10%;
+    margin-top: 5%;
 }
 .caixa2{
     position: relative;
     width: 400px;
     height: 550px;
-    margin-bottom: -43%;
-    margin-top: -2%;
     z-index: 2;
     background-color: #fffafa;
     border-radius: 5%;
@@ -114,17 +109,16 @@
     position: relative;
     width: 400px;
     height: 550px;
-    margin-bottom: -31%;
     z-index: 2;
     background-color: #fffafa;
     border-radius: 5%;
+    margin-top: 5%;
 }
 .plano{
     color: #5B5151;
     font-weight: 600;
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 5%;
 }
 .valor{
      color: #A13BB1;
@@ -156,11 +150,7 @@
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
-}
-#login{
-    background-color: #381A72;
-    color: white;
-    margin-top: -2%;
+    overflow: hidden;
 }
 #login{
     position: relative;
@@ -175,11 +165,14 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
-    margin-top: 6%;
+    margin-top: 10%;
+    z-index: 100;
 }
 #login:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+    background-color: #381A72; /* ADICIONE ISSO */
+    color: white; /* ADICIONE ISSO */
 }
 #botoa2{
     position: relative;
@@ -188,12 +181,9 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-    
-}
-#login2{
-    background-color: #381A72;
-    color: white;
-    margin-top: 19%;
+    gap: 10px;
+    font-size: 1.7rem;
+    overflow: hidden;
 }
 #login2{
     position: relative;
@@ -201,18 +191,21 @@
     height: 60px;
     border: 2px solid #381A72;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #381A72;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
-    margin-bottom: -5%;
+    margin-top: 10%;
+    z-index: 100; /* ADICIONE ISSO */
 }
 #login2:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+    background-color: #381A72; /* ADICIONE ISSO */
+    color: white; /* ADICIONE ISSO */
 }
 #botoa3{
     position: relative;
@@ -221,13 +214,28 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
+    gap: 10px;
+    font-size: 1.7rem;
+    overflow: hidden;
 }
 #login3{
-    background-color: #381A72;
-    color: white;
-    margin-top: 12%;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #381A72;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #381A72;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgb(91, 91, 91);
+    margin-top: 10%;
+    z-index: 100; /* ADICIONE ISSO */
 }
-#login3, .Vermais{
+
+.Vermais{
     position: relative;
     width: 250px;
     height: 60px;
@@ -235,34 +243,43 @@
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #381A72;
-    background-color: transparent;
+    background-color: #FFE385;
+    color: #49038A;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
-    margin-bottom: 5%;
+    margin-top: -30%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* ADICIONE ISSO */
 }
 #login3:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+    background-color: #381A72; /* ADICIONE ISSO */
+    color: white; /* ADICIONE ISSO */
 }
 .Vermais{
     background-color: #FFE385;
     color: #49038A;
-    margin-top: 43%;
-    margin-left: -6.5%;
     position: absolute;
     text-decoration: none;
     justify-content: center;
     text-align: center;
+    margin-top: 1%;
+    margin-left: 43%;
 }
 .Vermais p{
-    margin-top: 1%;
     font-size: 2rem;
+    margin: 0;
 }
 .Vermais:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+    background-color: #49038A; /* ADICIONE ISSO */
+    color: #FFE385; /* ADICIONE ISSO */
 }
 .check{
     width: 20px;
@@ -363,42 +380,7 @@
     font-size: 20px;
     margin-bottom: 3%;
 }
-.caixasbrancas{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: -13.5%;
-}
-.caixa1{
-    position: relative;
-    width: 350px;
-    height: 500px;
-    margin-bottom: -46%;
-    z-index: 2;
-    background-color: #fffafa;
-    border-radius: 5%;
-    margin-right: -10%;
-}
-.caixa2{
-    position: relative;
-    width: 350px;
-    height: 500px;
-    margin-bottom: -43%;
-    margin-top: -2%;
-    z-index: 2;
-    background-color: #fffafa;
-    border-radius: 5%;
-    margin-right: -10%;
-}
-.caixa3{
-    position: relative;
-    width: 350px;
-    height: 500px;
-    margin-bottom: -31%;
-    z-index: 2;
-    background-color: #fffafa;
-    border-radius: 5%;
-}
+
 .plano{
     color: #5B5151;
     font-weight: 600;
@@ -530,7 +512,7 @@
 .Vermais{
     background-color: #FFE385;
     color: #49038A;
-    margin-top: 44%;
+    margin-top: -50%;
     margin-left: -8.5%;
     position: absolute;  
     text-decoration: none !important;  

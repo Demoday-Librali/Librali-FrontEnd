@@ -6,6 +6,7 @@ import Imglara from "./../assets/images/lara1.jpeg"
 // importação da API através de um arquivo 
 const ai = new GoogleGenAI({
   apiKey: import.meta.env.VITE_GEMINI_API_KEY
+  // secrets.env.GEMINI_API_KEY
 });
 
 // Dados mockados de profissionais - Usado lista para armanenzar os dados ( O ideal é substituir por uma API real - será necessario mexer na página de Setores)

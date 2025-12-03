@@ -1,5 +1,5 @@
 //Botão Acessibilidade*/
-    // Selecionando os botões
+// Selecionando os botões
 const btnAbrirLeitor = document.getElementById("abrirLeitor");
 const btnLer = document.getElementById("lerPagina");
 const btnPausar = document.getElementById("pausarAudio");
