@@ -904,7 +904,7 @@
 }@media (max-width: 360px) {
     .Oquee {
         height: auto;
-        min-height: 170vh;
+        min-height: 200vh;
         clip-path: none;
         flex-direction: column;
         justify-content: flex-start;
