@@ -2,7 +2,7 @@
     position: relative;
     background-color: #d4d4d4;
     width: 90%;
-    height: 2600px;
+    height: 2800px;
     margin-left: 5%;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -29,10 +29,10 @@
     background-image: url(../../assets/images/Gustavo.png);
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 .Infos{
     display: flex;
