@@ -1,10 +1,9 @@
 .PaginaIa {
     position: relative; 
     width: 100%;
-    min-height: 850px;
+    min-height: 150px;
     margin-top: -10%;
     margin-bottom: 10%;
-    overflow: hidden;
 }
 
 .Titulo {
@@ -54,7 +53,7 @@
 }
 .Mulheria{
   position: absolute;
-  top: 61%; 
+  top: 55%; 
   left: 30%;
   transform: translate(-50%, -50%);
   width: 550px; 
@@ -72,12 +71,13 @@
   animation: flutuaricone 3s ease-in-out infinite;
 }
 .Blocoverde{
-    position: absolute;
-    top: 95%; 
-    left: 45%;
+    position: relative;
+    margin-top: 50%;
+    margin-bottom: -1%;
+    margin-left: 41%;
     transform: translate(-50%, -50%);
     width: 300px; 
-    height: auto;
+    height: 200px;
     max-width: 90%; 
     animation: flutuarbloco 3s ease-in-out infinite;
 }
@@ -131,10 +131,36 @@
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
-
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .Titulo { font-size: 2.5em; }
     .Texto1, .Texto2 { font-size: 1.8em; }
+
+    .Blocoverde{
+        margin-bottom: -4%;
+    }
+}
+@media (max-width: 1024px) {
+    .Titulo{ 
+        font-size: 3em;
+        margin-top: -10%;
+    }
+    .Texto1, .Texto2 { font-size: 1.5em; }
+    .Texto1{
+        margin-top: -5%;
+    }
+    .Blocoverde{margin-top: 70%;
+        margin-bottom: -10%;
+    }
+    .Iconeia{
+  position: absolute;
+  top: 13%; 
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 250px; 
+  height: auto;
+  max-width: 90%; 
+  animation: flutuaricone 3s ease-in-out infinite;
+}
 }
 
 @media (max-width: 992px) {
@@ -191,6 +217,7 @@
         max-width: 350px;
         margin-top: 2rem;
         order: 10;
+        margin-left: 25%;
     }
     .botoes {
         flex-direction: column;
@@ -201,5 +228,10 @@
         font-size: 1.2rem;
         width: 100%;
         max-width: 300px;
+    }
+}
+@media (max-width: 425px) {
+    .Mulheria{
+        margin-left: 10%;
     }
 }

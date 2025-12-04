@@ -39,7 +39,7 @@
     flex-direction: column;
     width: 60%;
     height: 270px;
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: -21%;
 }
 .Nome{
@@ -138,11 +138,9 @@ hr{
 }
 .InfosEvento .SubTitle {
     color: #421167;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 50px;
 }
-
-
 
 .InfosEvento {
     margin: 30px 5%;
@@ -315,4 +313,208 @@ hr{
     margin-top: 1.5%;
     color: #9B9A9A;
     
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    .Container {
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    .Title {
+        font-size: 1.8rem;
+    }
+
+    .Inicio {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .Profissao {
+        font-size: 1.7rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Foto {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .Infos {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .Nome {
+        height: 100px;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .Funcao {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .Avaliacao {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .Especialidade h2 {
+        font-size: 1.2rem;
+    }
+
+    .Tags {
+        justify-content: center;
+    }
+
+    .Tags p {
+        font-size: .9rem;
+        padding: 5px;
+    }
+
+    .SubTitle {
+        font-size: 1.5rem;
+    }
+
+    .Textarea {
+        height: 150px;
+        font-size: .9rem;
+    }
+
+    .HelperText {
+        font-size: .1rem;
+    }
+
+    .GridContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .InputRow {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .Input, .Select {
+        width: 100%;
+    }
+
+    .CheckboxGroup {
+        gap: 10px;
+    }
+
+    .BotaoEnviar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Cliqueaqui, .Contratar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .Final {
+        text-align: center;
+    }
+
+    .Final p {
+        margin-left: 0;
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 1220px) {
+
+    .Container {
+        height: auto;
+        width: 95%;
+        margin-left: 2.5%;
+        padding: 50px;
+        overflow: hidden;
+    }
+
+    .Inicio {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Foto {
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .Infos {
+        margin-left: 0;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .Nome {
+        justify-content: center;
+        height: 150px;
+    }
+
+    .Funcao {
+        justify-content: center;
+    }
+
+    .Tags {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .GridContainer {
+        gap: 20px;
+    }
+
+    .InputRow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Input, .Select {
+        width: 100%;
+    }
+
+    .BotaoEnviar {
+        width: 100%;
+    }
+
+    .Cliqueaqui, .Contratar {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+
+    .Contratar {
+        margin-left: 5%;
+    }
+
+    .Final {
+        text-align: center;
+    }
 }

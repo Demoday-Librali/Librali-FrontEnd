@@ -479,7 +479,86 @@
     top: calc(50% + 300px);
     text-align: center;
 }
-
+@media (max-width: 1366px) {
+    .Oquee {
+        height: 80vh;
+        clip-path: ellipse(90% 50% at 50% 50%);
+    }
+    
+    .esquerda,
+    .meio,
+    .direita {
+        height: 30vh;
+        min-height: 350px;
+        width: 30%;
+        min-width: 200px;
+    }
+    
+    .titleesquerda,
+    .titlemeio,
+    .titledireita {
+        font-size: 1.9rem;
+        top: calc(50% + 20vh);
+        margin-top: 3%;
+    }
+    .titleesquerda.hovered,
+    .titlemeio.hovered,
+    .titledireita.hovered {
+        font-size: 3rem;
+    }
+    .direita:hover ~ .titledireita{
+      font-size: 3rem;
+      margin-top: -33%;
+    }
+    .esquerda:hover ~ .titleesquerda{
+      font-size: 3rem;
+      margin-top: -23%;
+    }
+    .meio:hover ~ .titlemeio{
+      margin-top: -35%;
+      margin-left: 7%;
+      font-size: 3rem;
+    }
+    .meio:hover ~ .paragrafomeio{
+      margin-left: 70%;
+      width: 100% !important;
+    }
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+    .esquerda img{
+      width: 350px;
+      margin-left: 15%;
+      margin-top: 1.5%;
+    }
+    .meio img{
+      width: 350px;
+      margin-right: 1%;
+      margin-top: 1.5%;
+    }
+    .direita img{
+      width: 350px;
+      margin-left:4%;
+      margin-top: 1.5%;
+    }
+    .paragrafodireita{
+        margin-top: 3%;
+        margin-right: 5%;
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .paragrafomeio{
+      margin-left: 6%;
+      font-size: 1.8rem;
+    }
+    .esquerda:hover .paragrafoesquerda{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
 
 @media (max-width: 1024px) {
     .Oquee {
