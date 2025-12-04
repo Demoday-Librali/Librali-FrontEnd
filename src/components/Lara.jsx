@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Styles from "./css/Lara.module.css";
-import { GoogleGenAI } from "@google/genai";  // Biblioteca para o funcionamento da IA
+import { GoogleGenAI } from "@google/genai";
 import Imglara from "./../assets/images/lara1.jpeg"
 
 // importação da API através de um arquivo 
 const ai = new GoogleGenAI({
   apiKey: import.meta.env.VITE_GEMINI_API_KEY
+  // secrets.env.GEMINI_API_KEY
 });
 
 // Dados mockados de profissionais - Usado lista para armanenzar os dados ( O ideal é substituir por uma API real - será necessario mexer na página de Setores)
@@ -19,7 +20,6 @@ const profissionaisMock = [
     cidade: "São Paulo",
     descricao: "Especialista em interpretação para ambiente escolar e universitário"
   },
-
   {
     id: 2,
     nome: "Carlos Santos",
@@ -29,7 +29,6 @@ const profissionaisMock = [
     cidade: "Rio de Janeiro",
     descricao: "Atua em escolas e cursos preparatórios"
   },
-
   {
     id: 3,
     nome: "Mariana Oliveira",
@@ -39,7 +38,6 @@ const profissionaisMock = [
     cidade: "Brasília",
     descricao: "Experiência em tribunais e audiências"
   },
-
   {
     id: 4,
     nome: "Roberto Lima",
@@ -49,7 +47,6 @@ const profissionaisMock = [
     cidade: "São Paulo",
     descricao: "Especializado em processos jurídicos"
   },
-
   {
     id: 5,
     nome: "Dr. João Pereira",
@@ -59,7 +56,6 @@ const profissionaisMock = [
     cidade: "Belo Horizonte", 
     descricao: "Atendimento em hospitais e consultórios"
   },
-  
   {
     id: 6,
     nome: "Dra. Fernanda Costa",
@@ -70,6 +66,14 @@ const profissionaisMock = [
     descricao: "Experiência em emergências médicas"
   }
 ];
+
+// Função para formatar hora
+const formatTime = (date) => {
+  return date.toLocaleTimeString('pt-BR', { 
+    hour: '2-digit', 
+    minute: '2-digit' 
+  });
+};
 
 export default function Lara() {
   const [input, setInput] = useState("");
@@ -229,10 +233,15 @@ Não reptia em todas as mensgaem que você é a Lara, apenas uma vez ao acessar 
         
         PERGUNTA DO USUÁRIO: "${input}"
         
-        Baseado nos profissionais acima (se houver) e no contexto da Librali, responda de forma útil:`;
+        Baseado nos profissionais acima (se houver) e no contexto da Librali, responda de forma útil:
+      `;
 
-      const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash", // Modelo da IA usada no projeto
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), 8000)
+      );
+
+      const iaPromise = ai.models.generateContent({
+        model: "gemini-2.0-flash",
         contents: [
           {
             role: "user",
@@ -241,7 +250,10 @@ Não reptia em todas as mensgaem que você é a Lara, apenas uma vez ao acessar 
         ]
       });
 
-      // Adiciona resposta da Lara
+      // Agora response existe
+      const response = await Promise.race([iaPromise, timeoutPromise]);
+
+      // Resposta da Lara
       const laraMessage = {
         id: Date.now() + 1,
         text: response.text,
@@ -250,29 +262,21 @@ Não reptia em todas as mensgaem que você é a Lara, apenas uma vez ao acessar 
       };
 
       setMessages(prev => [...prev, laraMessage]);
-      
+
     } catch (error) {
-      console.error("Erro:", error);
-      
+      console.error(error);
+
       const errorMessage = {
         id: Date.now() + 1,
         text: "Desculpe, ocorreu um erro. Tente novamente.",
         sender: "lara",
         timestamp: new Date()
       };
-      
+
       setMessages(prev => [...prev, errorMessage]);
     }
 
     setLoading(false);
-  };
-
-  // Formata hora da mensagem
-  const formatTime = (date) => {
-    return date.toLocaleTimeString('pt-BR', { 
-      hour: '2-digit', 
-      minute: '2-digit' 
-    });
   };
 
   return (
@@ -329,8 +333,6 @@ Não reptia em todas as mensgaem que você é a Lara, apenas uma vez ao acessar 
               </div>
             </div>
           )}
-          
-          {/*REMOVIDO: <div ref={messagesEndRef} /> */}
         </div>
 
         <div className={Styles.chatInput}>

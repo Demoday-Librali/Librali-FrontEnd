@@ -150,6 +150,7 @@
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
+    overflow: hidden;
 }
 #login{
     position: relative;
@@ -182,6 +183,7 @@
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
+    overflow: hidden;
 }
 #login2{
     position: relative;
@@ -214,6 +216,7 @@
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
+    overflow: hidden;
 }
 #login3{
     position: relative;

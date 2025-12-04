@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-.Oquee{
+.Oquee {
     position: relative;
     height: 850px;
     width: 100%;
@@ -10,1432 +8,1263 @@
     clip-path: ellipse(80% 50% at 50% 50%);
     margin-top: -83px;
     z-index: 0;
+    overflow: hidden;
 }
-.esquerda {
+
+/* DIVI AMARELA (ESQUERDA) */
+.esquerda{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffe385;
+  height: 550px;
+  width: 33%;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+  transition: 2s all;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.esquerda img{
+  width: 500px;
+  margin-left: 5%;
+}
+.esquerda:hover {
+  width: 100%;
+  transition: 3s all;
+}
+.esquerda:hover img{
+  margin-left: 70%;
+}
+.esquerda:hover ~ .titleesquerda{
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease;
+    margin-top: -30%;
+    margin-left: 20%;
+    left: 10%;
+    text-align: left;
+}
+/* Quando div esquerda estiver em hover, esconde os outros títulos */
+.esquerda:hover ~ .titlemeio,
+.esquerda:hover ~ .titledireita {
+  display: none !important;
+  pointer-events: none;
+}
+
+/* Quando div meio estiver em hover, esconde os outros títulos */
+.meio:hover ~ .titleesquerda,
+.meio:hover ~ .titledireita {
+  display: none !important;
+  pointer-events: none;
+}
+
+/* Quando div direita estiver em hover, esconde os outros títulos */
+.direita:hover ~ .titleesquerda,
+.direita:hover ~ .titlemeio {
+  display: none !important;
+  pointer-events: none;
+}
+/* TÍTULO ESQUERDA (FORA) */
+.titleesquerda {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    white-space: nowrap;
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #FFE385;
-    height: 550px;
+    
+    /* POSICIONA ABAIXO DA DIV AMARELA */
+    top: calc(50% + 300px);
+    left: 16.5%;
+    transform: translateX(-50%);
+    
     width: 33%;
-    border-top-right-radius: 350px;
-    border-bottom-right-radius: 350px;
-    transition: 2s all;
-    display: flex;
-    justify-content: start;
+    z-index: 20;
+    transition: all 0.5s ease;
 }
+
+/* PARÁGRAFO ESQUERDA */
 .paragrafoesquerda {
-  display: block;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 900px;
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
-}
-.paragrafoesquerda {
-  position: relative;
-  width: 900px;
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
+    position: absolute;
+    width: 1000px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: transform 1s ease, opacity 1s ease;
+    color: #421167;
+    z-index: 15;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50px);
+    pointer-events: none;
 }
 
 .esquerda:hover .paragrafoesquerda {
-  opacity: 1;
-  transform: translateX(0);
-}
-.esquerda:hover {
-    width: 100%;
-    transition: 2s all;
-}
-.esquerda:hover p {
-  display: block;
-}
-.titleesquerda{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 17px;
-    margin-top: 90%;
-    margin-left: -70%;
-    font-family: "Montserrat Alternates", sans-serif;
-    transition: 2s all;
-}.esquerda:hover .titleesquerda{
-    margin-top: 0%;
-    margin-left: -85%;
-    font-size: 46px;
-    color: #421167;
-    transition: 2s all;
-}
-.esquerda:hover .paragrafoesquerda{
-    display: block;
-    margin-top: 20%;
-    margin-left: -90%;
-    width: 900px;
-    font-size: 36px;
-    font-weight: 500;
-    transition: 2s all;
-}
-.esquerda:hover img{
-    margin-left: 70%;
-    transition: 2s all;
-}
-.esquerda:hover h1{
-    transition: none;
-}
-.esquerda:hover ~ .meio,
-.esquerda:hover ~ .direita {
-  display: none;
-  transition: 2s all;
-}
-.esquerda img{
-    width: 500px;
-    margin-top: 10px;
-    margin-left: 95px;
-    transition: 2s all;
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
+    left: 10%;
+    width: 1500px;
+    max-width: 45%;
+    line-height: 1.4;
+    pointer-events: auto;
+    margin-top: 3%;
 }
 
-.meio img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 16px;
-    margin-top: 15px;
-    margin-left: -20px;
-    width: 500px;
+/* DIV ROSA (MEIO) */
+.meio {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FD9BCC;
+    height: 550px;
+    width: 33%;
+    border-radius: 350px;
     transition: 2s all;
-    left: 0%;
-    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
 }
-.meio:hover img{
-  margin-left: -70%;
-  margin-top: 16%;
+
+/* REMOVE O TÍTULO DE DENTRO DA DIV ROSA */
+.meio h1 {
+    display: none !important;
 }
-.direita{
+
+/* TÍTULO MEIO (FORA DA DIV ROSA) */
+.titlemeio {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    
+    /* POSICIONA ABAIXO DA DIV ROSA */
+    top: calc(50% + 300px);
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 33%;
+    z-index: 20;
+    transition: all 0.5s ease;
+}
+
+/* Hover na div rosa - TÍTULO MUDA */
+.meio:hover ~ .titlemeio {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease;
+    top: calc(50% + 300px);
+    text-align: center;
+}
+
+/* Hover na div rosa */
+.meio:hover {
+    width: 100%;
+    transition: 2s all;
+    margin-left: 0;
+}
+
+/* Parágrafo do meio (DENTRO) */
+.paragrafomeio {
+    position: absolute;
+    width: 900px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #421167;
+    margin: 0;
+    opacity: 0;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-30px);
+    z-index: 15;
+    transition: transform 1s ease, opacity 1s ease;
+    pointer-events: none;
+    line-height: 1.3;
+    max-width: 45%;
+    margin-top: 3%;
+}
+
+.meio:hover .paragrafomeio {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
+    pointer-events: auto;
+}
+
+/* DIV VERDE (DIREITA) */
+.direita {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #A5F391;
     height: 550px;
     width: 33%;
     border-top-left-radius: 350px;
     border-bottom-left-radius: 350px;
-    margin-right: -16px;
-    position: absolute; 
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 550px;
-    width: 33%;
     transition: 2s all;
     display: flex;
     justify-content: start;
-     overflow: visible;
+    align-items: center;
+    overflow: hidden;
 }
 
+/* REMOVE O TÍTULO DE DENTRO DA DIV VERDE */
+.direita h1 {
+    display: none !important;
+}
+
+/* TÍTULO DIREITA (FORA DA DIV VERDE) */
+.titledireita {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    
+    /* POSICIONA ABAIXO DA DIV VERDE */
+    top: calc(50% + 300px);
+    left: 83.5%; /* 100% - 16.5% (pois é da direita) */
+    transform: translateX(-50%);
+    
+    width: 33%;
+    z-index: 20;
+    transition: all 0.5s ease;
+}
+
+/* Hover na div verde - TÍTULO MUDA */
+
+/* Hover na div verde */
 .direita:hover {
     width: 100%;
     transition: 2s all;
 }
 
-.direita:hover img{
-    margin-right: 70%;
-    transition: 2s all;
+/* Parágrafo da direita (DENTRO) */
+.paragrafodireita {
+    position: absolute;
+    width: 900px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #421167;
+    margin: 0;
+    opacity: 0;
+    right: 10%; /* Alinha à direita */
+    top: 50%;
+    transform: translateY(-50%) translateX(30px); /* Começa à direita */
+    z-index: 15;
+    transition: transform 1s ease, opacity 1s ease;
+    pointer-events: none;
+    line-height: 1.3;
+    max-width: 45%;
+    text-align: left; /* Texto alinhado à direita */
+}
+
+.direita:hover .paragrafodireita {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
+    pointer-events: auto;
+    right: 15%;
+    margin-left: -20%;
+}
+
+/* Quando divs expandirem, escondem outras */
+.meio:hover ~ .esquerda,
+.meio:hover ~ .direita {
+    display: none;
+    pointer-events: none;
 }
 
 .direita:hover ~ .meio,
 .direita:hover ~ .esquerda {
-    display: none; 
+    display: none;
     pointer-events: none;
     transition: all 0.5s;
 }
-.direita img{
+
+/* Imagens */
+.meio img {
+    position: relative;
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+    transition: 2s all;
+    margin-top: 30px;
+    z-index: 5;
+}
+
+.meio:hover img {
+    margin-left: -70%;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+}
+
+.direita img {
     width: 500px;
     margin-top: 30px;
     margin-left: 60px;
     transition: 2s all;
 }
-.titledireita{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 37px;
-    margin-top: 90%;
-    margin-left: -70%;
-    font-family: "Montserrat", sans-serif;
-    transition: 2s all;
-}.direita:hover .titledireita{
-    margin-top: 0%;
-    margin-left: -60%;
-    font-size: 66px;
-    color: #421167;
+
+.direita:hover img {
+    margin-left: 2%;
     transition: 2s all;
 }
 
-
-.paragrafodireita {
-  position: relative;
-  width: 900px;
-  font-size: 36px;
-  font-weight: 500;
-  opacity: 0;
-  transform: translateX(150%); /* começa fora da tela, bem à direita */
-  transition: transform 1s ease, opacity 1s ease;
-  margin-top: 20%;
-  margin-left: -82%;
-}
-
-/* Quando passar o mouse */
-.direita:hover .paragrafodireita {
-  opacity: 1;
-  transform: translateX(0); /* entra suavemente da direita pra esquerda */
-}
-
-
-
-/* .meio */
-.meio {
-   position: relative;
-  background-color: #FD9BCC;
-  height: 550px;
-  width: 33%; /* igual às laterais */
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
-  margin-left: 34%; /* centraliza */
-  transition: 2s all;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-  z-index: 10;
-}
-
-/* Título da meio */
-
-/* Parágrafo da meio */
-.paragrafomeio {
-  display: block;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1s ease;
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  width: 900px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* Hover da meio */
-.meio:hover {
-  width: 100%;
-  transition: 2s all;
-  margin-left: -0%;
-}
-
-.meio:hover .titlemeio {
-  margin-top: -15%;
-    margin-left: 9%;
-    font-size: 66px;
-    color: #421167;
-    transition: 2s all;
-}
-
-.meio:hover .paragrafomeio {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s ease;
-}
-.esquerda:hover ~ .meio {
-  display: none;
-  pointer-events: none; /* evita que o hover passe para .meio */
-}
-.direita:hover ~ .meio {
-  display: none;
-  pointer-events: none;
-}
-.esquerda:hover ~ .direita {
-  display: none;
-}
-.direita:hover ~ .esquerda {
-  display: none;
-}
-.paragrafomeio{
-    display: none;
-}
-.titlemeio {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  font-size: 37px;
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  z-index: 20;
-  transition: 2s all;
-  left: 50%;
-  margin-top: 110%;
-  transform: translate(-50%, -50%);
-}
-.meio:hover ~ .esquerda,
-.meio:hover ~ .direita
-.meio:hover .titlemeio{
-    margin-top: 0%;
-    margin-left: -60%;
-    font-size: 66px;
-    color: #421167;
-    transition: 2s all;
-    
-}
-.meio:hover .paragrafomeio{
-    display: block;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 950px;
-  font-size: 36px;
-  font-weight: 500;
-  top: -65%; /* Ajuste a posição no hover */
-  margin-left: 125%;
-}
-.direita:hover ~ .meio,
-.direita:hover ~ .esquerda {
-    display: none; /* Mude de opacity: 0 para display: none */
-    pointer-events: none;
-    transition: all 0.5s;
-}
+/* Classe para esconder */
 .hidden {
     display: none !important;
 }
-@media (width: 1440px){
-  .Oquee{
-    position: relative;
-    height: 650px;
-    width: 100%;
-    background-color: #421167;
-    display: flex;
-    align-items: center;
-    clip-path: none;
-    margin-top: -153px;
-    z-index: 0;
-}
-  .esquerda {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #FFE385;
-    height: 450px;
-    width: 33%;
-    border-top-right-radius: 350px;
-    border-bottom-right-radius: 350px;
-    transition: 2s all;
-    display: flex;
-    justify-content: start;
-}
-.paragrafoesquerda {
-  display: block;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 50px;
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
-}
-.paragrafoesquerda {
-  position: relative;
-  width: 10px;
-  font-size: 26px;
-  font-weight: 500;
-  margin: 0;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-}
 
-.esquerda:hover .paragrafoesquerda {
-  opacity: 1;
-  transform: translateX(0);
-}
-.esquerda:hover {
-    width: 100%;
-    transition: 2s all;
-}
-.esquerda:hover p {
-  display: block;
-}
-.titleesquerda{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 18px;
-    font-family: Verdana;
-    margin-top: 100%;
-    margin-left: -80%;
-    font-family: "Montserrat Alternates", sans-serif;
-    transition: 2s all;
-}.esquerda:hover .titleesquerda{
-    margin-top: 0%;
-    margin-left: -85%;
-    font-size: 40px;
-    color: #421167;
-    transition: 2s all;
-}
-.esquerda:hover .paragrafoesquerda{
-    display: block;
-    margin-top: 20%;
-    margin-left: -80%;
-    width: 800px;
-    font-size: 30px;
-    font-weight: 500;
-    transition: 2s all;
-}
-.esquerda:hover img{
-    margin-left: 70%;
-    transition: 2s all;
-    height: 300px;
-}
-.esquerda:hover h1{
-    transition: none;
-}
+/* Quando div esquerda expandir, esconde outras */
 .esquerda:hover ~ .meio,
 .esquerda:hover ~ .direita {
-  display: none;
-  transition: 2s all;
-}
-.esquerda img{
-    width: 400px;
-    height: 400px;
-    margin-top: 35px;
-    margin-left: 7px;
-    transition: 2s all;
-}
-
-
-
-.meio img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 16px;
-    margin-top: 15px;
-    margin-left: -20px;
-    transition: 2s all;
-    left: 0%;
-    top: 0%;
-    width: 400px;
-    height: 400px;
-}
-.meio:hover img{
-  margin-left: -70%;
-  margin-top:20%;
-}
-.meio {
-   position: relative;
-  background-color: #FD9BCC;
-  height: 450px;
-  width: 33%; /* igual às laterais */
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
-  margin-left: 34%; /* centraliza */
-  transition: 2s all;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-  z-index: 10;
-}
-
-/* Título da meio */
-
-/* Parágrafo da meio */
-.paragrafomeio {
-  display: block;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1s ease;
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  width: 900px;
-  text-align: center;
-  margin-top: 45px;
-}
-
-/* Hover da meio */
-.meio:hover {
-  width: 100%;
-  transition: 2s all;
-  margin-left: -0%;
-}
-
-.meio:hover .titlemeio {
-    margin-top: -20%;
-    margin-left: 9%;
-    font-size: 50px;
-    color: #421167;
-    transition: 2s all;
-}
-
-.meio:hover .paragrafomeio {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s ease;
-  color: black;
-  width: 500px;
-}
-.esquerda:hover ~ .meio {
-  display: none;
-  pointer-events: none; /* evita que o hover passe para .meio */
-}
-.direita:hover ~ .meio {
-  display: none;
-  pointer-events: none;
-}
-.esquerda:hover ~ .direita {
-  display: none;
-}
-.direita:hover ~ .esquerda {
-  display: none;
-}
-.paragrafomeio{
     display: none;
+    pointer-events: none;
 }
-.titlemeio {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  font-size: 34px;
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  z-index: 20;
-  transition: 2s all;
-  left: 50%;
-  margin-top: 130%;
-  transform: translate(-50%, -50%);
+
+
+
+
+.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
 }
+
+/* Estilo normal dos títulos com transição */
+.titleesquerda,
+.titlemeio,
+.titledireita {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease 0.3s, visibility 0.5s ease 0.3s, 
+                color 0.5s ease, font-size 0.5s ease, transform 0.5s ease;
+}
+
+/* Estilo normal das divs com transição */
+.esquerda,
+.meio,
+.direita {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease 0.3s, visibility 0.5s ease 0.3s,
+                width 2s ease, margin 2s ease, transform 2s ease;
+}
+
+/* Ajuste nos hover effects para também ter transição */
+.esquerda:hover ~ .titleesquerda {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.meio:hover ~ .titlemeio {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease, opacity 0.5s ease, visibility 0.5s ease;
+    top: calc(50% + 300px);
+    text-align: center;
+    margin-top: -30%;
+    width: 65%;
+    margin-left: 2%;
+}
+
+.direita:hover ~ .titledireita {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease, opacity 0.5s ease, visibility 0.5s ease;
+    top: calc(50% + 300px);
+    text-align: center;
+    margin-top: -30%;
+    margin-left: -30%;
+    width: 65%;
+}
+
+/* Quando divs expandirem, escondem outras com animação */
 .meio:hover ~ .esquerda,
-.meio:hover ~ .direita
-.meio:hover .titlemeio{
-    margin-top: 0%;
-    margin-left: -60%;
-    font-size: 66px;
-    color: #421167;
-    transition: 2s all;
-    
+.meio:hover ~ .direita {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-.meio:hover .paragrafomeio{
-    display: block;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 800px;
-  font-size: 30px;
-  font-weight: 500;
-  top: -75%; /* Ajuste a posição no hover */
-  margin-left: 135%;
-}
+
 .direita:hover ~ .meio,
 .direita:hover ~ .esquerda {
-    display: none; /* Mude de opacity: 0 para display: none */
+    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-
-
-
-.direita{
-    background-color: #A5F391;
-    height: 450px;
-    width: 33%;
-    border-top-left-radius: 350px;
-    border-bottom-left-radius: 350px;
-    margin-right: -16px;
-    position: absolute; 
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 33%;
-    transition: 2s all;
-    display: flex;
-    justify-content: start;
-     overflow: visible;
-}
-
-.direita:hover {
-    width: 100%;
-    transition: 2s all;
-}
-
-.direita:hover img{
-    margin-right: 70%;
-    transition: 2s all;
-    margin-top: 2%;
-}
-/* CORREÇÃO AQUI - Mudar para display: none */
-.direita:hover ~ .meio,
-.direita:hover ~ .esquerda {
-    display: none; /* Mude de opacity: 0 para display: none */
-    pointer-events: none;
-    transition: all 0.5s;
-}
-.direita img{
-    width: 400px;
-    height: 400px;
-    margin-top: 7%;
-    margin-left:60px;
-    transition: 2s all;
-}
-.titledireita{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 34px;
-    margin-top: 100%;
-    margin-left: -82%;
-    font-family: "Montserrat", sans-serif;
-    transition: 2s all;
-}.direita:hover .titledireita{
-    margin-top: 0%;
-    margin-left: -70%;
-    font-size: 60px;
-    color: #421167;
-    transition: 2s all;
-}
-
-
-.paragrafodireita {
-  position: relative;
-  width: 700px;
-  font-size: 30px;
-  font-weight: 500;
-  opacity: 0;
-  transform: translateX(150%); /* começa fora da tela, bem à direita */
-  transition: transform 1s ease, opacity 1s ease;
-  margin-top: 20%;
-  margin-left: -73%;
-}
-
-/* Quando passar o mouse */
-.direita:hover .paragrafodireita {
-  opacity: 1;
-  transform: translateX(0); /* entra suavemente da direita pra esquerda */
-}
-}
-@media screen and (max-width: 1024px) {
-  .Oquee{
-    position: relative;
-    height: 850px;
-    width: 100%;
-    background-color: #421167;
-    display: flex;
-    align-items: center;
-    clip-path: none;
-    margin-top: -153px;
-    z-index: 0;
-}
-  .esquerda {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #FFE385;
-    height: 450px;
-    width: 33%;
-    border-top-right-radius: 350px;
-    border-bottom-right-radius: 350px;
-    transition: 2s all;
-    display: flex;
-    justify-content: start;
-}
-.paragrafoesquerda {
-  display: block;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 50px;
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
-}
-.paragrafoesquerda {
-  position: relative;
-  width: 10px;
-  font-size: 26px;
-  font-weight: 500;
-  margin: 0;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-}
-
-.esquerda:hover .paragrafoesquerda {
-  opacity: 1;
-  transform: translateX(0);
-}
-.esquerda:hover {
-    width: 100%;
-    transition: 2s all;
-}
-.esquerda:hover p {
-  display: block;
-}
-.titleesquerda{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 13px;
-    font-family: Verdana;
-    margin-top: 135%;
-    margin-left: -80%;
-    font-family: "Montserrat Alternates", sans-serif;
-    transition: 2s all;
-}.esquerda:hover .titleesquerda{
-    margin-top: 0%;
-    margin-left: -95%;
-    font-size: 40px;
-    color: #421167;
-    transition: 2s all;
-}
-.esquerda:hover .paragrafoesquerda{
-    display: block;
-    margin-top: 20%;
-    margin-left: -75%;
-    width: 700px;
-    font-size: 30px;
-    font-weight: 500;
-    transition: 2s all;
-}
-.esquerda:hover img{
-    margin-left: 70%;
-    transition: 2s all;
-}
-.esquerda:hover h1{
-    transition: none;
-}
 .esquerda:hover ~ .meio,
 .esquerda:hover ~ .direita {
-  display: none;
-  transition: 2s all;
-}
-.esquerda img{
-    width: 300px;
-    height: 300px;
-    margin-top: 70px;
-    margin-left: 7px;
-    transition: 2s all;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-
-
-.meio img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 16px;
-    margin-top: 15px;
-    margin-left: -20px;
-    width: 500px;
-    transition: 2s all;
-    left: 0%;
-    top: 0%;
-    width: 300px;
-    height: 300px;
-}
-.meio:hover img{
-  margin-left: -70%;
-  margin-top:28%;
-}
-.meio {
-   position: relative;
-  background-color: #FD9BCC;
-  height: 450px;
-  width: 33%; /* igual às laterais */
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
-  margin-left: 34%; /* centraliza */
-  transition: 2s all;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-  z-index: 10;
-}
-
-/* Título da meio */
-
-/* Parágrafo da meio */
-.paragrafomeio {
-  display: block;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1s ease;
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  width: 900px;
-  text-align: center;
-  margin-top: 45px;
-}
-
-/* Hover da meio */
-.meio:hover {
-  width: 100%;
-  transition: 2s all;
-  margin-left: -0%;
-}
-
-.meio:hover .titlemeio {
-  margin-top: -25%;
-    margin-left: 9%;
-    font-size: 50px;
-    color: #421167;
-    transition: 2s all;
-}
-
-.meio:hover .paragrafomeio {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s ease;
-  color: black;
-  width: 500px;
-  margin-left: 370%;
-}
-.esquerda:hover ~ .meio {
-  display: none;
-  pointer-events: none; /* evita que o hover passe para .meio */
-}
-.direita:hover ~ .meio {
-  display: none;
+/* Remova as regras antigas que usam display: none nos seletores :hover ~ */
+/* DELETE ESTAS LINHAS: */
+.esquerda:hover ~ .titlemeio,
+.esquerda:hover ~ .titledireita {
+  display: none !important;
   pointer-events: none;
 }
-.esquerda:hover ~ .direita {
-  display: none;
+
+.meio:hover ~ .titleesquerda,
+.meio:hover ~ .titledireita {
+  display: none !important;
+  pointer-events: none;
 }
-.direita:hover ~ .esquerda {
-  display: none;
+
+.direita:hover ~ .titleesquerda,
+.direita:hover ~ .titlemeio {
+  display: none !important;
+  pointer-events: none;
 }
-.paragrafomeio{
-    display: none;
-}
-.titlemeio {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  font-size: 25px;
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  z-index: 20;
-  transition: 2s all;
-  left: 50%;
-  margin-top: 160%;
-  transform: translate(-50%, -50%);
-}
-.meio:hover ~ .esquerda,
-.meio:hover ~ .direita
-.meio:hover .titlemeio{
-    margin-top: 0%;
-    margin-left: -60%;
-    font-size: 66px;
+
+
+
+
+
+/* Estilo para títulos quando sua div correspondente está em hover */
+.titleesquerda.hovered {
     color: #421167;
-    transition: 2s all;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease;
+}
+
+.titlemeio.hovered {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease;
+    top: calc(50% + 300px);
+    text-align: center;
+}
+
+.titledireita.hovered {
+    color: #421167;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 3s ease;
+    top: calc(50% + 300px);
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .Oquee {
+        height: 80vh;
+        clip-path: ellipse(90% 50% at 50% 50%);
+    }
     
-}
-.meio:hover .paragrafomeio{
-    display: block;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-  position: relative;
-  width: 700px;
-  font-size: 30px;
-  font-weight: 500;
-  top: -65%; /* Ajuste a posição no hover */
-  margin-left: 165%;
-}
-.direita:hover ~ .meio,
-.direita:hover ~ .esquerda {
-    display: none; /* Mude de opacity: 0 para display: none */
-    pointer-events: none;
-    transition: all 0.5s;
-}
-
-
-
-
-.direita{
-    background-color: #A5F391;
-    height: 450px;
-    width: 33%;
-    border-top-left-radius: 350px;
-    border-bottom-left-radius: 350px;
-    margin-right: -16px;
-    position: absolute; 
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 33%;
-    transition: 2s all;
-    display: flex;
-    justify-content: start;
-     overflow: visible;
-}
-
-.direita:hover {
-    width: 100%;
-    transition: 2s all;
-}
-
-.direita:hover img{
-    margin-right: 70%;
-    transition: 2s all;
-    margin-top: 8%;
-}
-/* CORREÇÃO AQUI - Mudar para display: none */
-.direita:hover ~ .meio,
-.direita:hover ~ .esquerda {
-    display: none; /* Mude de opacity: 0 para display: none */
-    pointer-events: none;
-    transition: all 0.5s;
-}
-.direita img{
-    width: 300px;
-    height: 300px;
-    margin-top: 25%;
-    margin-left:20px;
-    transition: 2s all;
-}
-.titledireita{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    height: 150px;
-    white-space: nowrap;
-    font-size: 25px;
-    margin-top: 134%;
-    margin-left: -83%;
-    font-family: "Montserrat", sans-serif;
-    transition: 2s all;
-}.direita:hover .titledireita{
-    margin-top: 0%;
-    margin-left: -70%;
-    font-size: 60px;
-    color: #421167;
-    transition: 2s all;
+    .esquerda,
+    .meio,
+    .direita {
+        height: 30vh;
+        min-height: 350px;
+        width: 30%;
+        min-width: 200px;
+    }
+    
+    .titleesquerda,
+    .titlemeio,
+    .titledireita {
+        font-size: 1.5rem;
+        top: calc(50% + 20vh);
+    }
+    .titleesquerda.hovered,
+    .titlemeio.hovered,
+    .titledireita.hovered {
+        font-size: 2rem;
+    }
+    .direita:hover ~ .titledireita{
+      font-size: 2.5rem;
+      margin-top: -45%;
+    }
+    .esquerda:hover ~ .titleesquerda{
+      font-size: 2rem;
+    }
+    .meio:hover ~ .titlemeio{
+      margin-top: -45%;
+      font-size: 2rem;
+    }
+    .meio:hover ~ .paragrafomeio{
+      margin-left: 70%;
+    }
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+    .esquerda img,
+    .meio img,
+    .direita img{
+      width: 200px;
+    }
+    .paragrafodireita{
+        margin-top: 1%;
+        margin-right: 10%; /* Agora está na mesma regra */
+    }
+    .paragrafomeio{
+      margin-left: 10%;
+    }
 }
 
+@media (max-width: 768px) {
+    .Oquee {
+        height: auto;
+        min-height: 150vh;
+        clip-path: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    
+    .esquerda, .meio, .direita {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 100px;
+        transition: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+    }
+    
 
-.paragrafodireita {
-  position: relative;
-  width: 700px;
-  font-size: 30px;
-  font-weight: 500;
-  opacity: 0;
-  transform: translateX(150%); /* começa fora da tela, bem à direita */
-  transition: transform 1s ease, opacity 1s ease;
-  margin-top: 20%;
-  margin-left: -73%;
-  display: none;
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        width: 90% !important; 
+    }
+    
+    .esquerda:hover img,
+    .meio:hover img,
+    .direita:hover img {
+        margin-left: 0 !important; 
+    }
+    
+    .esquerda:hover .paragrafoesquerda,
+    .meio:hover .paragrafomeio,
+    .direita:hover .paragrafodireita {
+        opacity: 1 !important; /* Já está visível */
+        transform: none !important;
+    }
+    
+    .esquerda {
+        margin-top: 20%;
+        margin-left: 0;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .meio {
+        margin-right: 10%;
+        border-radius: 100px;
+        margin-top: 70%;
+    }
+    
+    .direita {
+        margin-right: 0;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-top: 70%;
+        margin-bottom: 10%;
+    }
+    
+    .esquerda img {
+        margin-left: 5% !important;
+        width: 150px !important;
+        height: auto;
+    }
+    
+    .meio img {
+        margin-right: 70% !important;
+        margin-top: 10% !important;
+        width: 150px !important;
+        height: auto;
+        margin-left: 5% !important;
+    }
+    
+    .direita img {
+        margin-left: 5% !important;
+        margin-top: 0 !important;
+        width: 150px !important;
+        height: auto;
+    }
+    
+    .titleesquerda {
+        margin-top: -70%;
+        margin-left: -20%;
+        font-size: 2rem;
+        width: 90%;
+        color: #421167;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+    
+    .titlemeio {
+        margin-top: -70% !important;
+        margin-left: 35% !important;
+        font-size: 2rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    .titledireita {
+        margin-top: -75% !important;
+        margin-left: 15% !important;
+        font-size: 1.8rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    /* PARÁGRAFOS SEMPRE VISÍVEIS NO MOBILE */
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        position: relative !important;
+        width: 85% !important;
+        max-width: 85% !important;
+        font-size: 1rem !important;
+        opacity: 1 !important; /* SEMPRE VISÍVEL */
+        visibility: visible !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 15px auto !important;
+        padding: 0 10px;
+        text-align: center;
+        color: #421167 !important;
+        pointer-events: auto !important;
+        display: block !important; /* SEMPRE VISÍVEL */
+        transition: none !important; /* Remove transição */
+        line-height: 1.5;
+    }
+    
+    .paragrafoesquerda {
+        margin-top: 10px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .paragrafomeio {
+        margin-left: 30% !important;
+        width: 60% !important;
+        margin-top: -20% !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .paragrafodireita {
+        margin-top: 1% !important;
+        margin-right: 0 !important;
+        text-align: center !important;
+        font-size: 1.2rem !important;
+        width: 70% !important;
+    }
+    
+    /* REMOVE TODAS AS CLASSES DE ESCONDER NO MOBILE */
+    .esquerda.hidden,
+    .meio.hidden,
+    .direita.hidden,
+    .titleesquerda.hidden,
+    .titlemeio.hidden,
+    .titledireita.hidden {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+    
+    /* Remove hover effects das divs */
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        background-color: inherit !important; /* Mantém cor original */
+    }
 }
 
-/* Quando passar o mouse */
-.direita:hover .paragrafodireita {
-  opacity: 1;
-  transform: translateX(0); /* entra suavemente da direita pra esquerda */
-  display: block;
+@media (max-width: 480px) {
+    .Oquee {
+        height: auto;
+        min-height: 150vh;
+        clip-path: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    
+    .esquerda, .meio, .direita {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 100px;
+        transition: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+    }
+    
+
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        width: 90% !important; 
+    }
+    
+    .esquerda:hover img,
+    .meio:hover img,
+    .direita:hover img {
+        margin-left: 0 !important; 
+    }
+    
+    .esquerda:hover .paragrafoesquerda,
+    .meio:hover .paragrafomeio,
+    .direita:hover .paragrafodireita {
+        opacity: 1 !important; /* Já está visível */
+        transform: none !important;
+    }
+    
+    .esquerda {
+        margin-top: 40%;
+        margin-left: 0;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .meio {
+        margin-right: 10%;
+        border-radius: 100px;
+        margin-top: 130%;
+    }
+    
+    .direita {
+        margin-right: 0;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-top: 130%;
+        margin-bottom: 10%;
+    }
+    
+    .esquerda img {
+        display: none;
+    }
+    
+    .meio img {
+        display: none;
+    }
+    
+    .direita img {
+        display: none;
+    }
+    
+    .titleesquerda {
+        margin-top: -125%;
+        margin-left: -35%;
+        font-size: 1.5rem !important;
+        width: 90%;
+        color: #421167;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+    
+    .titlemeio {
+        margin-top: -120% !important;
+        margin-left: 7% !important;
+        font-size: 1.5rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    .titledireita {
+        margin-top: -130% !important;
+        margin-left: 7% !important;
+        font-size: 1.5rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    /* PARÁGRAFOS SEMPRE VISÍVEIS NO MOBILE */
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        position: relative !important;
+        width: 85% !important;
+        max-width: 85% !important;
+        font-size: 1rem !important;
+        opacity: 1 !important; /* SEMPRE VISÍVEL */
+        visibility: visible !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 15px auto !important;
+        padding: 0 10px;
+        text-align: center;
+        color: #421167 !important;
+        pointer-events: auto !important;
+        display: block !important; /* SEMPRE VISÍVEL */
+        transition: none !important; /* Remove transição */
+        line-height: 1.5;
+    }
+    
+    .paragrafoesquerda {
+        margin-top: 10px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafomeio {
+        margin-left: 10% !important;
+        width: 80% !important;
+        margin-top: 10% !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafodireita {
+        margin-top: 1% !important;
+        text-align: center !important;
+        font-size: 1.2rem !important;
+        width: 70% !important;
+    }
+    
+    /* REMOVE TODAS AS CLASSES DE ESCONDER NO MOBILE */
+    .esquerda.hidden,
+    .meio.hidden,
+    .direita.hidden,
+    .titleesquerda.hidden,
+    .titlemeio.hidden,
+    .titledireita.hidden {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+    
+    /* Remove hover effects das divs */
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        background-color: inherit !important; /* Mantém cor original */
+    }
+}@media (max-width: 360px) {
+    .Oquee {
+        height: auto;
+        min-height: 200vh;
+        clip-path: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    
+    .esquerda, .meio, .direita {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 100px;
+        transition: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+    }
+    
+
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        width: 90% !important; 
+    }
+    
+    .esquerda:hover img,
+    .meio:hover img,
+    .direita:hover img {
+        margin-left: 0 !important; 
+    }
+    
+    .esquerda:hover .paragrafoesquerda,
+    .meio:hover .paragrafomeio,
+    .direita:hover .paragrafodireita {
+        opacity: 1 !important; /* Já está visível */
+        transform: none !important;
+    }
+    
+    .esquerda {
+        margin-top: 50%;
+        margin-left: 0;
+        width: 100%;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .meio {
+        margin-right: 10%;
+        border-radius: 100px;
+        margin-top: 170%;
+        height: 400px;
+    }
+    
+    .direita {
+        margin-right: 0;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-top: 180%;
+        margin-bottom: 10%;
+        height: 400px;
+    }
+    
+    .esquerda img {
+        display: none;
+    }
+    
+    .meio img {
+        display: none;
+    }
+    
+    .direita img {
+        display: none;
+    }
+    
+    .titleesquerda {
+        margin-top: -145%;
+        margin-left: -35%;
+        font-size: 1.5rem !important;
+        width: 90%;
+        color: #421167;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+    
+    .titlemeio {
+        margin-top: -165% !important;
+        margin-left: 2% !important;
+        font-size: 1.3rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    .titledireita {
+        margin-top: -160% !important;
+        margin-left: 10% !important;
+        font-size: 1.5rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    /* PARÁGRAFOS SEMPRE VISÍVEIS NO MOBILE */
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        position: relative !important;
+        width: 85% !important;
+        max-width: 85% !important;
+        font-size: 1rem !important;
+        opacity: 1 !important; /* SEMPRE VISÍVEL */
+        visibility: visible !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 15px auto !important;
+        padding: 0 10px;
+        text-align: center;
+        color: #421167 !important;
+        pointer-events: auto !important;
+        display: block !important; /* SEMPRE VISÍVEL */
+        transition: none !important; /* Remove transição */
+        line-height: 1.5;
+    }
+    
+    .paragrafoesquerda {
+        margin-top: 60px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafomeio {
+        margin-left: 10% !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 50px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafodireita {
+        margin-top: 30% !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    
+    /* REMOVE TODAS AS CLASSES DE ESCONDER NO MOBILE */
+    .esquerda.hidden,
+    .meio.hidden,
+    .direita.hidden,
+    .titleesquerda.hidden,
+    .titlemeio.hidden,
+    .titledireita.hidden {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+    
+    /* Remove hover effects das divs */
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        background-color: inherit !important; /* Mantém cor original */
+    }
 }
+
+@media (max-width: 320px) {
+    .Oquee {
+        height: auto;
+        min-height: 150vh;
+        clip-path: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    
+    .esquerda, .meio, .direita {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 100px;
+        transition: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+    }
+    
+
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        width: 90% !important; 
+    }
+    
+    .esquerda:hover img,
+    .meio:hover img,
+    .direita:hover img {
+        margin-left: 0 !important; 
+    }
+    
+    .esquerda:hover .paragrafoesquerda,
+    .meio:hover .paragrafomeio,
+    .direita:hover .paragrafodireita {
+        opacity: 1 !important; /* Já está visível */
+        transform: none !important;
+    }
+    
+    .esquerda {
+        margin-top: 50%;
+        margin-left: 0;
+        width: 100%;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .meio {
+        margin-right: 10%;
+        border-radius: 100px;
+        margin-top: 170%;
+        height: 400px;
+    }
+    
+    .direita {
+        margin-right: 0;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-top: 180%;
+        margin-bottom: 10%;
+        height: 400px;
+    }
+    
+    .esquerda img {
+        display: none;
+    }
+    
+    .meio img {
+        display: none;
+    }
+    
+    .direita img {
+        display: none;
+    }
+    
+    .titleesquerda {
+        margin-top: -169%;
+        margin-left: -35%;
+        font-size: 1.1rem !important;
+        width: 90%;
+        color: #421167;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+    
+    .titlemeio {
+        margin-top: -185% !important;
+        margin-left: 2% !important;
+        font-size: 1.1rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    .titledireita {
+        margin-top: -180% !important;
+        margin-left: 2% !important;
+        font-size: 1.1rem !important;
+        width: 90% !important;
+        color: #421167 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+    
+    /* PARÁGRAFOS SEMPRE VISÍVEIS NO MOBILE */
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        position: relative !important;
+        width: 85% !important;
+        max-width: 85% !important;
+        font-size: 1rem !important;
+        opacity: 1 !important; /* SEMPRE VISÍVEL */
+        visibility: visible !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        margin: 15px auto !important;
+        padding: 0 10px;
+        text-align: center;
+        color: #421167 !important;
+        pointer-events: auto !important;
+        display: block !important; /* SEMPRE VISÍVEL */
+        transition: none !important; /* Remove transição */
+        line-height: 1.5;
+    }
+    
+    .paragrafoesquerda {
+        margin-top: 60px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafomeio {
+        margin-left: 10% !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 50px !important;
+        font-size: 1rem !important;
+    }
+    
+    .paragrafodireita {
+        margin-top: 30% !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    
+    /* REMOVE TODAS AS CLASSES DE ESCONDER NO MOBILE */
+    .esquerda.hidden,
+    .meio.hidden,
+    .direita.hidden,
+    .titleesquerda.hidden,
+    .titlemeio.hidden,
+    .titledireita.hidden {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+    
+    /* Remove hover effects das divs */
+    .esquerda:hover,
+    .meio:hover,
+    .direita:hover {
+        background-color: inherit !important; /* Mantém cor original */
+    }
 }
 
-
-
-@media screen and (max-width: 768px){
-  .esquerda:hover,
-  .meio:hover,
-  .direita:hover,
-  .esquerda:hover *,
-  .meio:hover *,
-  .direita:hover * {
-    all: unset; /* remove qualquer efeito, cor, animação, etc */
-  }
-  /* Restaura o layout padrão */
-  .esquerda, .meio, .direita {
-    transition: none !important;
-    width: 90% !important;
-    height: auto !important;
-  }
-  .Oquee{
-    position: relative;
-    height: 850px;
-    width: 100%;
-    background-color: #421167;
-    display: flex;
-    align-items: center;
-    clip-path: ellipse(100% 60% at 50% 50%);
-    margin-top: -1px;
-    z-index: 0;
-}
- .esquerda img{
-    display: none;
-  }
-  .esquerda {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .paragrafoesquerda {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 80%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titleesquerda {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 40%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .esquerda{
-    width: 82%;
-    height: 250px;
-    margin-top: -35%;
-  }
-
-
-  .meio img{
-    display: none;
-  }
-  .meio {
-    width: 78%;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5.3%;
-    margin-top: 3%;
-  }
-  .paragrafomeio {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 80%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titlemeio {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 35px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-
-
-  .direita img{
-    display: none;
-  }
-  .direita {
-    width: 95%;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5.3%;
-    margin-top: 37%;
-  }
-  .paragrafodireita {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 60%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 4%;
-    margin-left: 15%;
-    color: #421167;
-  }
-
-  .titledireita {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 1%;
-    left: 45%;
-    transform: translateX(-50%);
-    font-size: 35px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-
-
-
-@media screen and (max-width: 480px) {
-  .esquerda:hover,
-  .meio:hover,
-  .direita:hover,
-  .esquerda:hover *,
-  .meio:hover *,
-  .direita:hover * {
-    all: unset; /* remove qualquer efeito, cor, animação, etc */
-  }
-  /* Restaura o layout padrão */
-  .esquerda, .meio, .direita {
-    transition: none !important;
-    width: 90% !important;
-    height: auto !important;
-  }
-  .Oquee{
-    position: relative;
-    height: 850px;
-    width: 100%;
-    background-color: #421167;
-    display: flex;
-    align-items: center;
-    clip-path: ellipse(100% 60% at 50% 50%);
-    margin-top: -1px;
-    z-index: 0;
-}
- .esquerda img{
-    display: none;
-  }
-  .esquerda {
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    top: 48%;
-  }
-
-  .paragrafoesquerda {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 80%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titleesquerda {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 40%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .esquerda{
-    width: 82%;
-    height: 250px;
-    margin-top: -55%;
-  }
-
-
-  .meio img{
-    display: none;
-  }
-  .meio {
-    width: 190%;
-    height: 300px;
-    margin-left: 5.3%;
-    margin-top: 3%;
-  }
-  .paragrafomeio {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 82%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titlemeio {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 28px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-
-
-  .direita img{
-    display: none;
-  }
-  .direita {
-    width: 95%;
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5.3%;
-    margin-top: 60%;
-  }
-  .paragrafodireita {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 90%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-left: 5%;
-    color: #421167;
-  }
-
-  .titledireita {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 1%;
-    left: 55%;
-    transform: translateX(-50%);
-    font-size: 28px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-
-
-
-@media screen and (max-width: 360px) {
-  .esquerda:hover,
-  .meio:hover,
-  .direita:hover,
-  .esquerda:hover *,
-  .meio:hover *,
-  .direita:hover * {
-    all: unset; /* remove qualquer efeito, cor, animação, etc */
-  }
-  /* Restaura o layout padrão */
-  .esquerda, .meio, .direita {
-    transition: none !important;
-    width: 90% !important;
-    height: auto !important;
-  }
-  .Oquee{
-    position: relative;
-    height: 950px;
-    width: 100%;
-    background-color: #421167;
-    display: flex;
-    align-items: center;
-    clip-path: ellipse(100% 60% at 50% 50%);
-    margin-top: -1px;
-    z-index: 0;
-}
- .esquerda img{
-    display: none;
-  }
-  .esquerda {
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    top: 40%;
-  }
-
-  .paragrafoesquerda {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 82%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titleesquerda {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 40%;
-    transform: translateX(-50%);
-    font-size: 13px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .esquerda{
-    width: 82%;
-    height: 250px;
-    margin-top: -55%;
-  }
-
-
-  .meio img{
-    display: none;
-  }
-  .meio {
-    width: 1090% !important;
-    height: 3000px;
-    margin-top: 10%;
-  }
-  .paragrafomeio {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 82%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15%;
-    margin-left: 7%;
-    color: #421167;
-  }
-
-  .titlemeio {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-
-
-  .direita img{
-    display: none;
-  }
-  .direita {
-    width: 100%;
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90%;
-  }
-  .paragrafodireita {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
-    position: relative;
-    width: 90%;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-left: 5%;
-    color: #421167;
-  }
-
-  .titledireita {
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 1%;
-    left: 57%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: #421167;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
+/* CLASSE .hidden - PARA ANIMAÇÃO DE SAÍDA */
+.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
 }

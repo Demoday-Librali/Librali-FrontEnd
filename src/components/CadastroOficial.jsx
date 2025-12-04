@@ -11,7 +11,6 @@ import { cadastroForm } from '../hooks/cadastroForm'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-
 import inscricao from '../assets/images/sinal-inscricao.png'
 import bem_vindo from '../assets/images/sinal-bem-vindo.png'
 import logo from '../assets/images/logo-completo.png'
@@ -29,7 +28,6 @@ const formTemplate = {
     rua:'',
     uf:'',
     cidade:'',
-    email:'',
     phone:'',
     cel:''
 }

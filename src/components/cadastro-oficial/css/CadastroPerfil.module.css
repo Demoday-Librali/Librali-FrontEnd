@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    margin-top: -60px;
 }
 
 .form_control input{
-    width: 330px;
+    width: 390px;
     height: 40px;
     border-radius: 8px;
     border: 1px solid #000101;
@@ -23,7 +24,7 @@
 }
 
 #data_nascimento {
-    width: 100%;
+    width: 390px;
 }
 
 #data_nasc {
@@ -35,19 +36,47 @@
 }
 
 .senhas {
-    width: 100%;
+    width: 390px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
 
 #form_senha {
-    width: 154px;
+    width: 175px;
     height: 40px;
 }
 
+#controle_check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 390px;
+    height: 40px;
+    margin-top: 20px;
+    gap: 7px;
+}
+
+#controle_check input:checked ~ #check_box {
+        background-color: #A5F391;
+}
+
+#check_box {
+    width: 15px;
+    height: 15px;
+}
+
+#check_box {
+    background-color: #A5F391;
+}
+
+#checkbox_label {
+    font-size: 14px;
+    color: #1D0B3F;
+    font-weight: 400;
+}
 
 @media (max-width: 375px) {
     .cadastro {

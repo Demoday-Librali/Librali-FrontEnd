@@ -5,12 +5,12 @@ function Contato(){
     const [descricaoEvento, setDescricaoEvento] = useState("")
     const [endereco, setEndereco] = useState({
         cep: '',
-        rua: '',
-        numero: '',
-        complemento: '',
-        bairro: '',
+        estado: '',
         cidade: '',
-        estado: ''
+        bairro: '',
+        rua: '',
+        complemento: '',
+        numero: ''
     })
     const [horario, setHorario] = useState({
         data: '',
@@ -46,9 +46,9 @@ function Contato(){
                     setEndereco(prev => ({
                         ...prev,
                         rua: data.logradouro || '',
-                        bairro: data.bairro || '',
+                        estado: data.uf || '',
                         cidade: data.localidade || '',
-                        estado: data.uf || ''
+                        bairro: data.bairro || ''
                     }))
                 }
             } catch (error) {
@@ -134,9 +134,41 @@ function Contato(){
                                     className={Style.Input}
                                     maxLength="9"
                                 />
+                            </div>
+                        </div>
+
+                        <div className={Style.InputGroup}>
+                            <label className={Style.Label}>Cidade *</label>
+                            <div className={Style.InputRow}>
                                 <input
                                     type="text"
-                                    placeholder="Confirme o CEP"
+                                    name="cidade"
+                                    value={endereco.cidade}
+                                    onChange={handleEnderecoChange}
+                                    placeholder="Cidade"
+                                    className={Style.Input}
+                                />
+                                <input
+                                    type="text"
+                                    name="estado"
+                                    value={endereco.estado}
+                                    onChange={handleEnderecoChange}
+                                    placeholder="Estado"
+                                    className={Style.Input}
+                                    maxLength="2"
+                                />
+                            </div>
+                        </div>
+
+                        <div className={Style.InputGroup}>
+                            <label className={Style.Label}>Bairro *</label>
+                            <div className={Style.InputRow}>
+                                <input
+                                    type="text"
+                                    name="bairro"
+                                    value={endereco.bairro}
+                                    onChange={handleEnderecoChange}
+                                    placeholder="Bairro"
                                     className={Style.Input}
                                 />
                             </div>
@@ -151,11 +183,6 @@ function Contato(){
                                     value={endereco.rua}
                                     onChange={handleEnderecoChange}
                                     placeholder="Nome da rua"
-                                    className={Style.Input}
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="Confirme a rua"
                                     className={Style.Input}
                                 />
                             </div>
@@ -179,48 +206,6 @@ function Contato(){
                                     value={endereco.complemento}
                                     onChange={handleEnderecoChange}
                                     className={Style.Input}
-                                />
-                            </div>
-                        </div>
-
-                        <div className={Style.InputGroup}>
-                            <label className={Style.Label}>Bairro *</label>
-                            <div className={Style.InputRow}>
-                                <input
-                                    type="text"
-                                    name="bairro"
-                                    value={endereco.bairro}
-                                    onChange={handleEnderecoChange}
-                                    placeholder="Bairro"
-                                    className={Style.Input}
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="Confirme o bairro"
-                                    className={Style.Input}
-                                />
-                            </div>
-                        </div>
-
-                        <div className={Style.InputGroup}>
-                            <label className={Style.Label}>Cidade *</label>
-                            <div className={Style.InputRow}>
-                                <input
-                                    type="text"
-                                    name="cidade"
-                                    value={endereco.cidade}
-                                    onChange={handleEnderecoChange}
-                                    placeholder="Cidade"
-                                    className={Style.Input}
-                                />
-                                <input
-                                    type="text"
-                                    name="estado"
-                                    value={endereco.estado}
-                                    onChange={handleEnderecoChange}
-                                    placeholder="Estado"
-                                    className={Style.Input}
-                                    maxLength="2"
                                 />
                             </div>
                         </div>
@@ -288,9 +273,6 @@ function Contato(){
                                 </label>
                                 <label className={Style.CheckboxLabel}>
                                     <input type="checkbox" name="online" /> Online
-                                </label>
-                                <label className={Style.CheckboxLabel}>
-                                    <input type="checkbox" name="hibrido" /> Híbrido
                                 </label>
                             </div>
                         </div>
