@@ -509,10 +509,11 @@
     .direita:hover ~ .titledireita{
       font-size: 4rem;
       margin-top: -25%;
+
     }
     .esquerda:hover ~ .titleesquerda{
       font-size: 4rem;
-      margin-top: -22%;
+      margin-top: -21%;
       margin-left: 10%;
     }
     .meio:hover ~ .titlemeio{
