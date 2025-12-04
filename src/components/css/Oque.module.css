@@ -479,7 +479,109 @@
     top: calc(50% + 300px);
     text-align: center;
 }
+@media (max-width: 1990px) {
+    .Oquee {
+        height: 80vh;
+        clip-path: ellipse(90% 50% at 50% 50%);
+    }
+    
+    .esquerda,
+    .meio,
+    .direita {
+        height: 30vh;
+        min-height: 350px;
+        width: 30%;
+        min-width: 200px;
+    }
+    
+    .titleesquerda,
+    .titlemeio,
+    .titledireita {
+        font-size: 2.5rem;
+        top: calc(50% + 20vh);
+        margin-top: 3%;
+    }
+    .titleesquerda.hovered,
+    .titlemeio.hovered,
+    .titledireita.hovered {
+        font-size: 3rem;
+    }
+    .direita:hover ~ .titledireita{
+      font-size: 4rem;
+      margin-top: -25%;
 
+    }
+    .esquerda:hover ~ .titleesquerda{
+      font-size: 4rem;
+      margin-top: -22%;
+      margin-left: 10%;
+    }
+    .meio:hover ~ .titlemeio{
+      margin-top: -28%;
+      margin-left: 3%;
+      font-size: 4rem;
+    }
+    .paragrafoesquerda,
+    .paragrafomeio,
+    .paragrafodireita {
+        font-size: 2rem;
+        width: 1230vw;
+    }
+    .esquerda img{
+      width: 500px;
+      margin-left: 20%;
+      margin-top: 1%;
+    }
+    .meio img{
+      width: 500px;
+      margin-right: 1%;
+      margin-top: 1.5%;
+    }
+    .direita img{
+      width: 500px;
+      margin-left:4%;
+      margin-top: 1.5%;
+    }
+    .paragrafodireita{
+        margin-top: 3%;
+        margin-right: 5%;
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .paragrafomeio{
+      margin-left: 6%;
+      font-size: 3rem;
+    }
+    .esquerda:hover .paragrafoesquerda{
+        width: 100%;
+        font-size: 2.5rem;
+        margin-left: -6%;
+    }
+    .esquerda:hover img{
+        margin-left: 75%;
+        width: 500px;
+    }
+    .direita:hover img{
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    .meio:hover img{
+        margin-left: -75%;
+        margin-top: 1%;
+    }
+    .direita:hover .paragrafodireita{
+        font-size: 3rem;
+        width: 150%;
+    }
+    .meio:hover .paragrafomeio{
+        margin-left: 2%;
+    }
+    .esquerda,
+    .meio,
+    .direita{
+        height: 500px;
+    }
+}
 @media (max-width: 1366px) {
     .Oquee {
         height: 80vh;
