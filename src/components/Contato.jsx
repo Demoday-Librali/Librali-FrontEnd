@@ -87,8 +87,8 @@ function Contato(){
                         <h2>Especialista em comunicação:</h2>
                         <div className={Style.Tags}>
                             <p>Educacional</p>
-                            <p>Juridico</p>
-                            <p>Empressaial</p>
+                            <p>Jurídico</p>
+                            <p>Empressarial</p>
                         </div>
                     </div>
 
