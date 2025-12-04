@@ -527,7 +527,34 @@
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
 }
-@media (max-width: 1336px) {
+@media (max-width: 1024px) {
+    .fundo{
+    position: relative;
+    margin-bottom: 100%;
+    width: 100%;
+    background-color: #3B0F5A; 
+    padding: 100px 0px; 
+    text-align: center;
+    margin-top: -86%;
+    height: 3900px;
+    z-index: 1; 
+    overflow-y: hidden;
+    clip-path: polygon(
+        0% 22%,
+        50% 30%, 
+        100% 22%, 
+        100% 90%,
+        50% 100%,
+        0% 90%
+    ); 
+}
+.caixasbrancas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+}
+}
+/* @media (max-width: 1336px) {
     .fundo {
         background-color: #381A72;
         height: 2160px;
@@ -550,7 +577,7 @@
         margin-right: 0;
     }
 
-    /* Ajusta os botões */
+    
     #login, #login2, #login3 {
         width: 90%;
         margin-top: 20px;
@@ -578,7 +605,7 @@
         height: 0%;
         display: none;  
     }
-}
+} */
 
 @media (max-width: 768px) {
     .fundo {
