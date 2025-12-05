@@ -6,13 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
 }
 /* Aqui termina o css reset */
 /* Aqui começa a config padrão do site */
 body{
     background-color: #fffafa;
-    overflow-x: hidden;
 }
 /* Aqui termina a config padrão do site */
 /*Botão Acessibilidade*/

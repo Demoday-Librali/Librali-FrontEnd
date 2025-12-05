@@ -143,14 +143,12 @@
 }
 #botoa{
     position: relative;
-    height: auto;
     left: 0%;
     display: flex;
     justify-content: space-around;
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
-    overflow: hidden;
 }
 #login{
     position: relative;
@@ -171,19 +169,17 @@
 #login:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
-    background-color: #381A72; /* ADICIONE ISSO */
-    color: white; /* ADICIONE ISSO */
+    background-color: #381A72;
+    color: white;
 }
 #botoa2{
     position: relative;
-    height: auto;
     left: 0%;
     display: flex;
     justify-content: space-around;
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
-    overflow: hidden;
 }
 #login2{
     position: relative;
@@ -199,7 +195,7 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgb(91, 91, 91);
     margin-top: 10%;
-    z-index: 100; /* ADICIONE ISSO */
+    z-index: 100;
 }
 #login2:hover{
     transform: scale(1.1);
@@ -209,14 +205,12 @@
 }
 #botoa3{
     position: relative;
-    height: auto;
     left: 0%;
     display: flex;
     justify-content: space-around;
     align-content: center;
     gap: 10px;
     font-size: 1.7rem;
-    overflow: hidden;
 }
 #login3{
     position: relative;
@@ -253,7 +247,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100; /* ADICIONE ISSO */
+    z-index: 100; 
 }
 #login3:hover{
     transform: scale(1.1);
@@ -268,7 +262,7 @@
     text-decoration: none;
     justify-content: center;
     text-align: center;
-    margin-top: 1%;
+    margin-top: -1%;
     margin-left: 43%;
 }
 .Vermais p{
@@ -512,8 +506,9 @@
 .Vermais{
     background-color: #FFE385;
     color: #49038A;
-    margin-top: -50%;
-    margin-left: -8.5%;
+    margin-top: 20%;
+    margin-left: 42%;
+    margin-top: 4%;
     position: absolute;  
     text-decoration: none !important;  
 }
@@ -525,6 +520,9 @@
 .Vermais:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
+}
+.caixasbrancas{
+    margin-top: 50%;
 }
 }
 @media (max-width: 1024px) {
@@ -554,7 +552,7 @@
     margin-top: 80%;
 }
 }
-/* @media (max-width: 1336px) {
+@media (max-width: 1336px) {
     .fundo {
         background-color: #381A72;
         height: 2160px;
@@ -605,7 +603,7 @@
         height: 0%;
         display: none;  
     }
-} */
+}
 
 @media (max-width: 768px) {
     .fundo {

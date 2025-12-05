@@ -10,8 +10,6 @@
     z-index: 0;
     overflow: hidden;
 }
-
-/* DIVI AMARELA (ESQUERDA) */
 .esquerda{
   position: absolute;
   top: 50%;
@@ -49,27 +47,23 @@
     left: 10%;
     text-align: left;
 }
-/* Quando div esquerda estiver em hover, esconde os outros títulos */
 .esquerda:hover ~ .titlemeio,
 .esquerda:hover ~ .titledireita {
   display: none !important;
   pointer-events: none;
 }
 
-/* Quando div meio estiver em hover, esconde os outros títulos */
 .meio:hover ~ .titleesquerda,
 .meio:hover ~ .titledireita {
   display: none !important;
   pointer-events: none;
 }
 
-/* Quando div direita estiver em hover, esconde os outros títulos */
 .direita:hover ~ .titleesquerda,
 .direita:hover ~ .titlemeio {
   display: none !important;
   pointer-events: none;
 }
-/* TÍTULO ESQUERDA (FORA) */
 .titleesquerda {
     color: white;
     font-size: 2.5rem;
@@ -77,19 +71,15 @@
     font-family: "Montserrat", sans-serif;
     text-align: center;
     white-space: nowrap;
-    position: absolute;
-    
-    /* POSICIONA ABAIXO DA DIV AMARELA */
+    position: absolute; 
     top: calc(50% + 300px);
     left: 16.5%;
     transform: translateX(-50%);
-    
     width: 33%;
     z-index: 20;
     transition: all 0.5s ease;
 }
 
-/* PARÁGRAFO ESQUERDA */
 .paragrafoesquerda {
     position: absolute;
     width: 1000px;
@@ -162,15 +152,13 @@
     z-index: 20;
     transition: all 0.5s ease;
 }
-
-/* Hover na div rosa - TÍTULO MUDA */
 .meio:hover ~ .titlemeio {
     color: #421167;
     font-size: 4rem;
     font-weight: 700;
     transition: all 3s ease;
-    top: calc(50% + 300px);
     text-align: center;
+    margin-top: -40%;
 }
 
 /* Hover na div rosa */
@@ -205,6 +193,7 @@
     transform: translateY(-50%) translateX(0);
     transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
     pointer-events: auto;
+    font-size: 2.8rem;
 }
 
 /* DIV VERDE (DIREITA) */
@@ -258,7 +247,6 @@
     transition: 2s all;
 }
 
-/* Parágrafo da direita (DENTRO) */
 .paragrafodireita {
     position: absolute;
     width: 900px;
@@ -267,15 +255,15 @@
     color: #421167;
     margin: 0;
     opacity: 0;
-    right: 10%; /* Alinha à direita */
+    right: 15%; 
     top: 50%;
-    transform: translateY(-50%) translateX(30px); /* Começa à direita */
+    transform: translateY(-50%) translateX(30px);
     z-index: 15;
     transition: transform 1s ease, opacity 1s ease;
     pointer-events: none;
     line-height: 1.3;
     max-width: 45%;
-    text-align: left; /* Texto alinhado à direita */
+    text-align: left; 
 }
 
 .direita:hover .paragrafodireita {
@@ -386,9 +374,8 @@
     font-size: 4rem;
     font-weight: 700;
     transition: all 3s ease, opacity 0.5s ease, visibility 0.5s ease;
-    top: calc(50% + 300px);
     text-align: center;
-    margin-top: -30%;
+    margin-top: -50%;
     width: 65%;
     margin-left: 2%;
 }
@@ -398,7 +385,7 @@
     font-size: 4rem;
     font-weight: 700;
     transition: all 3s ease, opacity 0.5s ease, visibility 0.5s ease;
-    top: calc(50% + 300px);
+    top: calc(40% + 300px);
     text-align: center;
     margin-top: -30%;
     margin-left: -30%;
@@ -467,7 +454,7 @@
     font-size: 4rem;
     font-weight: 700;
     transition: all 3s ease;
-    top: calc(50% + 300px);
+    top: calc(45% + 300px);
     text-align: center;
 }
 
@@ -582,6 +569,73 @@
         height: 500px;
     }
 }
+@media (max-width: 1440px){
+    .esquerda img{
+        width: 400px;
+        margin-left: 2%;
+    }
+    .esquerda:hover img{
+        margin-right: 15%;
+        width: 400px;
+    }
+    .meio:hover img{
+        margin-left: -65%;
+        width: 400px;
+    }
+    .meio img{
+        width: 400px;
+        margin-left: -2%;
+    }
+    .direita img{
+        width: 400px;
+        margin-left: 9%;
+    }
+    .titleesquerda,
+    .titlemeio,
+    .titledireita {
+        font-size: 2.3rem;
+        top: calc(55% + 20vh);
+        margin-top: 3%;
+    }
+    .titleesquerda{
+        margin-left: -3%;
+        margin-top: 2%;
+    }
+    .titlemeio{
+        margin-top: 2%;
+    }
+    .titledireita{
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+    .esquerda:hover .paragrafoesquerda{
+        font-size: 2rem;
+        margin-left: -5%;
+    }
+    .esquerda:hover ~ .titleesquerda{
+        margin-top: -31%;
+    }
+    .meio:hover ~ .titlemeio{
+        font-size: 3rem;
+        margin-top: -35%;
+        margin-left: 7%;
+    }
+    .meio:hover .paragrafomeio{
+        font-size: 2.5rem;
+        margin-left: 6%;
+    }
+    .direita:hover ~ .titledireita{
+        font-size: 3.5rem;
+        margin-top: -33%;
+        margin-left: -25%;
+    }
+    .direita:hover  .paragrafodireita{
+        background-color: red;
+        font-size: 3rem;
+        width: 140% !important;
+    }
+
+}
 @media (max-width: 1366px) {
     .Oquee {
         height: 80vh;
@@ -652,16 +706,15 @@
         margin-top: 3%;
         margin-right: 5%;
         font-size: 1.8rem;
-        width: 90%;
+        width: 100%;
     }
     .paragrafomeio{
       margin-left: 6%;
       font-size: 3rem;
     }
     .esquerda:hover .paragrafoesquerda{
-        width: 100%;
+        width: 190%;
         font-size: 1.8rem;
-        margin-left: -6%;
     }
 }
 
@@ -718,7 +771,7 @@
     }
     .paragrafodireita{
         margin-top: 1%;
-        margin-right: 10%; /* Agora está na mesma regra */
+        margin-right: 10%;
     }
     .paragrafomeio{
       margin-left: 10%;
