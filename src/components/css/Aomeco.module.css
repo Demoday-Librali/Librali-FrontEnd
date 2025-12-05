@@ -29,14 +29,14 @@
 }
 
 .texto_video h1 {
-  font-size: 90px;
-  margin-bottom: 20px; 
+  font-size: 150px;
+  margin-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
 .texto_video p {
-  font-size: 25px;
-  max-width: 750px; 
+  font-size: 30px;
+  max-width: 950px; 
   line-height: 1.5; 
   font-weight: bold;
   font-family: "Montserrat Alternates", sans-serif;
