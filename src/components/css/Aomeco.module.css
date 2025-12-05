@@ -41,7 +41,7 @@
   font-weight: bold;
   font-family: "Montserrat Alternates", sans-serif;
 }
-@media (max-width: 1990px){
+@media (max-width: 1366px){
   .texto_video h1{
     font-size: 5rem;
   }
