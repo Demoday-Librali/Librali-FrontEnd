@@ -12,6 +12,7 @@ export default function CadastroContato({data, updateFieldHandler}) {
                      placeholder='e-mail'
                       value={data.email || ""}
                       onChange={(e) => updateFieldHandler('email', e.target.value)}
+                      required
                      />
                 </div>
                 <div className={Styles.form_control}>
@@ -30,6 +31,7 @@ export default function CadastroContato({data, updateFieldHandler}) {
                      name='cel' 
                      id='cel' 
                      placeholder='Telefone celular' 
+                     required
                       value={data.cel || ""}
                       onChange={(e) => updateFieldHandler('cel', e.target.value)}
                      />

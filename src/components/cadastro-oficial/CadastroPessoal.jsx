@@ -51,6 +51,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
                            placeholder='CEP'
                            value={cep}
                            onChange={(e) => setCep(e.target.value.replace(/\D/g, ''))}
+                           required
                            />
                       </div>
                       <div className={Styles.form_control}>
@@ -61,6 +62,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
                            placeholder='N°'
                            value={endereco.numero}
                            onChange={(e) => setEndereco({...endereco, numero: e.target.value})}
+                           required
                            />
                       </div>
                       <div className={Styles.form_control}>
@@ -83,6 +85,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
                             placeholder='Rua'
                             value={endereco.logradouro}
                             readOnly
+                            required
                             />
                       </div>
                       <div className={Styles.form_control}>
@@ -93,6 +96,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
                             placeholder='UF'
                             value={endereco.uf}
                             readOnly
+                            required
                             />
                       </div>
                     </div>
@@ -104,6 +108,7 @@ function CadastroPessoal({data, updateFieldHandler}) {
                           placeholder='Cidade'
                           value={endereco.cidade}
                           readOnly
+                          required
                           />
                     </div>
                 </div>
