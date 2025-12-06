@@ -39,22 +39,22 @@ const CadastroPerfil = ({data, updateFieldHandler}) => {
             </div>
             <div className={Styles.form_control}> 
               <div className={Styles.senhas}>
-                <div className={Styles.form_control}>
+
                     <input
                      type="password"
                      name='senha'
                      id={Styles.form_senha}
                      placeholder='Senha'
                      />
-                </div>
-                <div className={Styles.form_control}>
+                
+                
                     <input
                      type="password"
                      name='conf_senha'
                      id={Styles.form_senha}
                      placeholder='Confirmar senha'
                      />
-                </div>
+                
               </div>
               <div className={Styles.form_control} id={Styles.controle_check}>
                     <input
