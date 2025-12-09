@@ -10,6 +10,7 @@ import Steps from './Steps'
 import { cadastroForm } from '../hooks/cadastroForm'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import inscricao from '../assets/images/sinal-inscricao.png'
 import bem_vindo from '../assets/images/sinal-bem-vindo.png'
@@ -33,6 +34,7 @@ const formTemplate = {
 }
 
 function CadastroOficial() {
+    const navigate = useNavigate()
     const [data, setData] = useState(formTemplate)
 
     const updateFieldHandler = (key, value) => {
@@ -42,6 +44,20 @@ function CadastroOficial() {
                 [key]: value
             }
         })
+    }
+
+    const handleFormSubmit = (e) => {
+        if (!isLastStep) {
+            changeStep(currentStep + 1, e)
+        } else {
+            e.preventDefault()
+
+            if (data.check_contratante) {
+                navigate('/escolhaplano')
+            } else {
+                navigate('/')
+            }
+        }
     }
 
     const cadastroComponents = [
@@ -59,7 +75,7 @@ function CadastroOficial() {
             <div className={Styles.conteudo_esquerda}>
                 <h1 id={Styles.titulo}>Cadastro</h1>
                 <Steps currentStep={currentStep} />
-                <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+                <form onSubmit={ handleFormSubmit}>
                     <h1>{currentComponent}</h1>
                     <div className={Styles.input_container}></div>
                     <div className={Styles.actions}>
@@ -69,15 +85,9 @@ function CadastroOficial() {
                                 <span>Voltar</span>
                             </button>
                             )}
-                        {!isLastStep ? (
                             <button type="submit" className={Styles.botao}>
-                                <span>Avançar</span>
+                                <span>{!isLastStep ? "Avançar" : "Cadastrar"}</span>
                             </button>
-                        ) : (
-                            <Link to="/escolhaplano"><button type="submit" className={Styles.botao}>
-                                <span>Cadastrar</span>
-                            </button></Link>
-                        )}
                     </div>
                 </form>
             </div>
