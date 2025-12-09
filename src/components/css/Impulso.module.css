@@ -5,7 +5,7 @@
     background-color: #3B0F5A; 
     padding: 100px 0px; 
     text-align: center;
-    margin-top: -86%;
+    margin-top: -90%;
     z-index: 1; 
     overflow-y: hidden;
     clip-path: polygon(
@@ -286,3 +286,44 @@
     margin-bottom: -13px;
 }
 
+@media  (max-width: 1440px) {
+    .caixasbrancas{
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        height: 7%;
+        justify-content: space-around;
+        gap: 15%;
+        margin-left: 4%;
+    }
+    .caixa1,
+    .caixa2,
+    .caixa3{
+        height: 500px;
+    }
+    .itens p{
+        font-size: 1.2rem;
+    }
+    .title{
+        margin-top: 20%;
+        font-size: 2.5rem;
+    }
+    .paragrafo{
+        font-size: 1.7rem;
+    }
+    #login{
+        margin-top: 4%;
+    }
+    .Laranja{
+        margin-top: -59%;
+    }
+    .Verde{
+        margin-top: -59%;
+    }
+    .Azul{
+        margin-top: -55%;
+    }
+    .Vermais{
+        margin-left: 40%;
+    }
+}

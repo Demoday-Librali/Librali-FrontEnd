@@ -495,15 +495,18 @@
         margin-top: 3%;
     }
     .titleesquerda{
+        margin-top: 8%;
+        font-size: 1.7rem;
         margin-left: -3%;
-        margin-top: 2%;
     }
     .titlemeio{
-        margin-top: 2%;
+        margin-top: 8%;
+        font-size: 1.7rem;
     }
     .titledireita{
-        margin-top: 2%;
-        margin-left: 1%;
+        margin-top: 8%;
+        font-size: 1.7rem;
+        margin-left: 4%;
     }
     .esquerda:hover .paragrafoesquerda{
         font-size: 2rem;
@@ -533,7 +536,7 @@
     }
 
 }
-@media (max-width: 1366px) {
+@media (max-width: 1305px) {
     .Oquee {
         height: 80vh;
         clip-path: ellipse(90% 50% at 50% 50%);
@@ -578,7 +581,7 @@
       font-size: 3rem;
     }
     .meio:hover .paragrafomeio{
-      margin-left: 10%;
+      margin-left: 50%;
       width: 150% !important;
     }
     .paragrafoesquerda,
@@ -609,12 +612,12 @@
         width: 100%;
     }
     .paragrafomeio{
-      margin-left: -6%;
+      margin-left: 6%;
       font-size: 1rem;
     }
     .esquerda:hover .paragrafoesquerda{
         width: 190%;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 

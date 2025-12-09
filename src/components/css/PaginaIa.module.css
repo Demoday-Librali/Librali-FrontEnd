@@ -132,16 +132,22 @@
     box-shadow: 2px 2px 5px rgb(91, 91, 91);
 }
 @media (max-width: 1440px) {
-    .Titulo { font-size: 2.5em; }
-    .Texto1, .Texto2 { font-size: 1.8em; }
+    .Titulo { font-size: 2.5rem; margin-top: -3%;}
+    .Texto1, .Texto2 { font-size: 1.8em; margin-top: -3%; }
 
     .Blocoverde{
-        margin-bottom: -4%;
+        margin-bottom: -10%;
+    }
+    .PaginaIa{
+        height: 700px;
+    }
+    .botoes{
+        margin-top: 8%;
     }
 }
 @media (max-width: 1024px) {
     .Titulo{ 
-        font-size: 3em;
+        font-size: 3rem;
         margin-top: -10%;
     }
     .Texto1, .Texto2 { font-size: 1.5em; }
