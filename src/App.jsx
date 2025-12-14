@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header.jsx'
+import HeaderCadastrado from './components/HeaderCadastrado.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './components/Home.jsx'
 import Aomeco from './components/Aomeco.jsx'
@@ -37,7 +38,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-
+      {/*<HeaderCadastrado />*/}
       <Routes>
         <Route
           path="/"
