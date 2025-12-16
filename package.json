@@ -11,11 +11,16 @@
   },
   "dependencies": {
     "@google/genai": "^1.31.0",
+    "@tanstack/react-query": "^5.90.12",
+    "axios": "^1.13.2",
+    "effect": "^3.19.12",
     "lucide-react": "^0.548.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5",
+    "state": "^0.2.0",
+    "use": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

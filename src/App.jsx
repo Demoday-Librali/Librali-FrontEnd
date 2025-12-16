@@ -31,14 +31,24 @@ import PlanoEmpresa from './components/PlanoEmpresa.jsx'
 import EditProfile from './components/EditProfile.jsx'
 import AlterarCadastroEmpresas from './components/AlterarCadastroEmpresas.jsx' /*Mexi aqui*/
 import Contato from './components/Contato.jsx'
-
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [usuario, setUsuario] = useState(null);
+  const apiUrl = import.meta.env.VITE_API_URL;
+
+  useEffect(() => {
+    fetch(`${apiUrl}/pessoa-fisica/usuario/1`)
+      .then(response => response.json())
+      .then(data => setUsuario(data))
+      .catch(err => console.error(err));
+  }, [apiUrl]);
+
   return (
     <Router>
       <ScrollToTop />
       <Header />
-      {/*<HeaderCadastrado />*/}
+      {usuario && <p>Nome: {usuario.nome}</p>}
       <Routes>
         <Route
           path="/"
@@ -64,28 +74,21 @@ function App() {
         <Route path="/PlanoEmpresa" element={<PlanoEmpresa />} />
         <Route path="/planos/interprete" element={<PlanoInterprete />} />
         <Route path="/planos/empresa" element={<PlanoEmpresa />} />
-
         <Route path="/assistente" element={<Lara />} />
-
         <Route path="/dadosempresa" element={<DadosEmpresa />} />
-
-        <Route path='/interprete' element={<CadastroInterprete />} />
-        <Route path='/empresa' element={<CadastroEmpresa />} />
-        <Route path='/cadastropf' element={<CadastroPf />} />
-        <Route path='/escolhaplano' element={<EscolhaPlano />} />
-
+        <Route path="/interprete" element={<CadastroInterprete />} />
+        <Route path="/empresa" element={<CadastroEmpresa />} />
+        <Route path="/cadastropf" element={<CadastroPf />} />
+        <Route path="/escolhaplano" element={<EscolhaPlano />} />
         <Route path="/dados-interpretes" element={<DadosInterpletes />} />
         <Route path="/editar-perfil" element={<EditProfile />} />
-        <Route path="/editar-empresa" element={<AlterarCadastroEmpresas />} />  {/*Mexi aqui*/}
+        <Route path="/editar-empresa" element={<AlterarCadastroEmpresas />} />
         <Route path="/contato" element={<Contato />} />
-
       </Routes>
       <Footer />
       <Lara3D />
     </Router>
-
-  )
+  );
 }
 
-export default App
-
+export default App;

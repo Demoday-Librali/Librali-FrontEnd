@@ -1,42 +1,41 @@
-import React from 'react'
-import Styles from './css/CadastroContato.module.css'
+import React from 'react';
+import Styles from './css/CadastroContato.module.css';
 
-export default function CadastroContato({data, updateFieldHandler}) {
+export default function CadastroContato({ data, updateFieldHandler }) {
   return (
     <div className={Styles.cadastro}>
-                <div className={Styles.form_control}>
-                    <input
-                     type="email" 
-                     name='email' 
-                     id='email' 
-                     placeholder='e-mail'
-                      value={data.email || ""}
-                      onChange={(e) => updateFieldHandler('email', e.target.value)}
-                      required
-                     />
-                </div>
-                <div className={Styles.form_control}>
-                    <input
-                     type="tel" 
-                     name='phone' 
-                     id='phone' 
-                     placeholder='Telefone comercial' 
-                      value={data.phone || ""}
-                      onChange={(e) => updateFieldHandler('phone', e.target.value)}
-                     />
-                </div>
-                <div className={Styles.form_control}>
-                    <input
-                     type="tel" 
-                     name='cel' 
-                     id='cel' 
-                     placeholder='Telefone celular' 
-                     required
-                      value={data.cel || ""}
-                      onChange={(e) => updateFieldHandler('cel', e.target.value)}
-                     />
-                </div>
-            </div>
-  )
+      <div className={Styles.form_control}>
+        <input
+          type="email"
+          name='email'
+          id='email'
+          placeholder='e-mail'
+          value={data.email || ""}
+          onChange={(e) => updateFieldHandler('email', e.target.value)}
+          required
+        />
+      </div>
+      <div className={Styles.form_control}>
+        <input
+          type="tel"
+          name='phone'
+          id='phone'
+          placeholder='Telefone comercial'
+          value={data.phone || ""}
+          onChange={(e) => updateFieldHandler('phone', e.target.value)}
+        />
+      </div>
+      <div className={Styles.form_control}>
+        <input
+          type="tel"
+          name='cel'
+          id='cel'
+          placeholder='Telefone celular'
+          value={data.cel || ""}
+          onChange={(e) => updateFieldHandler('cel', e.target.value)}
+          required
+        />
+      </div>
+    </div>
+  );
 }
-

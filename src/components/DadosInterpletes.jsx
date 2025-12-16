@@ -1,7 +1,43 @@
 import React from 'react';
 import styles from "./css/DadosInterpletes.module.css";
 
+import { useEffect, useState } from 'react';
+
+const coresBanner = [
+  "#6A4C93",
+  "#9D4EDD",
+  "#4EA8DE",
+  "#52B788",
+  "#F77F00",
+  "#EF476F"
+];
+
+function getBannerColor() {
+  let cor = localStorage.getItem("bannerColor");
+
+  if (!cor) {
+    const index = Math.floor(Math.random() * coresBanner.length);
+    cor = coresBanner[index];
+    localStorage.setItem("bannerColor", cor);
+  }
+
+  return cor;
+}
+
+
 const DadosInterpletes = () => {
+  const { id } = useParams()
+  const { data: interprete, isLoading } = useInterpreteById(id)
+
+  const [bannerColor, setBannerColor] = useState("#ccc")
+
+  useEffect(() => {
+    setBannerColor(getBannerColor())
+  }, [])
+
+  if (isLoading) return <p>Carregando...</p>
+
+
   return (
     <div className={styles.pageWrapper}>
       {/* --- Conteúdo Principal --- */}
@@ -9,9 +45,12 @@ const DadosInterpletes = () => {
         <div className={styles.profileCard}>
           
           {/* Banner Topo */}
-          <div className={styles.banner}>
+          <div
+            className={styles.banner}
+            style={{ backgroundColor: bannerColor }}>
             <span>Banner da preferência do usuário</span>
           </div>
+
 
           {/* Cabeçalho do Perfil (Avatar + Stats) */}
           <div className={styles.profileHeader}>
@@ -41,9 +80,13 @@ const DadosInterpletes = () => {
           <div className={styles.infoGrid}>
             {/* Coluna Esquerda: Dados Básicos */}
             <div className={styles.leftColumn}>
-              <h2 className={styles.sectionTitle}>Nome de usuário</h2>
+              <h2 className={styles.sectionTitle}>
+              {interprete?.nome || 'Nome não informado'}
+              </h2>
+
               <p className={styles.subText}>[Gênero]</p>
-              <p className={styles.subText}>Localidade</p>
+              <p className={styles.subText}> {interprete?.localidade || 'Localidade não informada'} </p>
+
               
               <p className={styles.experienceText}>
                 Experiência 1 | Experiência 2 | Experiência 3 | <br/>
@@ -75,11 +118,10 @@ const DadosInterpletes = () => {
           <div className={styles.bioSection}>
             <div className={styles.sectionHeaderRow}>
               <h2 className={styles.sectionTitlePurple}>Biografia</h2>
+
             </div>
             <div className={styles.bioContent}>
-              <p>
-                Uma descrição do usuário é o ato de expor as características e os detalhes de um objeto, pessoa, cenário, sensação ou ideia, seja de forma oral, escrita ou imagética. Seu objetivo é tornar algo visível e dar a entender como aquilo é, detalhando suas propriedades e aspectos de maneira objetiva (fiel à realidade) ou subjetiva (com emoções e opiniões). Uma descrição do usuário é o ato de expor as características e os detalhes de um objeto...
-              </p>
+              <p> {interprete?.descricao || 'Biografia ainda não cadastrada.'}</p>
             </div>
              <div className={styles.rightAlignBtn}>
                 <button className={styles.btnEditOutline}>Editar</button>
